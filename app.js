@@ -5,6 +5,16 @@ const AWS = require('aws-sdk');
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
+const expressWs = require('express-ws');
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getRandomName() {
+    const names = ['Steve', 'Peter', 'Marc', 'Jacob', 'Alex', 'Leo', 'Robert'];
+    return names[getRandomInt(0, names.length - 1)];
+}
 
 // Code to run if we're in the master process
 if (cluster.isMaster) {
@@ -26,12 +36,13 @@ if (cluster.isMaster) {
 } else {
     AWS.config.region = process.env.REGION;
 
- /*   const sns = new AWS.SNS();
-    const dynamoDB = new AWS.DynamoDB();
+    /*   const sns = new AWS.SNS();
+     const dynamoDB = new AWS.DynamoDB();
 
-    const ddbTable = process.env.STARTUP_SIGNUP_TABLE;
-    const snsTopic = process.env.NEW_SIGNUP_TOPIC;*/
-    const app = express();
+     const ddbTable = process.env.STARTUP_SIGNUP_TABLE;
+     const snsTopic = process.env.NEW_SIGNUP_TOPIC;*/
+    const expressWS = expressWs(express());
+    const app = expressWS.app;
 
     app.engine('html', ejs.renderFile);
     app.set('view engine', 'ejs');
@@ -42,6 +53,34 @@ if (cluster.isMaster) {
     app.get('/', (req, res) => {
         res.render('index.html');
     });
+
+    app.ws('/', (ws) => {
+        ws.on('message', (msg) => {
+            ws.send(msg);
+        });
+    });
+    const aWss = expressWS.getWss('/');
+    setInterval(() => {
+        aWss.clients.forEach((client) => {
+            client.send(JSON.stringify({
+                type: 'ADD_WINNER',
+                data: {
+                    product: {
+                        id: getRandomInt(1, 3),
+                        name: getRandomName(),
+                    },
+                    user: {
+                        name: getRandomName(),
+                        avatar: getRandomInt(1, 2),
+                    },
+                    lot: {
+                        winnerTickets: getRandomInt(10, 30),
+                        participants: getRandomInt(20, 100),
+                    },
+                },
+            }));
+        });
+    }, 2000);
 
     /*  app.post('/signup', function (req, res) {
      var item = {

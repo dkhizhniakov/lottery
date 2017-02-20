@@ -4,14 +4,15 @@
 const CommonsPlugin = new require('webpack/lib/optimize/CommonsChunkPlugin');
 const path = require('path');
 const webpack = require('webpack');
+process.env.NODE_ENV = 'production';
 module.exports = {
     devtool: 'source-map',
     entry: {
-        generic: './src/generic.js',
+        generic: './static/src/index.jsx',
     },
     output: {
-        path: 'dist',
-        publicPath: 'js/dist/',
+        path: 'static/dist',
+        publicPath: '/dist/',
         filename: '[name]Bundle.js',
         chunkFilename: '[name]_[id]_[chunkhash:20].js',
     },
@@ -24,11 +25,11 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.js$/,
+            test: /(\.js|\.jsx)$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'babel',
             query: {
-                presets: ['es2015', 'es2016', 'react'],
+                presets: ['es2015', 'es2016', 'react', 'react-app'],
                 plugins: ['transform-class-properties', 'transform-runtime', 'transform-object-assign'],
             },
         },

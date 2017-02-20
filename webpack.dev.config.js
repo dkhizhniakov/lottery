@@ -3,6 +3,7 @@
  */
 const CommonsPlugin = new require('webpack/lib/optimize/CommonsChunkPlugin');
 const webpack = require('webpack');
+process.env.NODE_ENV = 'development';
 module.exports = {
     devtool: 'source-map',
     entry: {
@@ -14,6 +15,7 @@ module.exports = {
         filename: '[name]Bundle.js',
         chunkFilename: '[name]_chunk.js',
     },
+    watch: true,
     module: {
         loaders: [{
             test: /(\.js|\.jsx)$/,
@@ -24,8 +26,15 @@ module.exports = {
                 plugins: ['transform-class-properties', 'transform-runtime', 'transform-object-assign'],
             },
         },
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
+            { test: /(\.css|\.scss)$/, loader: 'style-loader!css-loader!sass-loader' },
+            {
+                test: /(\.eot|\.woff2|\.woff|\.ttf|\.svg|\.gif)$/,
+                loader: 'url',
+            },
         ],
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx'],
     },
     plugins: [
         new CommonsPlugin({
