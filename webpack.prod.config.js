@@ -21,7 +21,7 @@ module.exports = {
             react: path.join(__dirname, 'node_modules', 'react'),
             React: path.join(__dirname, 'node_modules', 'react'),
         },
-        extensions: ['', '.js'],
+        extensions: ['', '.js', '.jsx'],
     },
     module: {
         loaders: [{
@@ -33,7 +33,11 @@ module.exports = {
                 plugins: ['transform-class-properties', 'transform-runtime', 'transform-object-assign'],
             },
         },
-            { test: /\.css$/, loader: 'style-loader!css-loader' },
+            { test: /(\.css|\.scss)$/, loader: 'style-loader!css-loader!sass-loader' },
+            {
+                test: /(\.eot|\.woff2|\.woff|\.ttf|\.svg|\.gif)$/,
+                loader: 'url',
+            },
         ],
     },
     plugins: [
