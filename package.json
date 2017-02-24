@@ -12,11 +12,14 @@
     "fixed-data-table": "^0.6.3",
     "flux": "^3.1.2",
     "font-awesome": "^4.7.0",
+    "forever-monitor": "^1.7.1",
     "react": "^15.4.2",
     "react-bootstrap": "0.30.7",
     "react-dom": "15.4.2",
+    "react-router": "^3.0.2",
     "react-slick": "^0.14.6",
     "react-svg": "^2.1.19",
+    "react.timer": "^2.1.0",
     "rx-dom": "^7.0.3",
     "slick-carousel": "^1.6.0",
     "underscore": "latest",
@@ -74,9 +77,9 @@
     "whatwg-fetch": "1.0.0"
   },
   "scripts": {
-    "start": "webpack --progress -p --config webpack.prod.config.js && node app.js",
+    "start": "webpack --progress -p --config webpack.prod.config.js && node init.js",
     "dev": "concurrently --kill-others \"npm run server\" \"npm run ui\"",
-    "server": "node app.js",
+    "server": "node init.js",
     "ui": "webpack --progress --display-error-details --config webpack.dev.config.js",
     "lint": "eslint static/src/**",
     "lint-fix": "eslint --fix static/src/**"

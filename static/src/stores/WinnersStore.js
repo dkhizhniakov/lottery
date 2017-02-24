@@ -21,12 +21,12 @@ class WinnersStore extends EventEmitter {
 
     handleAction(action) {
         switch (action.actionType) {
-            case WinnersConstants.ADD_WINNER:
-                this.winners = [action.winnerInfo, ...this.winners].slice(0, 10);
-                this.emitChange();
-                break;
-            default:
-                break;
+        case WinnersConstants.ADD_WINNER:
+            this.winners = [action.winnerInfo, ...this.winners].slice(0, 10);
+            this.emitChange();
+            break;
+        default:
+            break;
         }
         return true;
     }

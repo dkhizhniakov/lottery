@@ -13,36 +13,42 @@ export default class Latest extends Component {
         WinnersStore.addChangeListener(this.onWinners);
     }
 
+    onWinners() {
+        this.forceUpdate();
+    }
+
     render() {
         return (
           <Table responsive condensed className="latestWinners">
-              <thead>
+            <thead>
               <tr>
-                  <th>Product</th>
-                  <th>Winner</th>
-                  <th>No. of tickets</th>
-                  <th>No. of participants</th>
+                <th>Product</th>
+                <th>Winner</th>
+                <th>No. of tickets</th>
+                <th>No. of participants</th>
               </tr>
-              </thead>
-              <tbody>
-              {WinnersStore.getWinners().map((winner)=>
+            </thead>
+            <tbody>
+              {WinnersStore.getWinners().map(winner =>
                 (
                   <tr>
-                      <td><img className="product"
-                               src={`/images/elements/products/${winner.product.id}.png`}/>{winner.product.name}</td>
-                      <td><img className="avatar"
-                               src={`/images/elements/ui/avatar${winner.user.avatar}.svg`}/> {winner.user.name}</td>
-                      <td>{winner.lot.winnerTickets}</td>
-                      <td>{winner.lot.participants}</td>
+                    <td><img
+                      alt={winner.product.name}
+                      className="product"
+                      src={`/images/elements/products/${winner.product.id}.png`}
+                    />{winner.product.name}</td>
+                    <td><img
+                      alt={winner.user.name}
+                      className="avatar"
+                      src={`/images/elements/ui/avatar${winner.user.avatar}.svg`}
+                    /> {winner.user.name}</td>
+                    <td>{winner.lot.winnerTickets}</td>
+                    <td>{winner.lot.participants}</td>
                   </tr>
-                )
+                ),
               )}
-              </tbody>
+            </tbody>
           </Table>
         );
-    }
-
-    onWinners() {
-        this.forceUpdate();
     }
 }

@@ -27,7 +27,7 @@ class WebsocketStore extends EventEmitter {
         return this.currentState;
     }
 
-    getMessage(message) {
+    static getMessage(message) {
         let messageData = {};
         try {
             messageData = JSON.parse(message);
@@ -35,11 +35,11 @@ class WebsocketStore extends EventEmitter {
             throw new Error(Exception.toString());
         }
         switch (messageData.type) {
-            case WinnersConstants.ADD_WINNER:
-                WinnersActions.addWinner(messageData.data);
-                break;
-            default:
-                break;
+        case WinnersConstants.ADD_WINNER:
+            WinnersActions.addWinner(messageData.data);
+            break;
+        default:
+            break;
         }
         return messageData;
         // handle messageData
@@ -52,14 +52,14 @@ class WebsocketStore extends EventEmitter {
             store.emitChange();
         });
         switch (action.actionType) {
-            case WebsocketConstants.CONNECT:
-                this.socket = Rx.DOM.fromWebSocket(
+        case WebsocketConstants.CONNECT:
+            this.socket = Rx.DOM.fromWebSocket(
                   action.url,
                   null,
                   openObserver);
-                this.socket.subscribe(
+            this.socket.subscribe(
                   (e) => {
-                      store.getMessage(e.data);
+                      WebsocketStore.getMessage(e.data);
                   },
                   (e) => {
                       WebsocketActions.onError(e);
@@ -68,21 +68,21 @@ class WebsocketStore extends EventEmitter {
                       WebsocketActions.disconnect();
                   },
                 );
-                break;
-            case WebsocketConstants.POST_MESSAGE:
-                this.socket.onNext(action.message);
-                break;
-            case WebsocketConstants.DISCONNECT:
-                this.socket = null;
-                this.currentState.connected = false;
-                this.emitChange();
-                break;
-            case WebsocketConstants.GET_ERROR:
-                this.socket = null;
-                this.emitChange();
-                break;
-            default:
-                break;
+            break;
+        case WebsocketConstants.POST_MESSAGE:
+            this.socket.onNext(action.message);
+            break;
+        case WebsocketConstants.DISCONNECT:
+            this.socket = null;
+            this.currentState.connected = false;
+            this.emitChange();
+            break;
+        case WebsocketConstants.GET_ERROR:
+            this.socket = null;
+            this.emitChange();
+            break;
+        default:
+            break;
         }
         return true;
     }

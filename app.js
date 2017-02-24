@@ -1,4 +1,3 @@
-// Include the cluster module
 const cluster = require('cluster');
 const os = require('os');
 const AWS = require('aws-sdk');
@@ -8,7 +7,7 @@ const ejs = require('ejs');
 const expressWs = require('express-ws');
 
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - (min + 1))) + min;
 }
 
 function getRandomName() {
@@ -50,16 +49,17 @@ if (cluster.isMaster) {
     app.use(express.static('static'));
     app.use(bodyParser.urlencoded({ extended: false }));
 
-    app.get('/', (req, res) => {
-        res.render('index.html');
-    });
-
-    app.ws('/', (ws) => {
+    app.ws('/ws', (ws) => {
         ws.on('message', (msg) => {
             ws.send(msg);
         });
     });
-    const aWss = expressWS.getWss('/');
+
+    app.get('*', (req, res) => {
+        res.render('index.html');
+    });
+
+    const aWss = expressWS.getWss('/ws');
     setInterval(() => {
         aWss.clients.forEach((client) => {
             client.send(JSON.stringify({
