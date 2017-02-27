@@ -29,7 +29,9 @@ export default class App extends Component {
         return (
             <div className="App">
                 <Header />
-                {this.props.children}
+                <div className="page-wrap">
+                    {this.props.children}
+                </div>
                 <footer>
                     <Col xs={12} sm={4}>
                         <h4>About</h4>

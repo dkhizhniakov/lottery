@@ -21703,25 +21703,33 @@ webpackJsonp([0,1],[
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _Main = __webpack_require__(570);
+	var _Main = __webpack_require__(542);
 	
 	var _Main2 = _interopRequireDefault(_Main);
 	
-	var _NotFound = __webpack_require__(566);
+	var _NotFound = __webpack_require__(571);
 	
 	var _NotFound2 = _interopRequireDefault(_NotFound);
 	
-	var _ProductsCategories = __webpack_require__(567);
+	var _ProductsCategories = __webpack_require__(572);
 	
 	var _ProductsCategories2 = _interopRequireDefault(_ProductsCategories);
 	
-	var _ProductsList = __webpack_require__(568);
+	var _ProductsList = __webpack_require__(573);
 	
 	var _ProductsList2 = _interopRequireDefault(_ProductsList);
 	
-	var _SingleProduct = __webpack_require__(569);
+	var _SingleProduct = __webpack_require__(574);
 	
 	var _SingleProduct2 = _interopRequireDefault(_SingleProduct);
+	
+	var _AuthenticationPage = __webpack_require__(736);
+	
+	var _AuthenticationPage2 = _interopRequireDefault(_AuthenticationPage);
+	
+	var _ProfilePage = __webpack_require__(737);
+	
+	var _ProfilePage2 = _interopRequireDefault(_ProfilePage);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -21730,7 +21738,7 @@ webpackJsonp([0,1],[
 	        _reactRouter.Router,
 	        (0, _defineProperty3.default)({ history: _reactRouter.browserHistory, __source: {
 	                fileName: _jsxFileName,
-	                lineNumber: 12
+	                lineNumber: 14
 	            },
 	            __self: this
 	        }, '__self', this),
@@ -21738,38 +21746,50 @@ webpackJsonp([0,1],[
 	            _reactRouter.Route,
 	            (0, _defineProperty3.default)({ path: '/', component: _App2.default, __source: {
 	                    fileName: _jsxFileName,
-	                    lineNumber: 13
+	                    lineNumber: 15
 	                },
 	                __self: this
 	            }, '__self', this),
 	            _react2.default.createElement(_reactRouter.IndexRoute, (0, _defineProperty3.default)({ component: _Main2.default, __source: {
 	                    fileName: _jsxFileName,
-	                    lineNumber: 14
+	                    lineNumber: 16
 	                },
 	                __self: this
 	            }, '__self', this)),
 	            _react2.default.createElement(_reactRouter.Route, (0, _defineProperty3.default)({ path: '/products', component: _ProductsCategories2.default, __source: {
 	                    fileName: _jsxFileName,
-	                    lineNumber: 15
+	                    lineNumber: 17
 	                },
 	                __self: this
 	            }, '__self', this)),
 	            _react2.default.createElement(_reactRouter.Route, (0, _defineProperty3.default)({ path: '/products/list', component: _ProductsList2.default, __source: {
 	                    fileName: _jsxFileName,
-	                    lineNumber: 16
+	                    lineNumber: 18
 	                },
 	                __self: this
 	            }, '__self', this)),
 	            _react2.default.createElement(_reactRouter.Route, (0, _defineProperty3.default)({ path: '/products/:id', component: _SingleProduct2.default, __source: {
 	                    fileName: _jsxFileName,
-	                    lineNumber: 17
+	                    lineNumber: 19
+	                },
+	                __self: this
+	            }, '__self', this)),
+	            _react2.default.createElement(_reactRouter.Route, (0, _defineProperty3.default)({ path: '/auth/:mode', component: _AuthenticationPage2.default, __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 20
+	                },
+	                __self: this
+	            }, '__self', this)),
+	            _react2.default.createElement(_reactRouter.Route, (0, _defineProperty3.default)({ path: '/profile', component: _ProfilePage2.default, __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 21
 	                },
 	                __self: this
 	            }, '__self', this))
 	        ),
 	        _react2.default.createElement(_reactRouter.Route, (0, _defineProperty3.default)({ path: '*', component: _NotFound2.default, __source: {
 	                fileName: _jsxFileName,
-	                lineNumber: 19
+	                lineNumber: 23
 	            },
 	            __self: this
 	        }, '__self', this))
@@ -26841,15 +26861,15 @@ webpackJsonp([0,1],[
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _WebsocketStore = __webpack_require__(557);
+	var _WebsocketStore = __webpack_require__(523);
 	
 	var _WebsocketStore2 = _interopRequireDefault(_WebsocketStore);
 	
-	var _WebsocketActions = __webpack_require__(562);
+	var _WebsocketActions = __webpack_require__(533);
 	
 	var _WebsocketActions2 = _interopRequireDefault(_WebsocketActions);
 	
-	__webpack_require__(564);
+	__webpack_require__(536);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -26891,13 +26911,22 @@ webpackJsonp([0,1],[
 	                    },
 	                    __self: this
 	                }, '__self', this)),
-	                this.props.children,
+	                _react2.default.createElement(
+	                    'div',
+	                    (0, _defineProperty3.default)({ className: 'page-wrap', __source: {
+	                            fileName: _jsxFileName,
+	                            lineNumber: 32
+	                        },
+	                        __self: this
+	                    }, '__self', this),
+	                    this.props.children
+	                ),
 	                _react2.default.createElement(
 	                    'footer',
 	                    (0, _defineProperty3.default)({
 	                        __source: {
 	                            fileName: _jsxFileName,
-	                            lineNumber: 33
+	                            lineNumber: 35
 	                        },
 	                        __self: this
 	                    }, '__self', this),
@@ -26905,7 +26934,7 @@ webpackJsonp([0,1],[
 	                        _reactBootstrap.Col,
 	                        (0, _defineProperty3.default)({ xs: 12, sm: 4, __source: {
 	                                fileName: _jsxFileName,
-	                                lineNumber: 34
+	                                lineNumber: 36
 	                            },
 	                            __self: this
 	                        }, '__self', this),
@@ -26914,7 +26943,7 @@ webpackJsonp([0,1],[
 	                            (0, _defineProperty3.default)({
 	                                __source: {
 	                                    fileName: _jsxFileName,
-	                                    lineNumber: 35
+	                                    lineNumber: 37
 	                                },
 	                                __self: this
 	                            }, '__self', this),
@@ -26925,52 +26954,10 @@ webpackJsonp([0,1],[
 	                            (0, _defineProperty3.default)({
 	                                __source: {
 	                                    fileName: _jsxFileName,
-	                                    lineNumber: 36
+	                                    lineNumber: 38
 	                                },
 	                                __self: this
 	                            }, '__self', this),
-	                            _react2.default.createElement(
-	                                'li',
-	                                (0, _defineProperty3.default)({
-	                                    __source: {
-	                                        fileName: _jsxFileName,
-	                                        lineNumber: 37
-	                                    },
-	                                    __self: this
-	                                }, '__self', this),
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    (0, _defineProperty3.default)({
-	                                        __source: {
-	                                            fileName: _jsxFileName,
-	                                            lineNumber: 37
-	                                        },
-	                                        __self: this
-	                                    }, '__self', this),
-	                                    'Company info'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                (0, _defineProperty3.default)({
-	                                    __source: {
-	                                        fileName: _jsxFileName,
-	                                        lineNumber: 38
-	                                    },
-	                                    __self: this
-	                                }, '__self', this),
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    (0, _defineProperty3.default)({
-	                                        __source: {
-	                                            fileName: _jsxFileName,
-	                                            lineNumber: 38
-	                                        },
-	                                        __self: this
-	                                    }, '__self', this),
-	                                    'Offices'
-	                                )
-	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                (0, _defineProperty3.default)({
@@ -26989,6 +26976,48 @@ webpackJsonp([0,1],[
 	                                        },
 	                                        __self: this
 	                                    }, '__self', this),
+	                                    'Company info'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 40
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 40
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Offices'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 41
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 41
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
 	                                    'Contacts'
 	                                )
 	                            )
@@ -26998,7 +27027,7 @@ webpackJsonp([0,1],[
 	                        _reactBootstrap.Col,
 	                        (0, _defineProperty3.default)({ xs: 12, sm: 4, __source: {
 	                                fileName: _jsxFileName,
-	                                lineNumber: 42
+	                                lineNumber: 44
 	                            },
 	                            __self: this
 	                        }, '__self', this),
@@ -27007,7 +27036,7 @@ webpackJsonp([0,1],[
 	                            (0, _defineProperty3.default)({
 	                                __source: {
 	                                    fileName: _jsxFileName,
-	                                    lineNumber: 43
+	                                    lineNumber: 45
 	                                },
 	                                __self: this
 	                            }, '__self', this),
@@ -27018,52 +27047,10 @@ webpackJsonp([0,1],[
 	                            (0, _defineProperty3.default)({
 	                                __source: {
 	                                    fileName: _jsxFileName,
-	                                    lineNumber: 44
+	                                    lineNumber: 46
 	                                },
 	                                __self: this
 	                            }, '__self', this),
-	                            _react2.default.createElement(
-	                                'li',
-	                                (0, _defineProperty3.default)({
-	                                    __source: {
-	                                        fileName: _jsxFileName,
-	                                        lineNumber: 45
-	                                    },
-	                                    __self: this
-	                                }, '__self', this),
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    (0, _defineProperty3.default)({
-	                                        __source: {
-	                                            fileName: _jsxFileName,
-	                                            lineNumber: 45
-	                                        },
-	                                        __self: this
-	                                    }, '__self', this),
-	                                    'Hot'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                (0, _defineProperty3.default)({
-	                                    __source: {
-	                                        fileName: _jsxFileName,
-	                                        lineNumber: 46
-	                                    },
-	                                    __self: this
-	                                }, '__self', this),
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    (0, _defineProperty3.default)({
-	                                        __source: {
-	                                            fileName: _jsxFileName,
-	                                            lineNumber: 46
-	                                        },
-	                                        __self: this
-	                                    }, '__self', this),
-	                                    'Latest'
-	                                )
-	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                (0, _defineProperty3.default)({
@@ -27082,6 +27069,48 @@ webpackJsonp([0,1],[
 	                                        },
 	                                        __self: this
 	                                    }, '__self', this),
+	                                    'Hot'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 48
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 48
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Latest'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 49
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 49
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
 	                                    'By categories'
 	                                )
 	                            )
@@ -27091,7 +27120,7 @@ webpackJsonp([0,1],[
 	                        _reactBootstrap.Col,
 	                        (0, _defineProperty3.default)({ xs: 12, sm: 4, __source: {
 	                                fileName: _jsxFileName,
-	                                lineNumber: 50
+	                                lineNumber: 52
 	                            },
 	                            __self: this
 	                        }, '__self', this),
@@ -27100,7 +27129,7 @@ webpackJsonp([0,1],[
 	                            (0, _defineProperty3.default)({
 	                                __source: {
 	                                    fileName: _jsxFileName,
-	                                    lineNumber: 51
+	                                    lineNumber: 53
 	                                },
 	                                __self: this
 	                            }, '__self', this),
@@ -27111,7 +27140,7 @@ webpackJsonp([0,1],[
 	                            (0, _defineProperty3.default)({
 	                                __source: {
 	                                    fileName: _jsxFileName,
-	                                    lineNumber: 52
+	                                    lineNumber: 54
 	                                },
 	                                __self: this
 	                            }, '__self', this),
@@ -27120,7 +27149,7 @@ webpackJsonp([0,1],[
 	                                (0, _defineProperty3.default)({
 	                                    __source: {
 	                                        fileName: _jsxFileName,
-	                                        lineNumber: 53
+	                                        lineNumber: 55
 	                                    },
 	                                    __self: this
 	                                }, '__self', this),
@@ -27129,7 +27158,7 @@ webpackJsonp([0,1],[
 	                                    (0, _defineProperty3.default)({
 	                                        __source: {
 	                                            fileName: _jsxFileName,
-	                                            lineNumber: 53
+	                                            lineNumber: 55
 	                                        },
 	                                        __self: this
 	                                    }, '__self', this),
@@ -27141,7 +27170,7 @@ webpackJsonp([0,1],[
 	                                (0, _defineProperty3.default)({
 	                                    __source: {
 	                                        fileName: _jsxFileName,
-	                                        lineNumber: 54
+	                                        lineNumber: 56
 	                                    },
 	                                    __self: this
 	                                }, '__self', this),
@@ -27150,7 +27179,7 @@ webpackJsonp([0,1],[
 	                                    (0, _defineProperty3.default)({
 	                                        __source: {
 	                                            fileName: _jsxFileName,
-	                                            lineNumber: 54
+	                                            lineNumber: 56
 	                                        },
 	                                        __self: this
 	                                    }, '__self', this),
@@ -47057,6 +47086,48 @@ webpackJsonp([0,1],[
 	                                    }, '__self', this),
 	                                    'Open my profile'
 	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'actions', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 65
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.Button,
+	                                    (0, _defineProperty3.default)({ bsStyle: 'info', onClick: function onClick() {
+	                                            _reactRouter.browserHistory.push('/auth/1');
+	                                        }, __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 66
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Sign up'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'actions', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 70
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.Button,
+	                                    (0, _defineProperty3.default)({ bsStyle: 'info', onClick: function onClick() {
+	                                            _reactRouter.browserHistory.push('/auth/0');
+	                                        }, __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 71
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Signin'
+	                                )
 	                            )
 	                        )
 	                    )
@@ -47073,255 +47144,9 @@ webpackJsonp([0,1],[
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _defineProperty2 = __webpack_require__(1);
-	
-	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
-	
-	var _getPrototypeOf = __webpack_require__(256);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(267);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(268);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(269);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(316);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\Latest\\index.jsx';
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(324);
-	
-	var _WinnersStore = __webpack_require__(524);
-	
-	var _WinnersStore2 = _interopRequireDefault(_WinnersStore);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Latest = function (_Component) {
-	  (0, _inherits3.default)(Latest, _Component);
-	
-	  function Latest() {
-	    (0, _classCallCheck3.default)(this, Latest);
-	
-	    var _this = (0, _possibleConstructorReturn3.default)(this, (Latest.__proto__ || (0, _getPrototypeOf2.default)(Latest)).call(this));
-	
-	    _this.onWinners = _this.onWinners.bind(_this);
-	    return _this;
-	  }
-	
-	  (0, _createClass3.default)(Latest, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      _WinnersStore2.default.addChangeListener(this.onWinners);
-	    }
-	  }, {
-	    key: 'onWinners',
-	    value: function onWinners() {
-	      this.forceUpdate();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _this2 = this;
-	
-	      return _react2.default.createElement(
-	        _reactBootstrap.Table,
-	        (0, _defineProperty3.default)({ responsive: true, condensed: true, className: 'latestWinners', __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 22
-	          },
-	          __self: this
-	        }, '__self', this),
-	        _react2.default.createElement(
-	          'thead',
-	          (0, _defineProperty3.default)({
-	            __source: {
-	              fileName: _jsxFileName,
-	              lineNumber: 23
-	            },
-	            __self: this
-	          }, '__self', this),
-	          _react2.default.createElement(
-	            'tr',
-	            (0, _defineProperty3.default)({
-	              __source: {
-	                fileName: _jsxFileName,
-	                lineNumber: 24
-	              },
-	              __self: this
-	            }, '__self', this),
-	            _react2.default.createElement(
-	              'th',
-	              (0, _defineProperty3.default)({
-	                __source: {
-	                  fileName: _jsxFileName,
-	                  lineNumber: 25
-	                },
-	                __self: this
-	              }, '__self', this),
-	              'Product'
-	            ),
-	            _react2.default.createElement(
-	              'th',
-	              (0, _defineProperty3.default)({
-	                __source: {
-	                  fileName: _jsxFileName,
-	                  lineNumber: 26
-	                },
-	                __self: this
-	              }, '__self', this),
-	              'Winner'
-	            ),
-	            _react2.default.createElement(
-	              'th',
-	              (0, _defineProperty3.default)({
-	                __source: {
-	                  fileName: _jsxFileName,
-	                  lineNumber: 27
-	                },
-	                __self: this
-	              }, '__self', this),
-	              'No. of tickets'
-	            ),
-	            _react2.default.createElement(
-	              'th',
-	              (0, _defineProperty3.default)({
-	                __source: {
-	                  fileName: _jsxFileName,
-	                  lineNumber: 28
-	                },
-	                __self: this
-	              }, '__self', this),
-	              'No. of participants'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'tbody',
-	          (0, _defineProperty3.default)({
-	            __source: {
-	              fileName: _jsxFileName,
-	              lineNumber: 31
-	            },
-	            __self: this
-	          }, '__self', this),
-	          _WinnersStore2.default.getWinners().map(function (winner) {
-	            return _react2.default.createElement(
-	              'tr',
-	              (0, _defineProperty3.default)({
-	                __source: {
-	                  fileName: _jsxFileName,
-	                  lineNumber: 34
-	                },
-	                __self: _this2
-	              }, '__self', _this2),
-	              _react2.default.createElement(
-	                'td',
-	                (0, _defineProperty3.default)({
-	                  __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 35
-	                  },
-	                  __self: _this2
-	                }, '__self', _this2),
-	                _react2.default.createElement('img', (0, _defineProperty3.default)({
-	                  alt: winner.product.name,
-	                  className: 'product',
-	                  src: '/images/elements/products/' + winner.product.id + '.png',
-	                  __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 35
-	                  },
-	                  __self: _this2
-	                }, '__self', _this2)),
-	                winner.product.name
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                (0, _defineProperty3.default)({
-	                  __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 40
-	                  },
-	                  __self: _this2
-	                }, '__self', _this2),
-	                _react2.default.createElement('img', (0, _defineProperty3.default)({
-	                  alt: winner.user.name,
-	                  className: 'avatar',
-	                  src: '/images/elements/ui/avatar' + winner.user.avatar + '.svg',
-	                  __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 40
-	                  },
-	                  __self: _this2
-	                }, '__self', _this2)),
-	                ' ',
-	                winner.user.name
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                (0, _defineProperty3.default)({
-	                  __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 45
-	                  },
-	                  __self: _this2
-	                }, '__self', _this2),
-	                winner.lot.winnerTickets
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                (0, _defineProperty3.default)({
-	                  __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 46
-	                  },
-	                  __self: _this2
-	                }, '__self', _this2),
-	                winner.lot.participants
-	              )
-	            );
-	          })
-	        )
-	      );
-	    }
-	  }]);
-	  return Latest;
-	}(_react.Component);
-	
-	exports.default = Latest;
-
-/***/ },
-/* 524 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	
-	var _toConsumableArray2 = __webpack_require__(525);
-	
-	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
-	
 	var _getPrototypeOf = __webpack_require__(256);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -47342,15 +47167,31 @@ webpackJsonp([0,1],[
 	
 	var _inherits3 = _interopRequireDefault(_inherits2);
 	
-	var _events = __webpack_require__(526);
+	var _events = __webpack_require__(524);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _dispatcher = __webpack_require__(527);
+	var _rxDom = __webpack_require__(525);
+	
+	var _rxDom2 = _interopRequireDefault(_rxDom);
+	
+	var _dispatcher = __webpack_require__(528);
 	
 	var _dispatcher2 = _interopRequireDefault(_dispatcher);
 	
-	var _WinnersConstants = __webpack_require__(530);
+	var _WebsocketConstants = __webpack_require__(532);
+	
+	var WebsocketConstants = _interopRequireWildcard(_WebsocketConstants);
+	
+	var _WebsocketActions = __webpack_require__(533);
+	
+	var _WebsocketActions2 = _interopRequireDefault(_WebsocketActions);
+	
+	var _WinnersActions = __webpack_require__(534);
+	
+	var _WinnersActions2 = _interopRequireDefault(_WinnersActions);
+	
+	var _WinnersConstants = __webpack_require__(535);
 	
 	var WinnersConstants = _interopRequireWildcard(_WinnersConstants);
 	
@@ -47362,30 +47203,57 @@ webpackJsonp([0,1],[
 	                              * Created by Dima Graebert on 2/20/2017.
 	                              */
 	
-	var WinnersStore = function (_EventEmitter) {
-	    (0, _inherits3.default)(WinnersStore, _EventEmitter);
+	var WebsocketStore = function (_EventEmitter) {
+	    (0, _inherits3.default)(WebsocketStore, _EventEmitter);
 	
-	    function WinnersStore(props) {
-	        (0, _classCallCheck3.default)(this, WinnersStore);
+	    function WebsocketStore(props) {
+	        (0, _classCallCheck3.default)(this, WebsocketStore);
 	
-	        var _this = (0, _possibleConstructorReturn3.default)(this, (WinnersStore.__proto__ || (0, _getPrototypeOf2.default)(WinnersStore)).call(this, props));
+	        var _this = (0, _possibleConstructorReturn3.default)(this, (WebsocketStore.__proto__ || (0, _getPrototypeOf2.default)(WebsocketStore)).call(this, props));
 	
-	        _this.winners = [];
+	        _this.socket = null;
+	        _this.currentState = {
+	            connected: false,
+	            loggedIn: false
+	        };
 	        _this.dispatcherIndex = _dispatcher2.default.register(_this.handleAction.bind(_this));
 	        return _this;
 	    }
 	
-	    (0, _createClass3.default)(WinnersStore, [{
-	        key: 'getWinners',
-	        value: function getWinners() {
-	            return this.winners;
+	    (0, _createClass3.default)(WebsocketStore, [{
+	        key: 'getCurrentState',
+	        value: function getCurrentState() {
+	            return this.currentState;
 	        }
 	    }, {
 	        key: 'handleAction',
 	        value: function handleAction(action) {
+	            var store = this;
+	            var openObserver = _rxDom2.default.Observer.create(function () {
+	                store.currentState.connected = true;
+	                store.emitChange();
+	            });
 	            switch (action.actionType) {
-	                case WinnersConstants.ADD_WINNER:
-	                    this.winners = [action.winnerInfo].concat((0, _toConsumableArray3.default)(this.winners)).slice(0, 10);
+	                case WebsocketConstants.CONNECT:
+	                    this.socket = _rxDom2.default.DOM.fromWebSocket(action.url, null, openObserver);
+	                    this.socket.subscribe(function (e) {
+	                        WebsocketStore.getMessage(e.data);
+	                    }, function (e) {
+	                        _WebsocketActions2.default.onError(e);
+	                    }, function () {
+	                        _WebsocketActions2.default.disconnect();
+	                    });
+	                    break;
+	                case WebsocketConstants.POST_MESSAGE:
+	                    this.socket.onNext(action.message);
+	                    break;
+	                case WebsocketConstants.DISCONNECT:
+	                    this.socket = null;
+	                    this.currentState.connected = false;
+	                    this.emitChange();
+	                    break;
+	                case WebsocketConstants.GET_ERROR:
+	                    this.socket = null;
 	                    this.emitChange();
 	                    break;
 	                default:
@@ -47408,42 +47276,35 @@ webpackJsonp([0,1],[
 	        value: function removeChangeListener(callback) {
 	            this.removeListener(CHANGE_EVENT, callback);
 	        }
+	    }], [{
+	        key: 'getMessage',
+	        value: function getMessage(message) {
+	            var messageData = {};
+	            try {
+	                messageData = JSON.parse(message);
+	            } catch (Exception) {
+	                throw new Error(Exception.toString());
+	            }
+	            switch (messageData.type) {
+	                case WinnersConstants.ADD_WINNER:
+	                    _WinnersActions2.default.addWinner(messageData.data);
+	                    break;
+	                default:
+	                    break;
+	            }
+	            return messageData;
+	            // handle messageData
+	        }
 	    }]);
-	    return WinnersStore;
+	    return WebsocketStore;
 	}(_events2.default);
 	
-	WinnersStore.dispatchToken = null;
+	WebsocketStore.dispatchToken = null;
 	
-	exports.default = new WinnersStore();
+	exports.default = new WebsocketStore();
 
 /***/ },
-/* 525 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _from = __webpack_require__(390);
-	
-	var _from2 = _interopRequireDefault(_from);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (arr) {
-	  if (Array.isArray(arr)) {
-	    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
-	      arr2[i] = arr[i];
-	    }
-	
-	    return arr2;
-	  } else {
-	    return (0, _from2.default)(arr);
-	  }
-	};
-
-/***/ },
-/* 526 */
+/* 524 */
 /***/ function(module, exports) {
 
 	// Copyright Joyent, Inc. and other Node contributors.
@@ -47751,3278 +47612,7 @@ webpackJsonp([0,1],[
 
 
 /***/ },
-/* 527 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _toConsumableArray2 = __webpack_require__(525);
-	
-	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
-	
-	var _classCallCheck2 = __webpack_require__(267);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(268);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _flux = __webpack_require__(528);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var AppDispatcher = function () {
-	    function AppDispatcher() {
-	        (0, _classCallCheck3.default)(this, AppDispatcher);
-	
-	        this.dispatcher = new _flux.Dispatcher();
-	        this.currentlyProcessing = false;
-	        this.actionQueue = [];
-	    }
-	
-	    (0, _createClass3.default)(AppDispatcher, [{
-	        key: 'startProcessing',
-	        value: function startProcessing() {
-	            this.currentlyProcessing = true;
-	            while (this.actionQueue.length > 0) {
-	                if (this.dispatcher.isDispatching()) {
-	                    return setTimeout(this.startProcessing, 100);
-	                }
-	                this.dispatcher.dispatch(this.actionQueue.shift());
-	            }
-	            this.currentlyProcessing = false;
-	            return true;
-	        }
-	    }, {
-	        key: 'dispatch',
-	        value: function dispatch(payload) {
-	            this.actionQueue = [].concat((0, _toConsumableArray3.default)(this.actionQueue), [payload]);
-	            if (!this.currentlyProcessing) {
-	                this.startProcessing();
-	            }
-	        }
-	    }, {
-	        key: 'register',
-	        value: function register(callback) {
-	            return this.dispatcher.register(callback);
-	        }
-	    }]);
-	    return AppDispatcher;
-	}();
-	
-	exports.default = new AppDispatcher();
-
-/***/ },
-/* 528 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 */
-	
-	module.exports.Dispatcher = __webpack_require__(529);
-
-
-/***/ },
-/* 529 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright (c) 2014-2015, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule Dispatcher
-	 * 
-	 * @preventMunge
-	 */
-	
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	var invariant = __webpack_require__(26);
-	
-	var _prefix = 'ID_';
-	
-	/**
-	 * Dispatcher is used to broadcast payloads to registered callbacks. This is
-	 * different from generic pub-sub systems in two ways:
-	 *
-	 *   1) Callbacks are not subscribed to particular events. Every payload is
-	 *      dispatched to every registered callback.
-	 *   2) Callbacks can be deferred in whole or part until other callbacks have
-	 *      been executed.
-	 *
-	 * For example, consider this hypothetical flight destination form, which
-	 * selects a default city when a country is selected:
-	 *
-	 *   var flightDispatcher = new Dispatcher();
-	 *
-	 *   // Keeps track of which country is selected
-	 *   var CountryStore = {country: null};
-	 *
-	 *   // Keeps track of which city is selected
-	 *   var CityStore = {city: null};
-	 *
-	 *   // Keeps track of the base flight price of the selected city
-	 *   var FlightPriceStore = {price: null}
-	 *
-	 * When a user changes the selected city, we dispatch the payload:
-	 *
-	 *   flightDispatcher.dispatch({
-	 *     actionType: 'city-update',
-	 *     selectedCity: 'paris'
-	 *   });
-	 *
-	 * This payload is digested by `CityStore`:
-	 *
-	 *   flightDispatcher.register(function(payload) {
-	 *     if (payload.actionType === 'city-update') {
-	 *       CityStore.city = payload.selectedCity;
-	 *     }
-	 *   });
-	 *
-	 * When the user selects a country, we dispatch the payload:
-	 *
-	 *   flightDispatcher.dispatch({
-	 *     actionType: 'country-update',
-	 *     selectedCountry: 'australia'
-	 *   });
-	 *
-	 * This payload is digested by both stores:
-	 *
-	 *   CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
-	 *     if (payload.actionType === 'country-update') {
-	 *       CountryStore.country = payload.selectedCountry;
-	 *     }
-	 *   });
-	 *
-	 * When the callback to update `CountryStore` is registered, we save a reference
-	 * to the returned token. Using this token with `waitFor()`, we can guarantee
-	 * that `CountryStore` is updated before the callback that updates `CityStore`
-	 * needs to query its data.
-	 *
-	 *   CityStore.dispatchToken = flightDispatcher.register(function(payload) {
-	 *     if (payload.actionType === 'country-update') {
-	 *       // `CountryStore.country` may not be updated.
-	 *       flightDispatcher.waitFor([CountryStore.dispatchToken]);
-	 *       // `CountryStore.country` is now guaranteed to be updated.
-	 *
-	 *       // Select the default city for the new country
-	 *       CityStore.city = getDefaultCityForCountry(CountryStore.country);
-	 *     }
-	 *   });
-	 *
-	 * The usage of `waitFor()` can be chained, for example:
-	 *
-	 *   FlightPriceStore.dispatchToken =
-	 *     flightDispatcher.register(function(payload) {
-	 *       switch (payload.actionType) {
-	 *         case 'country-update':
-	 *         case 'city-update':
-	 *           flightDispatcher.waitFor([CityStore.dispatchToken]);
-	 *           FlightPriceStore.price =
-	 *             getFlightPriceStore(CountryStore.country, CityStore.city);
-	 *           break;
-	 *     }
-	 *   });
-	 *
-	 * The `country-update` payload will be guaranteed to invoke the stores'
-	 * registered callbacks in order: `CountryStore`, `CityStore`, then
-	 * `FlightPriceStore`.
-	 */
-	
-	var Dispatcher = (function () {
-	  function Dispatcher() {
-	    _classCallCheck(this, Dispatcher);
-	
-	    this._callbacks = {};
-	    this._isDispatching = false;
-	    this._isHandled = {};
-	    this._isPending = {};
-	    this._lastID = 1;
-	  }
-	
-	  /**
-	   * Registers a callback to be invoked with every dispatched payload. Returns
-	   * a token that can be used with `waitFor()`.
-	   */
-	
-	  Dispatcher.prototype.register = function register(callback) {
-	    var id = _prefix + this._lastID++;
-	    this._callbacks[id] = callback;
-	    return id;
-	  };
-	
-	  /**
-	   * Removes a callback based on its token.
-	   */
-	
-	  Dispatcher.prototype.unregister = function unregister(id) {
-	    !this._callbacks[id] ?  true ? invariant(false, 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
-	    delete this._callbacks[id];
-	  };
-	
-	  /**
-	   * Waits for the callbacks specified to be invoked before continuing execution
-	   * of the current callback. This method should only be used by a callback in
-	   * response to a dispatched payload.
-	   */
-	
-	  Dispatcher.prototype.waitFor = function waitFor(ids) {
-	    !this._isDispatching ?  true ? invariant(false, 'Dispatcher.waitFor(...): Must be invoked while dispatching.') : invariant(false) : undefined;
-	    for (var ii = 0; ii < ids.length; ii++) {
-	      var id = ids[ii];
-	      if (this._isPending[id]) {
-	        !this._isHandled[id] ?  true ? invariant(false, 'Dispatcher.waitFor(...): Circular dependency detected while ' + 'waiting for `%s`.', id) : invariant(false) : undefined;
-	        continue;
-	      }
-	      !this._callbacks[id] ?  true ? invariant(false, 'Dispatcher.waitFor(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
-	      this._invokeCallback(id);
-	    }
-	  };
-	
-	  /**
-	   * Dispatches a payload to all registered callbacks.
-	   */
-	
-	  Dispatcher.prototype.dispatch = function dispatch(payload) {
-	    !!this._isDispatching ?  true ? invariant(false, 'Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch.') : invariant(false) : undefined;
-	    this._startDispatching(payload);
-	    try {
-	      for (var id in this._callbacks) {
-	        if (this._isPending[id]) {
-	          continue;
-	        }
-	        this._invokeCallback(id);
-	      }
-	    } finally {
-	      this._stopDispatching();
-	    }
-	  };
-	
-	  /**
-	   * Is this Dispatcher currently dispatching.
-	   */
-	
-	  Dispatcher.prototype.isDispatching = function isDispatching() {
-	    return this._isDispatching;
-	  };
-	
-	  /**
-	   * Call the callback stored with the given id. Also do some internal
-	   * bookkeeping.
-	   *
-	   * @internal
-	   */
-	
-	  Dispatcher.prototype._invokeCallback = function _invokeCallback(id) {
-	    this._isPending[id] = true;
-	    this._callbacks[id](this._pendingPayload);
-	    this._isHandled[id] = true;
-	  };
-	
-	  /**
-	   * Set up bookkeeping needed when dispatching.
-	   *
-	   * @internal
-	   */
-	
-	  Dispatcher.prototype._startDispatching = function _startDispatching(payload) {
-	    for (var id in this._callbacks) {
-	      this._isPending[id] = false;
-	      this._isHandled[id] = false;
-	    }
-	    this._pendingPayload = payload;
-	    this._isDispatching = true;
-	  };
-	
-	  /**
-	   * Clear bookkeeping used for dispatching.
-	   *
-	   * @internal
-	   */
-	
-	  Dispatcher.prototype._stopDispatching = function _stopDispatching() {
-	    delete this._pendingPayload;
-	    this._isDispatching = false;
-	  };
-	
-	  return Dispatcher;
-	})();
-	
-	module.exports = Dispatcher;
-
-/***/ },
-/* 530 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	/**
-	 * Created by Dima Graebert on 2/20/2017.
-	 */
-	var SUBSCRIBE = exports.SUBSCRIBE = 'SUBSCRIBE';
-	var UNSUBSCRIBE = exports.UNSUBSCRIBE = 'UNSUBSCRIBE';
-	var ADD_WINNER = exports.ADD_WINNER = 'ADD_WINNER';
-
-/***/ },
-/* 531 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends3 = __webpack_require__(326);
-	
-	var _extends4 = _interopRequireDefault(_extends3);
-	
-	var _defineProperty2 = __webpack_require__(1);
-	
-	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
-	
-	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\HotProducts\\index.jsx';
-	exports.default = HotProducts;
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactSlick = __webpack_require__(532);
-	
-	var _reactSlick2 = _interopRequireDefault(_reactSlick);
-	
-	__webpack_require__(548);
-	
-	__webpack_require__(550);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function HotProducts() {
-	  var settings = {
-	    dots: true,
-	    infinite: true,
-	    speed: 500,
-	    autoplay: true,
-	    arrows: true,
-	    draggable: false,
-	    slidesToShow: 3,
-	    slidesToScroll: 1
-	  };
-	  return _react2.default.createElement(
-	    _reactSlick2.default,
-	    (0, _extends4.default)({}, settings, (0, _defineProperty3.default)({
-	      __source: {
-	        fileName: _jsxFileName,
-	        lineNumber: 18
-	      },
-	      __self: this
-	    }, '__self', this)),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 19
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 19
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 19
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '1'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 20
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 20
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 20
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '2'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 21
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 21
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 21
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '3'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 22
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 22
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 22
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '4'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 23
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 23
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 23
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '5'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 24
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 24
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 24
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '6'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 25
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 25
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 25
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '7'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 26
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 26
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 26
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '8'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 27
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 27
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 27
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '9'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 28
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 28
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 28
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '10'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 29
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 29
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 29
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '11'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 30
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 30
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 30
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '12'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 31
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 31
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 31
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '13'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 32
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 32
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 32
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '14'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      (0, _defineProperty3.default)({
-	        __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 33
-	        },
-	        __self: this
-	      }, '__self', this),
-	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
-	          fileName: _jsxFileName,
-	          lineNumber: 33
-	        },
-	        __self: this
-	      }, '__self', this)),
-	      _react2.default.createElement(
-	        'h3',
-	        (0, _defineProperty3.default)({
-	          __source: {
-	            fileName: _jsxFileName,
-	            lineNumber: 33
-	          },
-	          __self: this
-	        }, '__self', this),
-	        '15'
-	      )
-	    )
-	  );
-	}
-
-/***/ },
-/* 532 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	module.exports = __webpack_require__(533);
-
-/***/ },
-/* 533 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _innerSlider = __webpack_require__(534);
-	
-	var _objectAssign = __webpack_require__(22);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
-	var _json2mq = __webpack_require__(543);
-	
-	var _json2mq2 = _interopRequireDefault(_json2mq);
-	
-	var _reactResponsiveMixin = __webpack_require__(545);
-	
-	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
-	
-	var _defaultProps = __webpack_require__(539);
-	
-	var _defaultProps2 = _interopRequireDefault(_defaultProps);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Slider = _react2.default.createClass({
-	  displayName: 'Slider',
-	
-	  mixins: [_reactResponsiveMixin2.default],
-	  innerSlider: null,
-	  innerSliderRefHandler: function innerSliderRefHandler(ref) {
-	    this.innerSlider = ref;
-	  },
-	  getInitialState: function getInitialState() {
-	    return {
-	      breakpoint: null
-	    };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    var _this = this;
-	
-	    if (this.props.responsive) {
-	      var breakpoints = this.props.responsive.map(function (breakpt) {
-	        return breakpt.breakpoint;
-	      });
-	      breakpoints.sort(function (x, y) {
-	        return x - y;
-	      });
-	
-	      breakpoints.forEach(function (breakpoint, index) {
-	        var bQuery;
-	        if (index === 0) {
-	          bQuery = (0, _json2mq2.default)({ minWidth: 0, maxWidth: breakpoint });
-	        } else {
-	          bQuery = (0, _json2mq2.default)({ minWidth: breakpoints[index - 1], maxWidth: breakpoint });
-	        }
-	        _this.media(bQuery, function () {
-	          _this.setState({ breakpoint: breakpoint });
-	        });
-	      });
-	
-	      // Register media query for full screen. Need to support resize from small to large
-	      var query = (0, _json2mq2.default)({ minWidth: breakpoints.slice(-1)[0] });
-	
-	      this.media(query, function () {
-	        _this.setState({ breakpoint: null });
-	      });
-	    }
-	  },
-	
-	  slickPrev: function slickPrev() {
-	    this.innerSlider.slickPrev();
-	  },
-	
-	  slickNext: function slickNext() {
-	    this.innerSlider.slickNext();
-	  },
-	
-	  slickGoTo: function slickGoTo(slide) {
-	    this.innerSlider.slickGoTo(slide);
-	  },
-	
-	  render: function render() {
-	    var _this2 = this;
-	
-	    var settings;
-	    var newProps;
-	    if (this.state.breakpoint) {
-	      newProps = this.props.responsive.filter(function (resp) {
-	        return resp.breakpoint === _this2.state.breakpoint;
-	      });
-	      settings = newProps[0].settings === 'unslick' ? 'unslick' : (0, _objectAssign2.default)({}, this.props, newProps[0].settings);
-	    } else {
-	      settings = (0, _objectAssign2.default)({}, _defaultProps2.default, this.props);
-	    }
-	
-	    var children = this.props.children;
-	    if (!Array.isArray(children)) {
-	      children = [children];
-	    }
-	
-	    // Children may contain false or null, so we should filter them
-	    children = children.filter(function (child) {
-	      return !!child;
-	    });
-	
-	    if (settings === 'unslick') {
-	      // if 'unslick' responsive breakpoint setting used, just return the <Slider> tag nested HTML
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        children
-	      );
-	    } else {
-	      return _react2.default.createElement(
-	        _innerSlider.InnerSlider,
-	        _extends({ ref: this.innerSliderRefHandler }, settings),
-	        children
-	      );
-	    }
-	  }
-	});
-	
-	module.exports = Slider;
-
-/***/ },
-/* 534 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.InnerSlider = undefined;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _eventHandlers = __webpack_require__(535);
-	
-	var _eventHandlers2 = _interopRequireDefault(_eventHandlers);
-	
-	var _helpers = __webpack_require__(537);
-	
-	var _helpers2 = _interopRequireDefault(_helpers);
-	
-	var _initialState = __webpack_require__(538);
-	
-	var _initialState2 = _interopRequireDefault(_initialState);
-	
-	var _defaultProps = __webpack_require__(539);
-	
-	var _defaultProps2 = _interopRequireDefault(_defaultProps);
-	
-	var _classnames = __webpack_require__(333);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	var _objectAssign = __webpack_require__(22);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
-	var _track = __webpack_require__(540);
-	
-	var _dots = __webpack_require__(541);
-	
-	var _arrows = __webpack_require__(542);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var InnerSlider = exports.InnerSlider = _react2.default.createClass({
-	  displayName: 'InnerSlider',
-	
-	  mixins: [_helpers2.default, _eventHandlers2.default],
-	  list: null,
-	  track: null,
-	  listRefHandler: function listRefHandler(ref) {
-	    this.list = ref;
-	  },
-	  trackRefHandler: function trackRefHandler(ref) {
-	    this.track = ref;
-	  },
-	  getInitialState: function getInitialState() {
-	    return _extends({}, _initialState2.default, {
-	      currentSlide: this.props.initialSlide
-	    });
-	  },
-	  getDefaultProps: function getDefaultProps() {
-	    return _defaultProps2.default;
-	  },
-	  componentWillMount: function componentWillMount() {
-	    if (this.props.init) {
-	      this.props.init();
-	    }
-	    this.setState({
-	      mounted: true
-	    });
-	    var lazyLoadedList = [];
-	    for (var i = 0; i < _react2.default.Children.count(this.props.children); i++) {
-	      if (i >= this.state.currentSlide && i < this.state.currentSlide + this.props.slidesToShow) {
-	        lazyLoadedList.push(i);
-	      }
-	    }
-	
-	    if (this.props.lazyLoad && this.state.lazyLoadedList.length === 0) {
-	      this.setState({
-	        lazyLoadedList: lazyLoadedList
-	      });
-	    }
-	  },
-	  componentDidMount: function componentDidMount() {
-	    // Hack for autoplay -- Inspect Later
-	    this.initialize(this.props);
-	    this.adaptHeight();
-	
-	    // To support server-side rendering
-	    if (!window) {
-	      return;
-	    }
-	    if (window.addEventListener) {
-	      window.addEventListener('resize', this.onWindowResized);
-	    } else {
-	      window.attachEvent('onresize', this.onWindowResized);
-	    }
-	  },
-	  componentWillUnmount: function componentWillUnmount() {
-	    if (this.animationEndCallback) {
-	      clearTimeout(this.animationEndCallback);
-	    }
-	    if (window.addEventListener) {
-	      window.removeEventListener('resize', this.onWindowResized);
-	    } else {
-	      window.detachEvent('onresize', this.onWindowResized);
-	    }
-	    if (this.state.autoPlayTimer) {
-	      clearInterval(this.state.autoPlayTimer);
-	    }
-	  },
-	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
-	    if (this.props.slickGoTo != nextProps.slickGoTo) {
-	      if (true) {
-	        console.warn('react-slick deprecation warning: slickGoTo prop is deprecated and it will be removed in next release. Use slickGoTo method instead');
-	      }
-	      this.changeSlide({
-	        message: 'index',
-	        index: nextProps.slickGoTo,
-	        currentSlide: this.state.currentSlide
-	      });
-	    } else if (this.state.currentSlide >= nextProps.children.length) {
-	      this.update(nextProps);
-	      this.changeSlide({
-	        message: 'index',
-	        index: nextProps.children.length - nextProps.slidesToShow,
-	        currentSlide: this.state.currentSlide
-	      });
-	    } else {
-	      this.update(nextProps);
-	    }
-	  },
-	  componentDidUpdate: function componentDidUpdate() {
-	    this.adaptHeight();
-	  },
-	  onWindowResized: function onWindowResized() {
-	    this.update(this.props);
-	    // animating state should be cleared while resizing, otherwise autoplay stops working
-	    this.setState({
-	      animating: false
-	    });
-	    clearTimeout(this.animationEndCallback);
-	    delete this.animationEndCallback;
-	  },
-	  slickPrev: function slickPrev() {
-	    this.changeSlide({ message: 'previous' });
-	  },
-	  slickNext: function slickNext() {
-	    this.changeSlide({ message: 'next' });
-	  },
-	  slickGoTo: function slickGoTo(slide) {
-	    typeof slide === 'number' && this.changeSlide({
-	      message: 'index',
-	      index: slide,
-	      currentSlide: this.state.currentSlide
-	    });
-	  },
-	  render: function render() {
-	    var className = (0, _classnames2.default)('slick-initialized', 'slick-slider', this.props.className, {
-	      'slick-vertical': this.props.vertical
-	    });
-	
-	    var trackProps = {
-	      fade: this.props.fade,
-	      cssEase: this.props.cssEase,
-	      speed: this.props.speed,
-	      infinite: this.props.infinite,
-	      centerMode: this.props.centerMode,
-	      focusOnSelect: this.props.focusOnSelect ? this.selectHandler : null,
-	      currentSlide: this.state.currentSlide,
-	      lazyLoad: this.props.lazyLoad,
-	      lazyLoadedList: this.state.lazyLoadedList,
-	      rtl: this.props.rtl,
-	      slideWidth: this.state.slideWidth,
-	      slidesToShow: this.props.slidesToShow,
-	      slidesToScroll: this.props.slidesToScroll,
-	      slideCount: this.state.slideCount,
-	      trackStyle: this.state.trackStyle,
-	      variableWidth: this.props.variableWidth
-	    };
-	
-	    var dots;
-	
-	    if (this.props.dots === true && this.state.slideCount >= this.props.slidesToShow) {
-	      var dotProps = {
-	        dotsClass: this.props.dotsClass,
-	        slideCount: this.state.slideCount,
-	        slidesToShow: this.props.slidesToShow,
-	        currentSlide: this.state.currentSlide,
-	        slidesToScroll: this.props.slidesToScroll,
-	        clickHandler: this.changeSlide,
-	        children: this.props.children,
-	        customPaging: this.props.customPaging
-	      };
-	
-	      dots = _react2.default.createElement(_dots.Dots, dotProps);
-	    }
-	
-	    var prevArrow, nextArrow;
-	
-	    var arrowProps = {
-	      infinite: this.props.infinite,
-	      centerMode: this.props.centerMode,
-	      currentSlide: this.state.currentSlide,
-	      slideCount: this.state.slideCount,
-	      slidesToShow: this.props.slidesToShow,
-	      prevArrow: this.props.prevArrow,
-	      nextArrow: this.props.nextArrow,
-	      clickHandler: this.changeSlide
-	    };
-	
-	    if (this.props.arrows) {
-	      prevArrow = _react2.default.createElement(_arrows.PrevArrow, arrowProps);
-	      nextArrow = _react2.default.createElement(_arrows.NextArrow, arrowProps);
-	    }
-	
-	    var verticalHeightStyle = null;
-	
-	    if (this.props.vertical) {
-	      verticalHeightStyle = {
-	        height: this.state.listHeight
-	      };
-	    }
-	
-	    var centerPaddingStyle = null;
-	
-	    if (this.props.vertical === false) {
-	      if (this.props.centerMode === true) {
-	        centerPaddingStyle = {
-	          padding: '0px ' + this.props.centerPadding
-	        };
-	      }
-	    } else {
-	      if (this.props.centerMode === true) {
-	        centerPaddingStyle = {
-	          padding: this.props.centerPadding + ' 0px'
-	        };
-	      }
-	    }
-	
-	    var listStyle = (0, _objectAssign2.default)({}, verticalHeightStyle, centerPaddingStyle);
-	
-	    return _react2.default.createElement(
-	      'div',
-	      {
-	        className: className,
-	        onMouseEnter: this.onInnerSliderEnter,
-	        onMouseLeave: this.onInnerSliderLeave,
-	        onMouseOver: this.onInnerSliderOver
-	      },
-	      prevArrow,
-	      _react2.default.createElement(
-	        'div',
-	        {
-	          ref: this.listRefHandler,
-	          className: 'slick-list',
-	          style: listStyle,
-	          onMouseDown: this.swipeStart,
-	          onMouseMove: this.state.dragging ? this.swipeMove : null,
-	          onMouseUp: this.swipeEnd,
-	          onMouseLeave: this.state.dragging ? this.swipeEnd : null,
-	          onTouchStart: this.swipeStart,
-	          onTouchMove: this.state.dragging ? this.swipeMove : null,
-	          onTouchEnd: this.swipeEnd,
-	          onTouchCancel: this.state.dragging ? this.swipeEnd : null,
-	          onKeyDown: this.props.accessibility ? this.keyHandler : null },
-	        _react2.default.createElement(
-	          _track.Track,
-	          _extends({ ref: this.trackRefHandler }, trackProps),
-	          this.props.children
-	        )
-	      ),
-	      nextArrow,
-	      dots
-	    );
-	  }
-	});
-
-/***/ },
-/* 535 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _trackHelper = __webpack_require__(536);
-	
-	var _helpers = __webpack_require__(537);
-	
-	var _helpers2 = _interopRequireDefault(_helpers);
-	
-	var _objectAssign = __webpack_require__(22);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
-	var _reactDom = __webpack_require__(51);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var EventHandlers = {
-	  // Event handler for previous and next
-	  changeSlide: function changeSlide(options) {
-	    var indexOffset, previousInt, slideOffset, unevenOffset, targetSlide;
-	    var _props = this.props;
-	    var slidesToScroll = _props.slidesToScroll;
-	    var slidesToShow = _props.slidesToShow;
-	    var _state = this.state;
-	    var slideCount = _state.slideCount;
-	    var currentSlide = _state.currentSlide;
-	
-	    unevenOffset = slideCount % slidesToScroll !== 0;
-	    indexOffset = unevenOffset ? 0 : (slideCount - currentSlide) % slidesToScroll;
-	
-	    if (options.message === 'previous') {
-	      slideOffset = indexOffset === 0 ? slidesToScroll : slidesToShow - indexOffset;
-	      targetSlide = currentSlide - slideOffset;
-	      if (this.props.lazyLoad) {
-	        previousInt = currentSlide - slideOffset;
-	        targetSlide = previousInt === -1 ? slideCount - 1 : previousInt;
-	      }
-	    } else if (options.message === 'next') {
-	      slideOffset = indexOffset === 0 ? slidesToScroll : indexOffset;
-	      targetSlide = currentSlide + slideOffset;
-	      if (this.props.lazyLoad) {
-	        targetSlide = (currentSlide + slidesToScroll) % slideCount + indexOffset;
-	      }
-	    } else if (options.message === 'dots' || options.message === 'children') {
-	      // Click on dots
-	      targetSlide = options.index * options.slidesToScroll;
-	      if (targetSlide === options.currentSlide) {
-	        return;
-	      }
-	    } else if (options.message === 'index') {
-	      targetSlide = parseInt(options.index);
-	      if (targetSlide === options.currentSlide) {
-	        return;
-	      }
-	    }
-	
-	    this.slideHandler(targetSlide);
-	  },
-	
-	  // Accessiblity handler for previous and next
-	  keyHandler: function keyHandler(e) {
-	    //Dont slide if the cursor is inside the form fields and arrow keys are pressed
-	    if (!e.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
-	      if (e.keyCode === 37 && this.props.accessibility === true) {
-	        this.changeSlide({
-	          message: this.props.rtl === true ? 'next' : 'previous'
-	        });
-	      } else if (e.keyCode === 39 && this.props.accessibility === true) {
-	        this.changeSlide({
-	          message: this.props.rtl === true ? 'previous' : 'next'
-	        });
-	      }
-	    }
-	  },
-	  // Focus on selecting a slide (click handler on track)
-	  selectHandler: function selectHandler(options) {
-	    this.changeSlide(options);
-	  },
-	  swipeStart: function swipeStart(e) {
-	    var touches, posX, posY;
-	
-	    if (this.props.swipe === false || 'ontouchend' in document && this.props.swipe === false) {
-	      return;
-	    } else if (this.props.draggable === false && e.type.indexOf('mouse') !== -1) {
-	      return;
-	    }
-	    posX = e.touches !== undefined ? e.touches[0].pageX : e.clientX;
-	    posY = e.touches !== undefined ? e.touches[0].pageY : e.clientY;
-	    this.setState({
-	      dragging: true,
-	      touchObject: {
-	        startX: posX,
-	        startY: posY,
-	        curX: posX,
-	        curY: posY
-	      }
-	    });
-	  },
-	  swipeMove: function swipeMove(e) {
-	    if (!this.state.dragging) {
-	      e.preventDefault();
-	      return;
-	    }
-	    if (this.state.animating) {
-	      return;
-	    }
-	    if (this.props.vertical && this.props.swipeToSlide && this.props.verticalSwiping) {
-	      e.preventDefault();
-	    }
-	    var swipeLeft;
-	    var curLeft, positionOffset;
-	    var touchObject = this.state.touchObject;
-	
-	    curLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	      slideIndex: this.state.currentSlide,
-	      trackRef: this.track
-	    }, this.props, this.state));
-	    touchObject.curX = e.touches ? e.touches[0].pageX : e.clientX;
-	    touchObject.curY = e.touches ? e.touches[0].pageY : e.clientY;
-	    touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curX - touchObject.startX, 2)));
-	
-	    if (this.props.verticalSwiping) {
-	      touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curY - touchObject.startY, 2)));
-	    }
-	
-	    positionOffset = (this.props.rtl === false ? 1 : -1) * (touchObject.curX > touchObject.startX ? 1 : -1);
-	
-	    if (this.props.verticalSwiping) {
-	      positionOffset = touchObject.curY > touchObject.startY ? 1 : -1;
-	    }
-	
-	    var currentSlide = this.state.currentSlide;
-	    var dotCount = Math.ceil(this.state.slideCount / this.props.slidesToScroll);
-	    var swipeDirection = this.swipeDirection(this.state.touchObject);
-	    var touchSwipeLength = touchObject.swipeLength;
-	
-	    if (this.props.infinite === false) {
-	      if (currentSlide === 0 && swipeDirection === 'right' || currentSlide + 1 >= dotCount && swipeDirection === 'left') {
-	        touchSwipeLength = touchObject.swipeLength * this.props.edgeFriction;
-	
-	        if (this.state.edgeDragged === false && this.props.edgeEvent) {
-	          this.props.edgeEvent(swipeDirection);
-	          this.setState({ edgeDragged: true });
-	        }
-	      }
-	    }
-	
-	    if (this.state.swiped === false && this.props.swipeEvent) {
-	      this.props.swipeEvent(swipeDirection);
-	      this.setState({ swiped: true });
-	    }
-	
-	    if (!this.props.vertical) {
-	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
-	    } else {
-	      swipeLeft = curLeft + touchSwipeLength * (this.state.listHeight / this.state.listWidth) * positionOffset;
-	    }
-	
-	    if (this.props.verticalSwiping) {
-	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
-	    }
-	
-	    this.setState({
-	      touchObject: touchObject,
-	      swipeLeft: swipeLeft,
-	      trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: swipeLeft }, this.props, this.state))
-	    });
-	
-	    if (Math.abs(touchObject.curX - touchObject.startX) < Math.abs(touchObject.curY - touchObject.startY) * 0.8) {
-	      return;
-	    }
-	    if (touchObject.swipeLength > 4) {
-	      e.preventDefault();
-	    }
-	  },
-	  getNavigableIndexes: function getNavigableIndexes() {
-	    var max = void 0;
-	    var breakPoint = 0;
-	    var counter = 0;
-	    var indexes = [];
-	
-	    if (!this.props.infinite) {
-	      max = this.state.slideCount;
-	    } else {
-	      breakPoint = this.props.slidesToShow * -1;
-	      counter = this.props.slidesToShow * -1;
-	      max = this.state.slideCount * 2;
-	    }
-	
-	    while (breakPoint < max) {
-	      indexes.push(breakPoint);
-	      breakPoint = counter + this.props.slidesToScroll;
-	
-	      counter += this.props.slidesToScroll <= this.props.slidesToShow ? this.props.slidesToScroll : this.props.slidesToShow;
-	    }
-	
-	    return indexes;
-	  },
-	  checkNavigable: function checkNavigable(index) {
-	    var navigables = this.getNavigableIndexes();
-	    var prevNavigable = 0;
-	
-	    if (index > navigables[navigables.length - 1]) {
-	      index = navigables[navigables.length - 1];
-	    } else {
-	      for (var n in navigables) {
-	        if (index < navigables[n]) {
-	          index = prevNavigable;
-	          break;
-	        }
-	
-	        prevNavigable = navigables[n];
-	      }
-	    }
-	
-	    return index;
-	  },
-	  getSlideCount: function getSlideCount() {
-	    var _this = this;
-	
-	    var centerOffset = this.props.centerMode ? this.state.slideWidth * Math.floor(this.props.slidesToShow / 2) : 0;
-	
-	    if (this.props.swipeToSlide) {
-	      var swipedSlide = void 0;
-	
-	      var slickList = _reactDom2.default.findDOMNode(this.list);
-	
-	      var slides = slickList.querySelectorAll('.slick-slide');
-	
-	      Array.from(slides).every(function (slide) {
-	        if (!_this.props.vertical) {
-	          if (slide.offsetLeft - centerOffset + _this.getWidth(slide) / 2 > _this.state.swipeLeft * -1) {
-	            swipedSlide = slide;
-	            return false;
-	          }
-	        } else {
-	          if (slide.offsetTop + _this.getHeight(slide) / 2 > _this.state.swipeLeft * -1) {
-	            swipedSlide = slide;
-	            return false;
-	          }
-	        }
-	
-	        return true;
-	      });
-	
-	      var slidesTraversed = Math.abs(swipedSlide.dataset.index - this.state.currentSlide) || 1;
-	
-	      return slidesTraversed;
-	    } else {
-	      return this.props.slidesToScroll;
-	    }
-	  },
-	
-	  swipeEnd: function swipeEnd(e) {
-	    if (!this.state.dragging) {
-	      if (this.props.swipe) {
-	        e.preventDefault();
-	      }
-	      return;
-	    }
-	    var touchObject = this.state.touchObject;
-	    var minSwipe = this.state.listWidth / this.props.touchThreshold;
-	    var swipeDirection = this.swipeDirection(touchObject);
-	
-	    if (this.props.verticalSwiping) {
-	      minSwipe = this.state.listHeight / this.props.touchThreshold;
-	    }
-	
-	    // reset the state of touch related state variables.
-	    this.setState({
-	      dragging: false,
-	      edgeDragged: false,
-	      swiped: false,
-	      swipeLeft: null,
-	      touchObject: {}
-	    });
-	    // Fix for #13
-	    if (!touchObject.swipeLength) {
-	      return;
-	    }
-	    if (touchObject.swipeLength > minSwipe) {
-	      e.preventDefault();
-	
-	      var slideCount = void 0,
-	          newSlide = void 0;
-	
-	      switch (swipeDirection) {
-	
-	        case 'left':
-	        case 'down':
-	          newSlide = this.state.currentSlide + this.getSlideCount();
-	          slideCount = this.props.swipeToSlide ? this.checkNavigable(newSlide) : newSlide;
-	          this.state.currentDirection = 0;
-	          break;
-	
-	        case 'right':
-	        case 'up':
-	          newSlide = this.state.currentSlide - this.getSlideCount();
-	          slideCount = this.props.swipeToSlide ? this.checkNavigable(newSlide) : newSlide;
-	          this.state.currentDirection = 1;
-	          break;
-	
-	        default:
-	          slideCount = this.state.currentSlide;
-	
-	      }
-	
-	      this.slideHandler(slideCount);
-	    } else {
-	      // Adjust the track back to it's original position.
-	      var currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	        slideIndex: this.state.currentSlide,
-	        trackRef: this.track
-	      }, this.props, this.state));
-	
-	      this.setState({
-	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
-	      });
-	    }
-	  },
-	  onInnerSliderEnter: function onInnerSliderEnter(e) {
-	    if (this.props.autoplay && this.props.pauseOnHover) {
-	      this.pause();
-	    }
-	  },
-	  onInnerSliderOver: function onInnerSliderOver(e) {
-	    if (this.props.autoplay && this.props.pauseOnHover) {
-	      this.pause();
-	    }
-	  },
-	  onInnerSliderLeave: function onInnerSliderLeave(e) {
-	    if (this.props.autoplay && this.props.pauseOnHover) {
-	      this.autoPlay();
-	    }
-	  }
-	};
-	
-	exports.default = EventHandlers;
-
-/***/ },
-/* 536 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = undefined;
-	
-	var _reactDom = __webpack_require__(51);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _objectAssign = __webpack_require__(22);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var checkSpecKeys = function checkSpecKeys(spec, keysArray) {
-	  return keysArray.reduce(function (value, key) {
-	    return value && spec.hasOwnProperty(key);
-	  }, true) ? null : console.error('Keys Missing', spec);
-	};
-	
-	var getTrackCSS = exports.getTrackCSS = function getTrackCSS(spec) {
-	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth']);
-	
-	  var trackWidth, trackHeight;
-	
-	  var trackChildren = spec.slideCount + 2 * spec.slidesToShow;
-	
-	  if (!spec.vertical) {
-	    if (spec.variableWidth) {
-	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
-	    } else if (spec.centerMode) {
-	      trackWidth = (spec.slideCount + 2 * (spec.slidesToShow + 1)) * spec.slideWidth;
-	    } else {
-	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
-	    }
-	  } else {
-	    trackHeight = trackChildren * spec.slideHeight;
-	  }
-	
-	  var style = {
-	    opacity: 1,
-	    WebkitTransform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
-	    transform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
-	    transition: '',
-	    WebkitTransition: '',
-	    msTransform: !spec.vertical ? 'translateX(' + spec.left + 'px)' : 'translateY(' + spec.left + 'px)'
-	  };
-	
-	  if (trackWidth) {
-	    (0, _objectAssign2.default)(style, { width: trackWidth });
-	  }
-	
-	  if (trackHeight) {
-	    (0, _objectAssign2.default)(style, { height: trackHeight });
-	  }
-	
-	  // Fallback for IE8
-	  if (window && !window.addEventListener && window.attachEvent) {
-	    if (!spec.vertical) {
-	      style.marginLeft = spec.left + 'px';
-	    } else {
-	      style.marginTop = spec.left + 'px';
-	    }
-	  }
-	
-	  return style;
-	};
-	
-	var getTrackAnimateCSS = exports.getTrackAnimateCSS = function getTrackAnimateCSS(spec) {
-	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth', 'speed', 'cssEase']);
-	
-	  var style = getTrackCSS(spec);
-	  // useCSS is true by default so it can be undefined
-	  style.WebkitTransition = '-webkit-transform ' + spec.speed + 'ms ' + spec.cssEase;
-	  style.transition = 'transform ' + spec.speed + 'ms ' + spec.cssEase;
-	  return style;
-	};
-	
-	var getTrackLeft = exports.getTrackLeft = function getTrackLeft(spec) {
-	
-	  checkSpecKeys(spec, ['slideIndex', 'trackRef', 'infinite', 'centerMode', 'slideCount', 'slidesToShow', 'slidesToScroll', 'slideWidth', 'listWidth', 'variableWidth', 'slideHeight']);
-	
-	  var slideOffset = 0;
-	  var targetLeft;
-	  var targetSlide;
-	  var verticalOffset = 0;
-	
-	  if (spec.fade) {
-	    return 0;
-	  }
-	
-	  if (spec.infinite) {
-	    if (spec.slideCount >= spec.slidesToShow) {
-	      slideOffset = spec.slideWidth * spec.slidesToShow * -1;
-	      verticalOffset = spec.slideHeight * spec.slidesToShow * -1;
-	    }
-	    if (spec.slideCount % spec.slidesToScroll !== 0) {
-	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
-	        if (spec.slideIndex > spec.slideCount) {
-	          slideOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideWidth * -1;
-	          verticalOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideHeight * -1;
-	        } else {
-	          slideOffset = spec.slideCount % spec.slidesToScroll * spec.slideWidth * -1;
-	          verticalOffset = spec.slideCount % spec.slidesToScroll * spec.slideHeight * -1;
-	        }
-	      }
-	    }
-	  } else {
-	
-	    if (spec.slideCount % spec.slidesToScroll !== 0) {
-	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
-	        var slidesToOffset = spec.slidesToShow - spec.slideCount % spec.slidesToScroll;
-	        slideOffset = slidesToOffset * spec.slideWidth;
-	      }
-	    }
-	  }
-	
-	  if (spec.centerMode) {
-	    if (spec.infinite) {
-	      slideOffset += spec.slideWidth * Math.floor(spec.slidesToShow / 2);
-	    } else {
-	      slideOffset = spec.slideWidth * Math.floor(spec.slidesToShow / 2);
-	    }
-	  }
-	
-	  if (!spec.vertical) {
-	    targetLeft = spec.slideIndex * spec.slideWidth * -1 + slideOffset;
-	  } else {
-	    targetLeft = spec.slideIndex * spec.slideHeight * -1 + verticalOffset;
-	  }
-	
-	  if (spec.variableWidth === true) {
-	    var targetSlideIndex;
-	    if (spec.slideCount <= spec.slidesToShow || spec.infinite === false) {
-	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[spec.slideIndex];
-	    } else {
-	      targetSlideIndex = spec.slideIndex + spec.slidesToShow;
-	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[targetSlideIndex];
-	    }
-	    targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
-	    if (spec.centerMode === true) {
-	      if (spec.infinite === false) {
-	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex];
-	      } else {
-	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex + spec.slidesToShow + 1];
-	      }
-	
-	      if (targetSlide) {
-	        targetLeft = targetSlide.offsetLeft * -1 + (spec.listWidth - targetSlide.offsetWidth) / 2;
-	      }
-	    }
-	  }
-	
-	  return targetLeft;
-	};
-
-/***/ },
-/* 537 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(51);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _trackHelper = __webpack_require__(536);
-	
-	var _objectAssign = __webpack_require__(22);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var helpers = {
-	  initialize: function initialize(props) {
-	    var slickList = _reactDom2.default.findDOMNode(this.list);
-	
-	    var slideCount = _react2.default.Children.count(props.children);
-	    var listWidth = this.getWidth(slickList);
-	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
-	    var slideWidth;
-	
-	    if (!props.vertical) {
-	      var centerPaddingAdj = props.centerMode && parseInt(props.centerPadding) * 2;
-	      slideWidth = (this.getWidth(_reactDom2.default.findDOMNode(this)) - centerPaddingAdj) / props.slidesToShow;
-	    } else {
-	      slideWidth = this.getWidth(_reactDom2.default.findDOMNode(this));
-	    }
-	
-	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
-	    var listHeight = slideHeight * props.slidesToShow;
-	
-	    var currentSlide = props.rtl ? slideCount - 1 - props.initialSlide : props.initialSlide;
-	
-	    this.setState({
-	      slideCount: slideCount,
-	      slideWidth: slideWidth,
-	      listWidth: listWidth,
-	      trackWidth: trackWidth,
-	      currentSlide: currentSlide,
-	      slideHeight: slideHeight,
-	      listHeight: listHeight
-	    }, function () {
-	
-	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	        slideIndex: this.state.currentSlide,
-	        trackRef: this.track
-	      }, props, this.state));
-	      // getCSS function needs previously set state
-	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
-	
-	      this.setState({ trackStyle: trackStyle });
-	
-	      this.autoPlay(); // once we're set up, trigger the initial autoplay.
-	    });
-	  },
-	  update: function update(props) {
-	    var slickList = _reactDom2.default.findDOMNode(this.list);
-	    // This method has mostly same code as initialize method.
-	    // Refactor it
-	    var slideCount = _react2.default.Children.count(props.children);
-	    var listWidth = this.getWidth(slickList);
-	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
-	    var slideWidth;
-	
-	    if (!props.vertical) {
-	      var centerPaddingAdj = props.centerMode && parseInt(props.centerPadding) * 2;
-	      slideWidth = (this.getWidth(_reactDom2.default.findDOMNode(this)) - centerPaddingAdj) / props.slidesToShow;
-	    } else {
-	      slideWidth = this.getWidth(_reactDom2.default.findDOMNode(this));
-	    }
-	
-	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
-	    var listHeight = slideHeight * props.slidesToShow;
-	
-	    // pause slider if autoplay is set to false
-	    if (props.autoplay) {
-	      this.pause();
-	    } else {
-	      this.autoPlay();
-	    }
-	
-	    this.setState({
-	      slideCount: slideCount,
-	      slideWidth: slideWidth,
-	      listWidth: listWidth,
-	      trackWidth: trackWidth,
-	      slideHeight: slideHeight,
-	      listHeight: listHeight
-	    }, function () {
-	
-	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	        slideIndex: this.state.currentSlide,
-	        trackRef: this.track
-	      }, props, this.state));
-	      // getCSS function needs previously set state
-	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
-	
-	      this.setState({ trackStyle: trackStyle });
-	    });
-	  },
-	  getWidth: function getWidth(elem) {
-	    return elem.getBoundingClientRect().width || elem.offsetWidth || 0;
-	  },
-	  getHeight: function getHeight(elem) {
-	    return elem.getBoundingClientRect().height || elem.offsetHeight || 0;
-	  },
-	
-	  adaptHeight: function adaptHeight() {
-	    if (this.props.adaptiveHeight) {
-	      var selector = '[data-index="' + this.state.currentSlide + '"]';
-	      if (this.list) {
-	        var slickList = _reactDom2.default.findDOMNode(this.list);
-	        slickList.style.height = slickList.querySelector(selector).offsetHeight + 'px';
-	      }
-	    }
-	  },
-	  canGoNext: function canGoNext(opts) {
-	    var canGo = true;
-	    if (!opts.infinite) {
-	      if (opts.centerMode) {
-	        // check if current slide is last slide
-	        if (opts.currentSlide >= opts.slideCount - 1) {
-	          canGo = false;
-	        }
-	      } else {
-	        // check if all slides are shown in slider
-	        if (opts.slideCount <= opts.slidesToShow || opts.currentSlide >= opts.slideCount - opts.slidesToShow) {
-	          canGo = false;
-	        }
-	      }
-	    }
-	    return canGo;
-	  },
-	  slideHandler: function slideHandler(index) {
-	    var _this = this;
-	
-	    // Functionality of animateSlide and postSlide is merged into this function
-	    // console.log('slideHandler', index);
-	    var targetSlide, currentSlide;
-	    var targetLeft, currentLeft;
-	    var callback;
-	
-	    if (this.props.waitForAnimate && this.state.animating) {
-	      return;
-	    }
-	
-	    if (this.props.fade) {
-	      currentSlide = this.state.currentSlide;
-	
-	      // Don't change slide if it's not infite and current slide is the first or last slide.
-	      if (this.props.infinite === false && (index < 0 || index >= this.state.slideCount)) {
-	        return;
-	      }
-	
-	      //  Shifting targetSlide back into the range
-	      if (index < 0) {
-	        targetSlide = index + this.state.slideCount;
-	      } else if (index >= this.state.slideCount) {
-	        targetSlide = index - this.state.slideCount;
-	      } else {
-	        targetSlide = index;
-	      }
-	
-	      if (this.props.lazyLoad && this.state.lazyLoadedList.indexOf(targetSlide) < 0) {
-	        this.setState({
-	          lazyLoadedList: this.state.lazyLoadedList.concat(targetSlide)
-	        });
-	      }
-	
-	      callback = function callback() {
-	        _this.setState({
-	          animating: false
-	        });
-	        if (_this.props.afterChange) {
-	          _this.props.afterChange(targetSlide);
-	        }
-	        delete _this.animationEndCallback;
-	      };
-	
-	      this.setState({
-	        animating: true,
-	        currentSlide: targetSlide
-	      }, function () {
-	        this.animationEndCallback = setTimeout(callback, this.props.speed);
-	      });
-	
-	      if (this.props.beforeChange) {
-	        this.props.beforeChange(this.state.currentSlide, targetSlide);
-	      }
-	
-	      this.autoPlay();
-	      return;
-	    }
-	
-	    targetSlide = index;
-	    if (targetSlide < 0) {
-	      if (this.props.infinite === false) {
-	        currentSlide = 0;
-	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
-	        currentSlide = this.state.slideCount - this.state.slideCount % this.props.slidesToScroll;
-	      } else {
-	        currentSlide = this.state.slideCount + targetSlide;
-	      }
-	    } else if (targetSlide >= this.state.slideCount) {
-	      if (this.props.infinite === false) {
-	        currentSlide = this.state.slideCount - this.props.slidesToShow;
-	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
-	        currentSlide = 0;
-	      } else {
-	        currentSlide = targetSlide - this.state.slideCount;
-	      }
-	    } else {
-	      currentSlide = targetSlide;
-	    }
-	
-	    targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	      slideIndex: targetSlide,
-	      trackRef: this.track
-	    }, this.props, this.state));
-	
-	    currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
-	      slideIndex: currentSlide,
-	      trackRef: this.track
-	    }, this.props, this.state));
-	
-	    if (this.props.infinite === false) {
-	      targetLeft = currentLeft;
-	    }
-	
-	    if (this.props.beforeChange) {
-	      this.props.beforeChange(this.state.currentSlide, currentSlide);
-	    }
-	
-	    if (this.props.lazyLoad) {
-	      var loaded = true;
-	      var slidesToLoad = [];
-	      for (var i = targetSlide; i < targetSlide + this.props.slidesToShow; i++) {
-	        loaded = loaded && this.state.lazyLoadedList.indexOf(i) >= 0;
-	        if (!loaded) {
-	          slidesToLoad.push(i);
-	        }
-	      }
-	      if (!loaded) {
-	        this.setState({
-	          lazyLoadedList: this.state.lazyLoadedList.concat(slidesToLoad)
-	        });
-	      }
-	    }
-	
-	    // Slide Transition happens here.
-	    // animated transition happens to target Slide and
-	    // non - animated transition happens to current Slide
-	    // If CSS transitions are false, directly go the current slide.
-	
-	    if (this.props.useCSS === false) {
-	
-	      this.setState({
-	        currentSlide: currentSlide,
-	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
-	      }, function () {
-	        if (this.props.afterChange) {
-	          this.props.afterChange(currentSlide);
-	        }
-	      });
-	    } else {
-	
-	      var nextStateChanges = {
-	        animating: false,
-	        currentSlide: currentSlide,
-	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state)),
-	        swipeLeft: null
-	      };
-	
-	      callback = function callback() {
-	        _this.setState(nextStateChanges);
-	        if (_this.props.afterChange) {
-	          _this.props.afterChange(currentSlide);
-	        }
-	        delete _this.animationEndCallback;
-	      };
-	
-	      this.setState({
-	        animating: true,
-	        currentSlide: currentSlide,
-	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: targetLeft }, this.props, this.state))
-	      }, function () {
-	        this.animationEndCallback = setTimeout(callback, this.props.speed);
-	      });
-	    }
-	
-	    this.autoPlay();
-	  },
-	  swipeDirection: function swipeDirection(touchObject) {
-	    var xDist, yDist, r, swipeAngle;
-	
-	    xDist = touchObject.startX - touchObject.curX;
-	    yDist = touchObject.startY - touchObject.curY;
-	    r = Math.atan2(yDist, xDist);
-	
-	    swipeAngle = Math.round(r * 180 / Math.PI);
-	    if (swipeAngle < 0) {
-	      swipeAngle = 360 - Math.abs(swipeAngle);
-	    }
-	    if (swipeAngle <= 45 && swipeAngle >= 0 || swipeAngle <= 360 && swipeAngle >= 315) {
-	      return this.props.rtl === false ? 'left' : 'right';
-	    }
-	    if (swipeAngle >= 135 && swipeAngle <= 225) {
-	      return this.props.rtl === false ? 'right' : 'left';
-	    }
-	    if (this.props.verticalSwiping === true) {
-	      if (swipeAngle >= 35 && swipeAngle <= 135) {
-	        return 'down';
-	      } else {
-	        return 'up';
-	      }
-	    }
-	
-	    return 'vertical';
-	  },
-	  play: function play() {
-	    var nextIndex;
-	
-	    if (!this.state.mounted) {
-	      return false;
-	    }
-	
-	    if (this.props.rtl) {
-	      nextIndex = this.state.currentSlide - this.props.slidesToScroll;
-	    } else {
-	      if (this.canGoNext(_extends({}, this.props, this.state))) {
-	        nextIndex = this.state.currentSlide + this.props.slidesToScroll;
-	      } else {
-	        return false;
-	      }
-	    }
-	
-	    this.slideHandler(nextIndex);
-	  },
-	  autoPlay: function autoPlay() {
-	    if (this.state.autoPlayTimer) {
-	      clearTimeout(this.state.autoPlayTimer);
-	    }
-	    if (this.props.autoplay) {
-	      this.setState({
-	        autoPlayTimer: setTimeout(this.play, this.props.autoplaySpeed)
-	      });
-	    }
-	  },
-	  pause: function pause() {
-	    if (this.state.autoPlayTimer) {
-	      clearTimeout(this.state.autoPlayTimer);
-	      this.setState({
-	        autoPlayTimer: null
-	      });
-	    }
-	  }
-	};
-	
-	exports.default = helpers;
-
-/***/ },
-/* 538 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	var initialState = {
-	    animating: false,
-	    dragging: false,
-	    autoPlayTimer: null,
-	    currentDirection: 0,
-	    currentLeft: null,
-	    currentSlide: 0,
-	    direction: 1,
-	    listWidth: null,
-	    listHeight: null,
-	    // loadIndex: 0,
-	    slideCount: null,
-	    slideWidth: null,
-	    slideHeight: null,
-	    // sliding: false,
-	    // slideOffset: 0,
-	    swipeLeft: null,
-	    touchObject: {
-	        startX: 0,
-	        startY: 0,
-	        curX: 0,
-	        curY: 0
-	    },
-	
-	    lazyLoadedList: [],
-	
-	    // added for react
-	    initialized: false,
-	    edgeDragged: false,
-	    swiped: false, // used by swipeEvent. differentites between touch and swipe.
-	    trackStyle: {},
-	    trackWidth: 0
-	
-	    // Removed
-	    // transformsEnabled: false,
-	    // $nextArrow: null,
-	    // $prevArrow: null,
-	    // $dots: null,
-	    // $list: null,
-	    // $slideTrack: null,
-	    // $slides: null,
-	};
-	
-	module.exports = initialState;
-
-/***/ },
-/* 539 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var defaultProps = {
-	    className: '',
-	    accessibility: true,
-	    adaptiveHeight: false,
-	    arrows: true,
-	    autoplay: false,
-	    autoplaySpeed: 3000,
-	    centerMode: false,
-	    centerPadding: '50px',
-	    cssEase: 'ease',
-	    customPaging: function customPaging(i) {
-	        return _react2.default.createElement(
-	            'button',
-	            null,
-	            i + 1
-	        );
-	    },
-	    dots: false,
-	    dotsClass: 'slick-dots',
-	    draggable: true,
-	    easing: 'linear',
-	    edgeFriction: 0.35,
-	    fade: false,
-	    focusOnSelect: false,
-	    infinite: true,
-	    initialSlide: 0,
-	    lazyLoad: false,
-	    pauseOnHover: true,
-	    responsive: null,
-	    rtl: false,
-	    slide: 'div',
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    speed: 500,
-	    swipe: true,
-	    swipeToSlide: false,
-	    touchMove: true,
-	    touchThreshold: 5,
-	    useCSS: true,
-	    variableWidth: false,
-	    vertical: false,
-	    waitForAnimate: true,
-	    afterChange: null,
-	    beforeChange: null,
-	    edgeEvent: null,
-	    init: null,
-	    swipeEvent: null,
-	    // nextArrow, prevArrow are react componets
-	    nextArrow: null,
-	    prevArrow: null
-	};
-	
-	module.exports = defaultProps;
-
-/***/ },
-/* 540 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.Track = undefined;
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _objectAssign = __webpack_require__(22);
-	
-	var _objectAssign2 = _interopRequireDefault(_objectAssign);
-	
-	var _classnames = __webpack_require__(333);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var getSlideClasses = function getSlideClasses(spec) {
-	  var slickActive, slickCenter, slickCloned;
-	  var centerOffset, index;
-	
-	  if (spec.rtl) {
-	    index = spec.slideCount - 1 - spec.index;
-	  } else {
-	    index = spec.index;
-	  }
-	
-	  slickCloned = index < 0 || index >= spec.slideCount;
-	  if (spec.centerMode) {
-	    centerOffset = Math.floor(spec.slidesToShow / 2);
-	    slickCenter = (index - spec.currentSlide) % spec.slideCount === 0;
-	    if (index > spec.currentSlide - centerOffset - 1 && index <= spec.currentSlide + centerOffset) {
-	      slickActive = true;
-	    }
-	  } else {
-	    slickActive = spec.currentSlide <= index && index < spec.currentSlide + spec.slidesToShow;
-	  }
-	  return (0, _classnames2.default)({
-	    'slick-slide': true,
-	    'slick-active': slickActive,
-	    'slick-center': slickCenter,
-	    'slick-cloned': slickCloned
-	  });
-	};
-	
-	var getSlideStyle = function getSlideStyle(spec) {
-	  var style = {};
-	
-	  if (spec.variableWidth === undefined || spec.variableWidth === false) {
-	    style.width = spec.slideWidth;
-	  }
-	
-	  if (spec.fade) {
-	    style.position = 'relative';
-	    style.left = -spec.index * spec.slideWidth;
-	    style.opacity = spec.currentSlide === spec.index ? 1 : 0;
-	    style.transition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
-	    style.WebkitTransition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
-	  }
-	
-	  return style;
-	};
-	
-	var getKey = function getKey(child, fallbackKey) {
-	  // key could be a zero
-	  return child.key === null || child.key === undefined ? fallbackKey : child.key;
-	};
-	
-	var renderSlides = function renderSlides(spec) {
-	  var key;
-	  var slides = [];
-	  var preCloneSlides = [];
-	  var postCloneSlides = [];
-	  var count = _react2.default.Children.count(spec.children);
-	
-	  _react2.default.Children.forEach(spec.children, function (elem, index) {
-	    var child = void 0;
-	    var childOnClickOptions = {
-	      message: 'children',
-	      index: index,
-	      slidesToScroll: spec.slidesToScroll,
-	      currentSlide: spec.currentSlide
-	    };
-	
-	    if (!spec.lazyLoad | (spec.lazyLoad && spec.lazyLoadedList.indexOf(index) >= 0)) {
-	      child = elem;
-	    } else {
-	      child = _react2.default.createElement('div', null);
-	    }
-	    var childStyle = getSlideStyle((0, _objectAssign2.default)({}, spec, { index: index }));
-	    var slickClasses = getSlideClasses((0, _objectAssign2.default)({ index: index }, spec));
-	    var cssClasses;
-	
-	    if (child.props.className) {
-	      cssClasses = (0, _classnames2.default)(slickClasses, child.props.className);
-	    } else {
-	      cssClasses = slickClasses;
-	    }
-	
-	    var onClick = function onClick(e) {
-	      child.props && child.props.onClick && child.props.onClick(e);
-	      if (spec.focusOnSelect) {
-	        spec.focusOnSelect(childOnClickOptions);
-	      }
-	    };
-	
-	    slides.push(_react2.default.cloneElement(child, {
-	      key: 'original' + getKey(child, index),
-	      'data-index': index,
-	      className: cssClasses,
-	      tabIndex: '-1',
-	      style: (0, _objectAssign2.default)({ outline: 'none' }, child.props.style || {}, childStyle),
-	      onClick: onClick
-	    }));
-	
-	    // variableWidth doesn't wrap properly.
-	    if (spec.infinite && spec.fade === false) {
-	      var infiniteCount = spec.variableWidth ? spec.slidesToShow + 1 : spec.slidesToShow;
-	
-	      if (index >= count - infiniteCount) {
-	        key = -(count - index);
-	        preCloneSlides.push(_react2.default.cloneElement(child, {
-	          key: 'precloned' + getKey(child, key),
-	          'data-index': key,
-	          className: cssClasses,
-	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
-	          onClick: onClick
-	        }));
-	      }
-	
-	      if (index < infiniteCount) {
-	        key = count + index;
-	        postCloneSlides.push(_react2.default.cloneElement(child, {
-	          key: 'postcloned' + getKey(child, key),
-	          'data-index': key,
-	          className: cssClasses,
-	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
-	          onClick: onClick
-	        }));
-	      }
-	    }
-	  });
-	
-	  if (spec.rtl) {
-	    return preCloneSlides.concat(slides, postCloneSlides).reverse();
-	  } else {
-	    return preCloneSlides.concat(slides, postCloneSlides);
-	  }
-	};
-	
-	var Track = exports.Track = _react2.default.createClass({
-	  displayName: 'Track',
-	
-	  render: function render() {
-	    var slides = renderSlides.call(this, this.props);
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'slick-track', style: this.props.trackStyle },
-	      slides
-	    );
-	  }
-	});
-
-/***/ },
-/* 541 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.Dots = undefined;
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _classnames = __webpack_require__(333);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var getDotCount = function getDotCount(spec) {
-	  var dots;
-	  dots = Math.ceil(spec.slideCount / spec.slidesToScroll);
-	  return dots;
-	};
-	
-	var Dots = exports.Dots = _react2.default.createClass({
-	  displayName: 'Dots',
-	
-	
-	  clickHandler: function clickHandler(options, e) {
-	    // In Autoplay the focus stays on clicked button even after transition
-	    // to next slide. That only goes away by click somewhere outside
-	    e.preventDefault();
-	    this.props.clickHandler(options);
-	  },
-	  render: function render() {
-	    var _this = this;
-	
-	    var dotCount = getDotCount({
-	      slideCount: this.props.slideCount,
-	      slidesToScroll: this.props.slidesToScroll
-	    });
-	
-	    // Apply join & split to Array to pre-fill it for IE8
-	    //
-	    // Credit: http://stackoverflow.com/a/13735425/1849458
-	    var dots = Array.apply(null, Array(dotCount + 1).join('0').split('')).map(function (x, i) {
-	
-	      var leftBound = i * _this.props.slidesToScroll;
-	      var rightBound = i * _this.props.slidesToScroll + (_this.props.slidesToScroll - 1);
-	      var className = (0, _classnames2.default)({
-	        'slick-active': _this.props.currentSlide >= leftBound && _this.props.currentSlide <= rightBound
-	      });
-	
-	      var dotOptions = {
-	        message: 'dots',
-	        index: i,
-	        slidesToScroll: _this.props.slidesToScroll,
-	        currentSlide: _this.props.currentSlide
-	      };
-	
-	      var onClick = _this.clickHandler.bind(_this, dotOptions);
-	
-	      return _react2.default.createElement(
-	        'li',
-	        { key: i, className: className },
-	        _react2.default.cloneElement(_this.props.customPaging(i), { onClick: onClick })
-	      );
-	    });
-	
-	    return _react2.default.createElement(
-	      'ul',
-	      { className: this.props.dotsClass, style: { display: 'block' } },
-	      dots
-	    );
-	  }
-	});
-
-/***/ },
-/* 542 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.NextArrow = exports.PrevArrow = undefined;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _classnames = __webpack_require__(333);
-	
-	var _classnames2 = _interopRequireDefault(_classnames);
-	
-	var _helpers = __webpack_require__(537);
-	
-	var _helpers2 = _interopRequireDefault(_helpers);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var PrevArrow = exports.PrevArrow = _react2.default.createClass({
-	  displayName: 'PrevArrow',
-	
-	
-	  clickHandler: function clickHandler(options, e) {
-	    if (e) {
-	      e.preventDefault();
-	    }
-	    this.props.clickHandler(options, e);
-	  },
-	  render: function render() {
-	    var prevClasses = { 'slick-arrow': true, 'slick-prev': true };
-	    var prevHandler = this.clickHandler.bind(this, { message: 'previous' });
-	
-	    if (!this.props.infinite && (this.props.currentSlide === 0 || this.props.slideCount <= this.props.slidesToShow)) {
-	      prevClasses['slick-disabled'] = true;
-	      prevHandler = null;
-	    }
-	
-	    var prevArrowProps = {
-	      key: '0',
-	      'data-role': 'none',
-	      className: (0, _classnames2.default)(prevClasses),
-	      currentSlide: this.props.currentSlide,
-	      slideCount: this.props.slideCount,
-	      style: { display: 'block' },
-	      onClick: prevHandler
-	    };
-	    var prevArrow;
-	
-	    if (this.props.prevArrow) {
-	      prevArrow = _react2.default.cloneElement(this.props.prevArrow, prevArrowProps);
-	    } else {
-	      prevArrow = _react2.default.createElement(
-	        'button',
-	        _extends({ key: '0', type: 'button' }, prevArrowProps),
-	        ' Previous'
-	      );
-	    }
-	
-	    return prevArrow;
-	  }
-	});
-	
-	var NextArrow = exports.NextArrow = _react2.default.createClass({
-	  displayName: 'NextArrow',
-	
-	  clickHandler: function clickHandler(options, e) {
-	    if (e) {
-	      e.preventDefault();
-	    }
-	    this.props.clickHandler(options, e);
-	  },
-	  render: function render() {
-	    var nextClasses = { 'slick-arrow': true, 'slick-next': true };
-	    var nextHandler = this.clickHandler.bind(this, { message: 'next' });
-	
-	    if (!_helpers2.default.canGoNext(this.props)) {
-	      nextClasses['slick-disabled'] = true;
-	      nextHandler = null;
-	    }
-	
-	    var nextArrowProps = {
-	      key: '1',
-	      'data-role': 'none',
-	      className: (0, _classnames2.default)(nextClasses),
-	      currentSlide: this.props.currentSlide,
-	      slideCount: this.props.slideCount,
-	      style: { display: 'block' },
-	      onClick: nextHandler
-	    };
-	
-	    var nextArrow;
-	
-	    if (this.props.nextArrow) {
-	      nextArrow = _react2.default.cloneElement(this.props.nextArrow, nextArrowProps);
-	    } else {
-	      nextArrow = _react2.default.createElement(
-	        'button',
-	        _extends({ key: '1', type: 'button' }, nextArrowProps),
-	        ' Next'
-	      );
-	    }
-	
-	    return nextArrow;
-	  }
-	});
-
-/***/ },
-/* 543 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var camel2hyphen = __webpack_require__(544);
-	
-	var isDimension = function (feature) {
-	  var re = /[height|width]$/;
-	  return re.test(feature);
-	};
-	
-	var obj2mq = function (obj) {
-	  var mq = '';
-	  var features = Object.keys(obj);
-	  features.forEach(function (feature, index) {
-	    var value = obj[feature];
-	    feature = camel2hyphen(feature);
-	    // Add px to dimension features
-	    if (isDimension(feature) && typeof value === 'number') {
-	      value = value + 'px';
-	    }
-	    if (value === true) {
-	      mq += feature;
-	    } else if (value === false) {
-	      mq += 'not ' + feature;
-	    } else {
-	      mq += '(' + feature + ': ' + value + ')';
-	    }
-	    if (index < features.length-1) {
-	      mq += ' and '
-	    }
-	  });
-	  return mq;
-	};
-	
-	var json2mq = function (query) {
-	  var mq = '';
-	  if (typeof query === 'string') {
-	    return query;
-	  }
-	  // Handling array of media queries
-	  if (query instanceof Array) {
-	    query.forEach(function (q, index) {
-	      mq += obj2mq(q);
-	      if (index < query.length-1) {
-	        mq += ', '
-	      }
-	    });
-	    return mq;
-	  }
-	  // Handling single media query
-	  return obj2mq(query);
-	};
-	
-	module.exports = json2mq;
-
-/***/ },
-/* 544 */
-/***/ function(module, exports) {
-
-	var camel2hyphen = function (str) {
-	  return str
-	          .replace(/[A-Z]/g, function (match) {
-	            return '-' + match.toLowerCase();
-	          })
-	          .toLowerCase();
-	};
-	
-	module.exports = camel2hyphen;
-
-/***/ },
-/* 545 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var canUseDOM = __webpack_require__(546);
-	var enquire = canUseDOM && __webpack_require__(547);
-	var json2mq = __webpack_require__(543);
-	
-	var ResponsiveMixin = {
-	  media: function (query, handler) {
-	    query = json2mq(query);
-	    if (typeof handler === 'function') {
-	      handler = {
-	        match: handler
-	      };
-	    }
-	    canUseDOM && enquire.register(query, handler);
-	
-	    // Queue the handlers to unregister them at unmount  
-	    if (! this._responsiveMediaHandlers) {
-	      this._responsiveMediaHandlers = [];
-	    }
-	    this._responsiveMediaHandlers.push({query: query, handler: handler});
-	  },
-	  componentWillUnmount: function () {
-	    if (this._responsiveMediaHandlers) {
-	      this._responsiveMediaHandlers.forEach(function(obj) {
-	        canUseDOM && enquire.unregister(obj.query, obj.handler);
-	      });
-	    }
-	  }
-	};
-	
-	module.exports = ResponsiveMixin;
-
-
-/***/ },
-/* 546 */
-/***/ function(module, exports) {
-
-	var canUseDOM = !!(
-	  typeof window !== 'undefined' &&
-	  window.document &&
-	  window.document.createElement
-	);
-	
-	module.exports = canUseDOM;
-
-/***/ },
-/* 547 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	 * enquire.js v2.1.1 - Awesome Media Queries in JavaScript
-	 * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/enquire.js
-	 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
-	 */
-	
-	;(function (name, context, factory) {
-		var matchMedia = window.matchMedia;
-	
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = factory(matchMedia);
-		}
-		else if (true) {
-			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
-				return (context[name] = factory(matchMedia));
-			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		}
-		else {
-			context[name] = factory(matchMedia);
-		}
-	}('enquire', this, function (matchMedia) {
-	
-		'use strict';
-	
-	    /*jshint unused:false */
-	    /**
-	     * Helper function for iterating over a collection
-	     *
-	     * @param collection
-	     * @param fn
-	     */
-	    function each(collection, fn) {
-	        var i      = 0,
-	            length = collection.length,
-	            cont;
-	
-	        for(i; i < length; i++) {
-	            cont = fn(collection[i], i);
-	            if(cont === false) {
-	                break; //allow early exit
-	            }
-	        }
-	    }
-	
-	    /**
-	     * Helper function for determining whether target object is an array
-	     *
-	     * @param target the object under test
-	     * @return {Boolean} true if array, false otherwise
-	     */
-	    function isArray(target) {
-	        return Object.prototype.toString.apply(target) === '[object Array]';
-	    }
-	
-	    /**
-	     * Helper function for determining whether target object is a function
-	     *
-	     * @param target the object under test
-	     * @return {Boolean} true if function, false otherwise
-	     */
-	    function isFunction(target) {
-	        return typeof target === 'function';
-	    }
-	
-	    /**
-	     * Delegate to handle a media query being matched and unmatched.
-	     *
-	     * @param {object} options
-	     * @param {function} options.match callback for when the media query is matched
-	     * @param {function} [options.unmatch] callback for when the media query is unmatched
-	     * @param {function} [options.setup] one-time callback triggered the first time a query is matched
-	     * @param {boolean} [options.deferSetup=false] should the setup callback be run immediately, rather than first time query is matched?
-	     * @constructor
-	     */
-	    function QueryHandler(options) {
-	        this.options = options;
-	        !options.deferSetup && this.setup();
-	    }
-	    QueryHandler.prototype = {
-	
-	        /**
-	         * coordinates setup of the handler
-	         *
-	         * @function
-	         */
-	        setup : function() {
-	            if(this.options.setup) {
-	                this.options.setup();
-	            }
-	            this.initialised = true;
-	        },
-	
-	        /**
-	         * coordinates setup and triggering of the handler
-	         *
-	         * @function
-	         */
-	        on : function() {
-	            !this.initialised && this.setup();
-	            this.options.match && this.options.match();
-	        },
-	
-	        /**
-	         * coordinates the unmatch event for the handler
-	         *
-	         * @function
-	         */
-	        off : function() {
-	            this.options.unmatch && this.options.unmatch();
-	        },
-	
-	        /**
-	         * called when a handler is to be destroyed.
-	         * delegates to the destroy or unmatch callbacks, depending on availability.
-	         *
-	         * @function
-	         */
-	        destroy : function() {
-	            this.options.destroy ? this.options.destroy() : this.off();
-	        },
-	
-	        /**
-	         * determines equality by reference.
-	         * if object is supplied compare options, if function, compare match callback
-	         *
-	         * @function
-	         * @param {object || function} [target] the target for comparison
-	         */
-	        equals : function(target) {
-	            return this.options === target || this.options.match === target;
-	        }
-	
-	    };
-	    /**
-	     * Represents a single media query, manages it's state and registered handlers for this query
-	     *
-	     * @constructor
-	     * @param {string} query the media query string
-	     * @param {boolean} [isUnconditional=false] whether the media query should run regardless of whether the conditions are met. Primarily for helping older browsers deal with mobile-first design
-	     */
-	    function MediaQuery(query, isUnconditional) {
-	        this.query = query;
-	        this.isUnconditional = isUnconditional;
-	        this.handlers = [];
-	        this.mql = matchMedia(query);
-	
-	        var self = this;
-	        this.listener = function(mql) {
-	            self.mql = mql;
-	            self.assess();
-	        };
-	        this.mql.addListener(this.listener);
-	    }
-	    MediaQuery.prototype = {
-	
-	        /**
-	         * add a handler for this query, triggering if already active
-	         *
-	         * @param {object} handler
-	         * @param {function} handler.match callback for when query is activated
-	         * @param {function} [handler.unmatch] callback for when query is deactivated
-	         * @param {function} [handler.setup] callback for immediate execution when a query handler is registered
-	         * @param {boolean} [handler.deferSetup=false] should the setup callback be deferred until the first time the handler is matched?
-	         */
-	        addHandler : function(handler) {
-	            var qh = new QueryHandler(handler);
-	            this.handlers.push(qh);
-	
-	            this.matches() && qh.on();
-	        },
-	
-	        /**
-	         * removes the given handler from the collection, and calls it's destroy methods
-	         * 
-	         * @param {object || function} handler the handler to remove
-	         */
-	        removeHandler : function(handler) {
-	            var handlers = this.handlers;
-	            each(handlers, function(h, i) {
-	                if(h.equals(handler)) {
-	                    h.destroy();
-	                    return !handlers.splice(i,1); //remove from array and exit each early
-	                }
-	            });
-	        },
-	
-	        /**
-	         * Determine whether the media query should be considered a match
-	         * 
-	         * @return {Boolean} true if media query can be considered a match, false otherwise
-	         */
-	        matches : function() {
-	            return this.mql.matches || this.isUnconditional;
-	        },
-	
-	        /**
-	         * Clears all handlers and unbinds events
-	         */
-	        clear : function() {
-	            each(this.handlers, function(handler) {
-	                handler.destroy();
-	            });
-	            this.mql.removeListener(this.listener);
-	            this.handlers.length = 0; //clear array
-	        },
-	
-	        /*
-	         * Assesses the query, turning on all handlers if it matches, turning them off if it doesn't match
-	         */
-	        assess : function() {
-	            var action = this.matches() ? 'on' : 'off';
-	
-	            each(this.handlers, function(handler) {
-	                handler[action]();
-	            });
-	        }
-	    };
-	    /**
-	     * Allows for registration of query handlers.
-	     * Manages the query handler's state and is responsible for wiring up browser events
-	     *
-	     * @constructor
-	     */
-	    function MediaQueryDispatch () {
-	        if(!matchMedia) {
-	            throw new Error('matchMedia not present, legacy browsers require a polyfill');
-	        }
-	
-	        this.queries = {};
-	        this.browserIsIncapable = !matchMedia('only all').matches;
-	    }
-	
-	    MediaQueryDispatch.prototype = {
-	
-	        /**
-	         * Registers a handler for the given media query
-	         *
-	         * @param {string} q the media query
-	         * @param {object || Array || Function} options either a single query handler object, a function, or an array of query handlers
-	         * @param {function} options.match fired when query matched
-	         * @param {function} [options.unmatch] fired when a query is no longer matched
-	         * @param {function} [options.setup] fired when handler first triggered
-	         * @param {boolean} [options.deferSetup=false] whether setup should be run immediately or deferred until query is first matched
-	         * @param {boolean} [shouldDegrade=false] whether this particular media query should always run on incapable browsers
-	         */
-	        register : function(q, options, shouldDegrade) {
-	            var queries         = this.queries,
-	                isUnconditional = shouldDegrade && this.browserIsIncapable;
-	
-	            if(!queries[q]) {
-	                queries[q] = new MediaQuery(q, isUnconditional);
-	            }
-	
-	            //normalise to object in an array
-	            if(isFunction(options)) {
-	                options = { match : options };
-	            }
-	            if(!isArray(options)) {
-	                options = [options];
-	            }
-	            each(options, function(handler) {
-	                queries[q].addHandler(handler);
-	            });
-	
-	            return this;
-	        },
-	
-	        /**
-	         * unregisters a query and all it's handlers, or a specific handler for a query
-	         *
-	         * @param {string} q the media query to target
-	         * @param {object || function} [handler] specific handler to unregister
-	         */
-	        unregister : function(q, handler) {
-	            var query = this.queries[q];
-	
-	            if(query) {
-	                if(handler) {
-	                    query.removeHandler(handler);
-	                }
-	                else {
-	                    query.clear();
-	                    delete this.queries[q];
-	                }
-	            }
-	
-	            return this;
-	        }
-	    };
-	
-		return new MediaQueryDispatch();
-	
-	}));
-
-/***/ },
-/* 548 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(549);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(519)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick.css", function() {
-				var newContent = require("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 549 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(513)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "/* Slider */\n.slick-slider {\n  position: relative;\n  display: block;\n  box-sizing: border-box;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-touch-callout: none;\n  -khtml-user-select: none;\n  -ms-touch-action: pan-y;\n  touch-action: pan-y;\n  -webkit-tap-highlight-color: transparent; }\n\n.slick-list {\n  position: relative;\n  display: block;\n  overflow: hidden;\n  margin: 0;\n  padding: 0; }\n\n.slick-list:focus {\n  outline: none; }\n\n.slick-list.dragging {\n  cursor: pointer;\n  cursor: hand; }\n\n.slick-slider .slick-track,\n.slick-slider .slick-list {\n  -webkit-transform: translate3d(0, 0, 0);\n  -moz-transform: translate3d(0, 0, 0);\n  -ms-transform: translate3d(0, 0, 0);\n  -o-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n.slick-track {\n  position: relative;\n  top: 0;\n  left: 0;\n  display: block; }\n\n.slick-track:before,\n.slick-track:after {\n  display: table;\n  content: ''; }\n\n.slick-track:after {\n  clear: both; }\n\n.slick-loading .slick-track {\n  visibility: hidden; }\n\n.slick-slide {\n  display: none;\n  float: left;\n  height: 100%;\n  min-height: 1px; }\n\n[dir='rtl'] .slick-slide {\n  float: right; }\n\n.slick-slide img {\n  display: block; }\n\n.slick-slide.slick-loading img {\n  display: none; }\n\n.slick-slide.dragging img {\n  pointer-events: none; }\n\n.slick-initialized .slick-slide {\n  display: block; }\n\n.slick-loading .slick-slide {\n  visibility: hidden; }\n\n.slick-vertical .slick-slide {\n  display: block;\n  height: auto;\n  border: 1px solid transparent; }\n\n.slick-arrow.slick-hidden {\n  display: none; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 550 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(551);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(519)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick-theme.css", function() {
-				var newContent = require("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick-theme.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 551 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(513)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/* Slider */\n.slick-loading .slick-list {\n  background: #fff url(" + __webpack_require__(552) + ") center center no-repeat; }\n\n/* Icons */\n@font-face {\n  font-family: 'slick';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(553) + ");\n  src: url(" + __webpack_require__(553) + "?#iefix) format(\"embedded-opentype\"), url(" + __webpack_require__(554) + ") format(\"woff\"), url(" + __webpack_require__(555) + ") format(\"truetype\"), url(" + __webpack_require__(556) + "#slick) format(\"svg\"); }\n\n/* Arrows */\n.slick-prev,\n.slick-next {\n  font-size: 0;\n  line-height: 0;\n  position: absolute;\n  top: 50%;\n  display: block;\n  width: 20px;\n  height: 20px;\n  padding: 0;\n  -webkit-transform: translate(0, -50%);\n  -ms-transform: translate(0, -50%);\n  transform: translate(0, -50%);\n  cursor: pointer;\n  color: transparent;\n  border: none;\n  outline: none;\n  background: transparent; }\n\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus {\n  color: transparent;\n  outline: none;\n  background: transparent; }\n\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before {\n  opacity: 1; }\n\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before {\n  opacity: .25; }\n\n.slick-prev:before,\n.slick-next:before {\n  font-family: 'slick';\n  font-size: 20px;\n  line-height: 1;\n  opacity: .75;\n  color: white;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.slick-prev {\n  left: -25px; }\n\n[dir='rtl'] .slick-prev {\n  right: -25px;\n  left: auto; }\n\n.slick-prev:before {\n  content: '\\2190'; }\n\n[dir='rtl'] .slick-prev:before {\n  content: '\\2192'; }\n\n.slick-next {\n  right: -25px; }\n\n[dir='rtl'] .slick-next {\n  right: auto;\n  left: -25px; }\n\n.slick-next:before {\n  content: '\\2192'; }\n\n[dir='rtl'] .slick-next:before {\n  content: '\\2190'; }\n\n/* Dots */\n.slick-dotted.slick-slider {\n  margin-bottom: 30px; }\n\n.slick-dots {\n  position: absolute;\n  bottom: -25px;\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  text-align: center; }\n\n.slick-dots li {\n  position: relative;\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  margin: 0 5px;\n  padding: 0;\n  cursor: pointer; }\n\n.slick-dots li button {\n  font-size: 0;\n  line-height: 0;\n  display: block;\n  width: 20px;\n  height: 20px;\n  padding: 5px;\n  cursor: pointer;\n  color: transparent;\n  border: 0;\n  outline: none;\n  background: transparent; }\n\n.slick-dots li button:hover,\n.slick-dots li button:focus {\n  outline: none; }\n\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before {\n  opacity: 1; }\n\n.slick-dots li button:before {\n  font-family: 'slick';\n  font-size: 6px;\n  line-height: 20px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 20px;\n  height: 20px;\n  content: '\\2022';\n  text-align: center;\n  opacity: .25;\n  color: black;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.slick-dots li.slick-active button:before {\n  opacity: .75;\n  color: black; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 552 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/gif;base64,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"
-
-/***/ },
-/* 553 */
-/***/ function(module, exports) {
-
-	module.exports = "data:application/vnd.ms-fontobject;base64,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"
-
-/***/ },
-/* 554 */
-/***/ function(module, exports) {
-
-	module.exports = "data:application/font-woff;base64,d09GRk9UVE8AAAVkAAsAAAAAB1wAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAi4AAAKbH/pWDkZGVE0AAAM4AAAAGgAAABxt0civR0RFRgAAA1QAAAAcAAAAIAAyAARPUy8yAAADcAAAAFIAAABgUBj/rmNtYXAAAAPEAAAAUAAAAWIiC0SwaGVhZAAABBQAAAAuAAAANgABMftoaGVhAAAERAAAABwAAAAkA+UCA2htdHgAAARgAAAADgAAAA4ESgBKbWF4cAAABHAAAAAGAAAABgAFUABuYW1lAAAEeAAAANwAAAFuBSeBwnBvc3QAAAVUAAAAEAAAACAAAwABeJw9ks9vEkEUx2cpWyeUoFYgNkHi2Wt7N3rVm3cTs3UVLC4LxIWEQvi1P3i7O1tYLJDAmlgKGEhQrsajf0j7J3jYTXrQWUrMJG+++b55n5e8NwwKBhHDMLv5kxT3ATEBxKBn3qOAl9zxHgb1MAPhHQgHkyF08Gr/L8B/Eb6zWnmCJ7AJVLubQOheArXvJ1A4EXi6j4I+Zg9F0QFKvsnlBCmXeve+sFEnb/nCptdtQ4QYhVFRAT1HrF8UQK/RL/SbmUbclsvGVFXRZKDHUE38cc4qpkbAAsuwiImvro+ufcfaOIQ6szlrmjRJDaKZKnbjN3GWKIbiIzRFUfCffuxxKOL+3LDlDVvx2TdxN84qZEsnhNBa6pgm2dAsnzbLsETdsmRFxUeHV4e+I2/ptN8TyqV8T3Dt29t7EYOuajVIw2y1Wy3M86w0zg/Fz2IvawmQAUHOVrPVfLkoScVynsqsTG0MGUs4z55nh3mnOJa+li+rl9WpPIcFfDubDeaDC+fLBdYN3QADzLauGfj4B6sZmq6CCpqmtSvF0qlUl2qf5AJIUCSlTqlb7lUG+LRfGzZGzZEyBgccMu6MuqPecNDvD4Y9Kjtj4gD+DsvKVMTcMdtqtZtmkzQstQvYje7Syep0PDSAhSOeHYXYWThEF//A/0YvYV1fSQtpKU5STtrhbQ444OtpKSWJIg3pOg8cBs7maTY1EZf07aq+hjWs7IWzdCYTGhb2CtZ47x+Uhx28AAB4nGNgYGBkAIJz765vANHnCyvqYTQAWnkHswAAeJxjYGRgYOADYgkGEGBiYARCFjAG8RgABHYAN3icY2BmYmCcwMDKwMHow5jGwMDgDqW/MkgytDAwMDGwcjKAQQMDAyOQUmCAgoA01xQGB4ZExUmMD/4/YNBjvP3/NgNEDQPjbbBKBQZGADfLDgsAAHicY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQzMCQqKClOUJz0/z9YHRLv/+L7D+8V3cuHmgAHjGwM6ELUByxUMIOZCmbgAAA5LQ8XeJxjYGRgYABiO68w73h+m68M3EwMIHC+sKIeTqsyqDLeZrwN5HIwgKUB/aYJUgAAeJxjYGRgYLzNwMCgx8QAAkA2IwMqYAIAMGIB7QIAAAACAAAlACUAJQAlAAAAAFAAAAUAAHicbY49asNAEIU/2ZJDfkiRIvXapUFCEqpcptABUrg3ZhEiQoKVfY9UqVLlGDlADpAT5e16IUWysMz3hjfzBrjjjQT/EjKpCy+4YhN5yZoxcirPe+SMWz4jr6S+5UzSa3VuwpTnBfc8RF7yxDZyKs9r5IxHPiKv1P9iZqDnyAvMQ39UecbScVb/gJO03Xk4CFom3XYK1clhMdQUlKo7/d9NF13RkIdfy+MV7TSe2sl11tRFaXYmJKpWTd7kdVnJ8veevZKc+n3I93t9Jnvr5n4aTVWU/0z9AI2qMkV4nGNgZkAGjAxoAAAAjgAF"
-
-/***/ },
-/* 555 */
-/***/ function(module, exports) {
-
-	module.exports = "data:application/x-font-ttf;base64,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"
-
-/***/ },
-/* 556 */
-/***/ function(module, exports) {
-
-	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxtZXRhZGF0YT5HZW5lcmF0ZWQgYnkgRm9udGFzdGljLm1lPC9tZXRhZGF0YT4KPGRlZnM+Cjxmb250IGlkPSJzbGljayIgaG9yaXotYWR2LXg9IjUxMiI+Cjxmb250LWZhY2UgZm9udC1mYW1pbHk9InNsaWNrIiB1bml0cy1wZXItZW09IjUxMiIgYXNjZW50PSI0ODAiIGRlc2NlbnQ9Ii0zMiIvPgo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iNTEyIiAvPgoKPGdseXBoIHVuaWNvZGU9IiYjODU5NDsiIGQ9Ik0yNDEgMTEzbDEzMCAxMzBjNCA0IDYgOCA2IDEzIDAgNS0yIDktNiAxM2wtMTMwIDEzMGMtMyAzLTcgNS0xMiA1LTUgMC0xMC0yLTEzLTVsLTI5LTMwYy00LTMtNi03LTYtMTIgMC01IDItMTAgNi0xM2w4Ny04OC04Ny04OGMtNC0zLTYtOC02LTEzIDAtNSAyLTkgNi0xMmwyOS0zMGMzLTMgOC01IDEzLTUgNSAwIDkgMiAxMiA1eiBtMjM0IDE0M2MwLTQwLTktNzctMjktMTEwLTIwLTM0LTQ2LTYwLTgwLTgwLTMzLTIwLTcwLTI5LTExMC0yOS00MCAwLTc3IDktMTEwIDI5LTM0IDIwLTYwIDQ2LTgwIDgwLTIwIDMzLTI5IDcwLTI5IDExMCAwIDQwIDkgNzcgMjkgMTEwIDIwIDM0IDQ2IDYwIDgwIDgwIDMzIDIwIDcwIDI5IDExMCAyOSA0MCAwIDc3LTkgMTEwLTI5IDM0LTIwIDYwLTQ2IDgwLTgwIDIwLTMzIDI5LTcwIDI5LTExMHoiLz4KPGdseXBoIHVuaWNvZGU9IiYjODU5MjsiIGQ9Ik0yOTYgMTEzbDI5IDMwYzQgMyA2IDcgNiAxMiAwIDUtMiAxMC02IDEzbC04NyA4OCA4NyA4OGM0IDMgNiA4IDYgMTMgMCA1LTIgOS02IDEybC0yOSAzMGMtMyAzLTggNS0xMyA1LTUgMC05LTItMTItNWwtMTMwLTEzMGMtNC00LTYtOC02LTEzIDAtNSAyLTkgNi0xM2wxMzAtMTMwYzMtMyA3LTUgMTItNSA1IDAgMTAgMiAxMyA1eiBtMTc5IDE0M2MwLTQwLTktNzctMjktMTEwLTIwLTM0LTQ2LTYwLTgwLTgwLTMzLTIwLTcwLTI5LTExMC0yOS00MCAwLTc3IDktMTEwIDI5LTM0IDIwLTYwIDQ2LTgwIDgwLTIwIDMzLTI5IDcwLTI5IDExMCAwIDQwIDkgNzcgMjkgMTEwIDIwIDM0IDQ2IDYwIDgwIDgwIDMzIDIwIDcwIDI5IDExMCAyOSA0MCAwIDc3LTkgMTEwLTI5IDM0LTIwIDYwLTQ2IDgwLTgwIDIwLTMzIDI5LTcwIDI5LTExMHoiLz4KPGdseXBoIHVuaWNvZGU9IiYjODIyNjsiIGQ9Ik00NzUgMjU2YzAtNDAtOS03Ny0yOS0xMTAtMjAtMzQtNDYtNjAtODAtODAtMzMtMjAtNzAtMjktMTEwLTI5LTQwIDAtNzcgOS0xMTAgMjktMzQgMjAtNjAgNDYtODAgODAtMjAgMzMtMjkgNzAtMjkgMTEwIDAgNDAgOSA3NyAyOSAxMTAgMjAgMzQgNDYgNjAgODAgODAgMzMgMjAgNzAgMjkgMTEwIDI5IDQwIDAgNzctOSAxMTAtMjkgMzQtMjAgNjAtNDYgODAtODAgMjAtMzMgMjktNzAgMjktMTEweiIvPgo8Z2x5cGggdW5pY29kZT0iJiM5NzsiIGQ9Ik00NzUgNDM5bDAtMTI4YzAtNS0xLTktNS0xMy00LTQtOC01LTEzLTVsLTEyOCAwYy04IDAtMTMgMy0xNyAxMS0zIDctMiAxNCA0IDIwbDQwIDM5Yy0yOCAyNi02MiAzOS0xMDAgMzktMjAgMC0zOS00LTU3LTExLTE4LTgtMzMtMTgtNDYtMzItMTQtMTMtMjQtMjgtMzItNDYtNy0xOC0xMS0zNy0xMS01NyAwLTIwIDQtMzkgMTEtNTcgOC0xOCAxOC0zMyAzMi00NiAxMy0xNCAyOC0yNCA0Ni0zMiAxOC03IDM3LTExIDU3LTExIDIzIDAgNDQgNSA2NCAxNSAyMCA5IDM4IDIzIDUxIDQyIDIgMSA0IDMgNyAzIDMgMCA1LTEgNy0zbDM5LTM5YzItMiAzLTMgMy02IDAtMi0xLTQtMi02LTIxLTI1LTQ2LTQ1LTc2LTU5LTI5LTE0LTYwLTIwLTkzLTIwLTMwIDAtNTggNS04NSAxNy0yNyAxMi01MSAyNy03MCA0Ny0yMCAxOS0zNSA0My00NyA3MC0xMiAyNy0xNyA1NS0xNyA4NSAwIDMwIDUgNTggMTcgODUgMTIgMjcgMjcgNTEgNDcgNzAgMTkgMjAgNDMgMzUgNzAgNDcgMjcgMTIgNTUgMTcgODUgMTcgMjggMCA1NS01IDgxLTE1IDI2LTExIDUwLTI2IDcwLTQ1bDM3IDM3YzYgNiAxMiA3IDIwIDQgOC00IDExLTkgMTEtMTd6Ii8+CjwvZm9udD48L2RlZnM+PC9zdmc+Cg=="
-
-/***/ },
-/* 557 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _getPrototypeOf = __webpack_require__(256);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(267);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(268);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(269);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(316);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _events = __webpack_require__(526);
-	
-	var _events2 = _interopRequireDefault(_events);
-	
-	var _rxDom = __webpack_require__(558);
-	
-	var _rxDom2 = _interopRequireDefault(_rxDom);
-	
-	var _dispatcher = __webpack_require__(527);
-	
-	var _dispatcher2 = _interopRequireDefault(_dispatcher);
-	
-	var _WebsocketConstants = __webpack_require__(561);
-	
-	var WebsocketConstants = _interopRequireWildcard(_WebsocketConstants);
-	
-	var _WebsocketActions = __webpack_require__(562);
-	
-	var _WebsocketActions2 = _interopRequireDefault(_WebsocketActions);
-	
-	var _WinnersActions = __webpack_require__(563);
-	
-	var _WinnersActions2 = _interopRequireDefault(_WinnersActions);
-	
-	var _WinnersConstants = __webpack_require__(530);
-	
-	var WinnersConstants = _interopRequireWildcard(_WinnersConstants);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var CHANGE_EVENT = 'change'; /**
-	                              * Created by Dima Graebert on 2/20/2017.
-	                              */
-	
-	var WebsocketStore = function (_EventEmitter) {
-	    (0, _inherits3.default)(WebsocketStore, _EventEmitter);
-	
-	    function WebsocketStore(props) {
-	        (0, _classCallCheck3.default)(this, WebsocketStore);
-	
-	        var _this = (0, _possibleConstructorReturn3.default)(this, (WebsocketStore.__proto__ || (0, _getPrototypeOf2.default)(WebsocketStore)).call(this, props));
-	
-	        _this.socket = null;
-	        _this.currentState = {
-	            connected: false,
-	            loggedIn: false
-	        };
-	        _this.dispatcherIndex = _dispatcher2.default.register(_this.handleAction.bind(_this));
-	        return _this;
-	    }
-	
-	    (0, _createClass3.default)(WebsocketStore, [{
-	        key: 'getCurrentState',
-	        value: function getCurrentState() {
-	            return this.currentState;
-	        }
-	    }, {
-	        key: 'handleAction',
-	        value: function handleAction(action) {
-	            var store = this;
-	            var openObserver = _rxDom2.default.Observer.create(function () {
-	                store.currentState.connected = true;
-	                store.emitChange();
-	            });
-	            switch (action.actionType) {
-	                case WebsocketConstants.CONNECT:
-	                    this.socket = _rxDom2.default.DOM.fromWebSocket(action.url, null, openObserver);
-	                    this.socket.subscribe(function (e) {
-	                        WebsocketStore.getMessage(e.data);
-	                    }, function (e) {
-	                        _WebsocketActions2.default.onError(e);
-	                    }, function () {
-	                        _WebsocketActions2.default.disconnect();
-	                    });
-	                    break;
-	                case WebsocketConstants.POST_MESSAGE:
-	                    this.socket.onNext(action.message);
-	                    break;
-	                case WebsocketConstants.DISCONNECT:
-	                    this.socket = null;
-	                    this.currentState.connected = false;
-	                    this.emitChange();
-	                    break;
-	                case WebsocketConstants.GET_ERROR:
-	                    this.socket = null;
-	                    this.emitChange();
-	                    break;
-	                default:
-	                    break;
-	            }
-	            return true;
-	        }
-	    }, {
-	        key: 'emitChange',
-	        value: function emitChange() {
-	            this.emit(CHANGE_EVENT);
-	        }
-	    }, {
-	        key: 'addChangeListener',
-	        value: function addChangeListener(callback) {
-	            this.on(CHANGE_EVENT, callback);
-	        }
-	    }, {
-	        key: 'removeChangeListener',
-	        value: function removeChangeListener(callback) {
-	            this.removeListener(CHANGE_EVENT, callback);
-	        }
-	    }], [{
-	        key: 'getMessage',
-	        value: function getMessage(message) {
-	            var messageData = {};
-	            try {
-	                messageData = JSON.parse(message);
-	            } catch (Exception) {
-	                throw new Error(Exception.toString());
-	            }
-	            switch (messageData.type) {
-	                case WinnersConstants.ADD_WINNER:
-	                    _WinnersActions2.default.addWinner(messageData.data);
-	                    break;
-	                default:
-	                    break;
-	            }
-	            return messageData;
-	            // handle messageData
-	        }
-	    }]);
-	    return WebsocketStore;
-	}(_events2.default);
-	
-	WebsocketStore.dispatchToken = null;
-	
-	exports.default = new WebsocketStore();
-
-/***/ },
-/* 558 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {// Copyright (c) Microsoft, Inc. All rights reserved. See License.txt in the project root for license information.
@@ -51048,7 +47638,7 @@ webpackJsonp([0,1],[
 	
 	  // Because of build optimizers
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(560)], __WEBPACK_AMD_DEFINE_RESULT__ = function (Rx, exports) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(527)], __WEBPACK_AMD_DEFINE_RESULT__ = function (Rx, exports) {
 	      return factory(root, exports, Rx);
 	    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  } else if (typeof module === 'object' && module && module.exports === freeExports) {
@@ -52411,10 +49001,10 @@ webpackJsonp([0,1],[
 	
 	  return Rx;
 	}));
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(559)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(526)(module), (function() { return this; }())))
 
 /***/ },
-/* 559 */
+/* 526 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -52430,7 +49020,7 @@ webpackJsonp([0,1],[
 
 
 /***/ },
-/* 560 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global, process) {// Copyright (c) Microsoft, All rights reserved. See License.txt in the project root for license information.
@@ -64822,10 +61412,355 @@ webpackJsonp([0,1],[
 	
 	}.call(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(559)(module), (function() { return this; }()), __webpack_require__(46)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(526)(module), (function() { return this; }()), __webpack_require__(46)))
 
 /***/ },
-/* 561 */
+/* 528 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _toConsumableArray2 = __webpack_require__(529);
+	
+	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
+	
+	var _classCallCheck2 = __webpack_require__(267);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(268);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _flux = __webpack_require__(530);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AppDispatcher = function () {
+	    function AppDispatcher() {
+	        (0, _classCallCheck3.default)(this, AppDispatcher);
+	
+	        this.dispatcher = new _flux.Dispatcher();
+	        this.currentlyProcessing = false;
+	        this.actionQueue = [];
+	    }
+	
+	    (0, _createClass3.default)(AppDispatcher, [{
+	        key: 'startProcessing',
+	        value: function startProcessing() {
+	            this.currentlyProcessing = true;
+	            while (this.actionQueue.length > 0) {
+	                if (this.dispatcher.isDispatching()) {
+	                    return setTimeout(this.startProcessing, 100);
+	                }
+	                this.dispatcher.dispatch(this.actionQueue.shift());
+	            }
+	            this.currentlyProcessing = false;
+	            return true;
+	        }
+	    }, {
+	        key: 'dispatch',
+	        value: function dispatch(payload) {
+	            this.actionQueue = [].concat((0, _toConsumableArray3.default)(this.actionQueue), [payload]);
+	            if (!this.currentlyProcessing) {
+	                this.startProcessing();
+	            }
+	        }
+	    }, {
+	        key: 'register',
+	        value: function register(callback) {
+	            return this.dispatcher.register(callback);
+	        }
+	    }]);
+	    return AppDispatcher;
+	}();
+	
+	exports.default = new AppDispatcher();
+
+/***/ },
+/* 529 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _from = __webpack_require__(390);
+	
+	var _from2 = _interopRequireDefault(_from);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (arr) {
+	  if (Array.isArray(arr)) {
+	    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+	      arr2[i] = arr[i];
+	    }
+	
+	    return arr2;
+	  } else {
+	    return (0, _from2.default)(arr);
+	  }
+	};
+
+/***/ },
+/* 530 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+	
+	module.exports.Dispatcher = __webpack_require__(531);
+
+
+/***/ },
+/* 531 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2014-2015, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 * @providesModule Dispatcher
+	 * 
+	 * @preventMunge
+	 */
+	
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	var invariant = __webpack_require__(26);
+	
+	var _prefix = 'ID_';
+	
+	/**
+	 * Dispatcher is used to broadcast payloads to registered callbacks. This is
+	 * different from generic pub-sub systems in two ways:
+	 *
+	 *   1) Callbacks are not subscribed to particular events. Every payload is
+	 *      dispatched to every registered callback.
+	 *   2) Callbacks can be deferred in whole or part until other callbacks have
+	 *      been executed.
+	 *
+	 * For example, consider this hypothetical flight destination form, which
+	 * selects a default city when a country is selected:
+	 *
+	 *   var flightDispatcher = new Dispatcher();
+	 *
+	 *   // Keeps track of which country is selected
+	 *   var CountryStore = {country: null};
+	 *
+	 *   // Keeps track of which city is selected
+	 *   var CityStore = {city: null};
+	 *
+	 *   // Keeps track of the base flight price of the selected city
+	 *   var FlightPriceStore = {price: null}
+	 *
+	 * When a user changes the selected city, we dispatch the payload:
+	 *
+	 *   flightDispatcher.dispatch({
+	 *     actionType: 'city-update',
+	 *     selectedCity: 'paris'
+	 *   });
+	 *
+	 * This payload is digested by `CityStore`:
+	 *
+	 *   flightDispatcher.register(function(payload) {
+	 *     if (payload.actionType === 'city-update') {
+	 *       CityStore.city = payload.selectedCity;
+	 *     }
+	 *   });
+	 *
+	 * When the user selects a country, we dispatch the payload:
+	 *
+	 *   flightDispatcher.dispatch({
+	 *     actionType: 'country-update',
+	 *     selectedCountry: 'australia'
+	 *   });
+	 *
+	 * This payload is digested by both stores:
+	 *
+	 *   CountryStore.dispatchToken = flightDispatcher.register(function(payload) {
+	 *     if (payload.actionType === 'country-update') {
+	 *       CountryStore.country = payload.selectedCountry;
+	 *     }
+	 *   });
+	 *
+	 * When the callback to update `CountryStore` is registered, we save a reference
+	 * to the returned token. Using this token with `waitFor()`, we can guarantee
+	 * that `CountryStore` is updated before the callback that updates `CityStore`
+	 * needs to query its data.
+	 *
+	 *   CityStore.dispatchToken = flightDispatcher.register(function(payload) {
+	 *     if (payload.actionType === 'country-update') {
+	 *       // `CountryStore.country` may not be updated.
+	 *       flightDispatcher.waitFor([CountryStore.dispatchToken]);
+	 *       // `CountryStore.country` is now guaranteed to be updated.
+	 *
+	 *       // Select the default city for the new country
+	 *       CityStore.city = getDefaultCityForCountry(CountryStore.country);
+	 *     }
+	 *   });
+	 *
+	 * The usage of `waitFor()` can be chained, for example:
+	 *
+	 *   FlightPriceStore.dispatchToken =
+	 *     flightDispatcher.register(function(payload) {
+	 *       switch (payload.actionType) {
+	 *         case 'country-update':
+	 *         case 'city-update':
+	 *           flightDispatcher.waitFor([CityStore.dispatchToken]);
+	 *           FlightPriceStore.price =
+	 *             getFlightPriceStore(CountryStore.country, CityStore.city);
+	 *           break;
+	 *     }
+	 *   });
+	 *
+	 * The `country-update` payload will be guaranteed to invoke the stores'
+	 * registered callbacks in order: `CountryStore`, `CityStore`, then
+	 * `FlightPriceStore`.
+	 */
+	
+	var Dispatcher = (function () {
+	  function Dispatcher() {
+	    _classCallCheck(this, Dispatcher);
+	
+	    this._callbacks = {};
+	    this._isDispatching = false;
+	    this._isHandled = {};
+	    this._isPending = {};
+	    this._lastID = 1;
+	  }
+	
+	  /**
+	   * Registers a callback to be invoked with every dispatched payload. Returns
+	   * a token that can be used with `waitFor()`.
+	   */
+	
+	  Dispatcher.prototype.register = function register(callback) {
+	    var id = _prefix + this._lastID++;
+	    this._callbacks[id] = callback;
+	    return id;
+	  };
+	
+	  /**
+	   * Removes a callback based on its token.
+	   */
+	
+	  Dispatcher.prototype.unregister = function unregister(id) {
+	    !this._callbacks[id] ?  true ? invariant(false, 'Dispatcher.unregister(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
+	    delete this._callbacks[id];
+	  };
+	
+	  /**
+	   * Waits for the callbacks specified to be invoked before continuing execution
+	   * of the current callback. This method should only be used by a callback in
+	   * response to a dispatched payload.
+	   */
+	
+	  Dispatcher.prototype.waitFor = function waitFor(ids) {
+	    !this._isDispatching ?  true ? invariant(false, 'Dispatcher.waitFor(...): Must be invoked while dispatching.') : invariant(false) : undefined;
+	    for (var ii = 0; ii < ids.length; ii++) {
+	      var id = ids[ii];
+	      if (this._isPending[id]) {
+	        !this._isHandled[id] ?  true ? invariant(false, 'Dispatcher.waitFor(...): Circular dependency detected while ' + 'waiting for `%s`.', id) : invariant(false) : undefined;
+	        continue;
+	      }
+	      !this._callbacks[id] ?  true ? invariant(false, 'Dispatcher.waitFor(...): `%s` does not map to a registered callback.', id) : invariant(false) : undefined;
+	      this._invokeCallback(id);
+	    }
+	  };
+	
+	  /**
+	   * Dispatches a payload to all registered callbacks.
+	   */
+	
+	  Dispatcher.prototype.dispatch = function dispatch(payload) {
+	    !!this._isDispatching ?  true ? invariant(false, 'Dispatch.dispatch(...): Cannot dispatch in the middle of a dispatch.') : invariant(false) : undefined;
+	    this._startDispatching(payload);
+	    try {
+	      for (var id in this._callbacks) {
+	        if (this._isPending[id]) {
+	          continue;
+	        }
+	        this._invokeCallback(id);
+	      }
+	    } finally {
+	      this._stopDispatching();
+	    }
+	  };
+	
+	  /**
+	   * Is this Dispatcher currently dispatching.
+	   */
+	
+	  Dispatcher.prototype.isDispatching = function isDispatching() {
+	    return this._isDispatching;
+	  };
+	
+	  /**
+	   * Call the callback stored with the given id. Also do some internal
+	   * bookkeeping.
+	   *
+	   * @internal
+	   */
+	
+	  Dispatcher.prototype._invokeCallback = function _invokeCallback(id) {
+	    this._isPending[id] = true;
+	    this._callbacks[id](this._pendingPayload);
+	    this._isHandled[id] = true;
+	  };
+	
+	  /**
+	   * Set up bookkeeping needed when dispatching.
+	   *
+	   * @internal
+	   */
+	
+	  Dispatcher.prototype._startDispatching = function _startDispatching(payload) {
+	    for (var id in this._callbacks) {
+	      this._isPending[id] = false;
+	      this._isHandled[id] = false;
+	    }
+	    this._pendingPayload = payload;
+	    this._isDispatching = true;
+	  };
+	
+	  /**
+	   * Clear bookkeeping used for dispatching.
+	   *
+	   * @internal
+	   */
+	
+	  Dispatcher.prototype._stopDispatching = function _stopDispatching() {
+	    delete this._pendingPayload;
+	    this._isDispatching = false;
+	  };
+	
+	  return Dispatcher;
+	})();
+	
+	module.exports = Dispatcher;
+
+/***/ },
+/* 532 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -64843,7 +61778,7 @@ webpackJsonp([0,1],[
 	var GET_ERROR = exports.GET_ERROR = 'GET_ERROR';
 
 /***/ },
-/* 562 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64860,11 +61795,11 @@ webpackJsonp([0,1],[
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
-	var _WebsocketConstants = __webpack_require__(561);
+	var _WebsocketConstants = __webpack_require__(532);
 	
 	var constants = _interopRequireWildcard(_WebsocketConstants);
 	
-	var _dispatcher = __webpack_require__(527);
+	var _dispatcher = __webpack_require__(528);
 	
 	var _dispatcher2 = _interopRequireDefault(_dispatcher);
 	
@@ -64926,7 +61861,7 @@ webpackJsonp([0,1],[
 	exports.default = WebsocketActions;
 
 /***/ },
-/* 563 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -64943,11 +61878,11 @@ webpackJsonp([0,1],[
 	
 	var _createClass3 = _interopRequireDefault(_createClass2);
 	
-	var _WinnersConstants = __webpack_require__(530);
+	var _WinnersConstants = __webpack_require__(535);
 	
 	var constants = _interopRequireWildcard(_WinnersConstants);
 	
-	var _dispatcher = __webpack_require__(527);
+	var _dispatcher = __webpack_require__(528);
 	
 	var _dispatcher2 = _interopRequireDefault(_dispatcher);
 	
@@ -64992,13 +61927,29 @@ webpackJsonp([0,1],[
 	exports.default = WinnersActions;
 
 /***/ },
-/* 564 */
+/* 535 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	/**
+	 * Created by Dima Graebert on 2/20/2017.
+	 */
+	var SUBSCRIBE = exports.SUBSCRIBE = 'SUBSCRIBE';
+	var UNSUBSCRIBE = exports.UNSUBSCRIBE = 'UNSUBSCRIBE';
+	var ADD_WINNER = exports.ADD_WINNER = 'ADD_WINNER';
+
+/***/ },
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(565);
+	var content = __webpack_require__(537);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(519)(content, {});
@@ -65018,7 +61969,7 @@ webpackJsonp([0,1],[
 	}
 
 /***/ },
-/* 565 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(513)();
@@ -65026,13 +61977,3319 @@ webpackJsonp([0,1],[
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto|Dancing+Script);", ""]);
 	
 	// module
-	exports.push([module.id, "* {\n  font-size: 12px;\n  font-family: 'Roboto', sans-serif; }\n\nhtml, body {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  background: url(\"/images/elements/ui/background.jpg\") no-repeat fixed;\n  background-size: cover; }\n\nnav.navbar {\n  background: #6e3667 linear-gradient(to bottom, #6e3667 0, #82387b 100%);\n  border-radius: 0;\n  border-color: #673360;\n  padding: 0;\n  margin: 0; }\n  nav.navbar > .container > .navbar-header > .navbar-brand img {\n    max-height: 100%; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li > a {\n    color: #f3f3f3; }\n    nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li > a:hover {\n      color: #88D317; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li.language > a > img {\n    max-width: 20px;\n    max-height: 20px;\n    margin: 0 5px; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li.dropdown.open > a, nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li.active > a {\n    background: transparent; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li ul.dropdown-menu {\n    padding: 0; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu {\n    display: flex;\n    padding: 15px;\n    background-color: #773770;\n    color: #fff;\n    min-width: 300px; }\n    nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .photo {\n      width: 60px;\n      display: inline-block;\n      height: 100%;\n      align-self: center; }\n    nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .userInfo {\n      display: inline-block;\n      padding: 0 10px; }\n      nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .userInfo span.name {\n        font-size: 20px;\n        display: block;\n        font-weight: bold; }\n      nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .userInfo div.actions {\n        display: block;\n        margin: 5px 0; }\n\ntable thead tr {\n  border: none;\n  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.3); }\n  table thead tr th {\n    text-align: center;\n    border: none;\n    padding: 0 20px;\n    font-size: 10px;\n    text-shadow: none;\n    color: #f3f3f3;\n    text-transform: uppercase; }\n\ntable tbody tr {\n  border: none;\n  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.3); }\n  table tbody tr td {\n    border: none;\n    padding: 10px; }\n\nimg.avatar {\n  max-width: 50px;\n  max-height: 50px;\n  border-radius: 50%;\n  margin: 5px; }\n\n.section {\n  background-color: #f5f5f5;\n  margin: 0 auto;\n  padding: 30px;\n  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);\n  text-align: center; }\n  .section .title {\n    margin: 10px 0;\n    text-transform: uppercase;\n    font-size: 24px;\n    color: #535353; }\n  .section.About {\n    background-color: #f5f5f5; }\n    .section.About .promoText {\n      font-size: 20px; }\n  .section.Latest {\n    background-color: #292928;\n    color: #f3f3f3;\n    min-height: 1100px; }\n    .section.Latest .title {\n      color: #f3f3f3; }\n    .section.Latest table.latestWinners thead tr th:nth-child(1), .section.Latest table.latestWinners tbody tr td:nth-child(1) {\n      width: 30%; }\n    .section.Latest table.latestWinners thead tr th:nth-child(2), .section.Latest table.latestWinners tbody tr td:nth-child(2) {\n      width: 25%; }\n    .section.Latest table.latestWinners thead tr th:nth-child(3), .section.Latest table.latestWinners tbody tr td:nth-child(3) {\n      width: 25%; }\n    .section.Latest table.latestWinners thead tr th:nth-child(4), .section.Latest table.latestWinners tbody tr td:nth-child(4) {\n      width: 20%; }\n    .section.Latest table.latestWinners tbody tr {\n      height: 65px; }\n      .section.Latest table.latestWinners tbody tr td {\n        line-height: 65px; }\n    .section.Latest table.latestWinners img.product {\n      max-width: 100px;\n      max-height: 65px;\n      margin: 5px; }\n  .section.Hot {\n    padding-bottom: 60px; }\n    .section.Hot .slick-slide img {\n      max-width: 100%;\n      max-height: 300px;\n      margin: 0 auto; }\n    .section.Hot .slick-prev:before, .section.Hot .slick-next:before {\n      color: #1A0315; }\n\na {\n  cursor: pointer;\n  color: #f5f5f5; }\n  a:active, a:hover, a:visited {\n    color: #d3d3d3;\n    text-decoration: none; }\n\nfooter {\n  margin-top: 10px;\n  clear: both;\n  width: 100%;\n  height: 150px;\n  background-color: #82387b;\n  padding: 20px; }\n  footer > div {\n    color: #f3f3f3;\n    text-align: center; }\n    footer > div ul {\n      list-style: none;\n      padding: 0; }\n      footer > div ul li {\n        padding: 0; }\n\n.notFound {\n  display: flex;\n  justify-content: center; }\n  .notFound > .inner {\n    align-self: center;\n    text-align: center;\n    color: #f5f5f5; }\n    .notFound > .inner .errorCode {\n      font-family: 'Dancing Script', cursive;\n      font-size: 48px; }\n    .notFound > .inner .errorName {\n      font-size: 24px; }\n    .notFound > .inner .errorDescription, .notFound > .inner .errorDescription a {\n      font-size: 16px; }\n    .notFound > .inner .errorDescription a:hover, .notFound > .inner .errorDescription a:focus, .notFound > .inner .errorDescription a:active {\n      text-decoration: underline; }\n\n.page-content > div {\n  margin: 10px 0; }\n  .page-content > div.container {\n    margin: 10px auto; }\n\n.page-content.categories > div .category {\n  user-select: none;\n  padding: 15px; }\n  .page-content.categories > div .category .inner {\n    background-color: #f5f5f5;\n    text-align: center;\n    transition-duration: .25s;\n    cursor: pointer;\n    border: solid 1px #ececec;\n    z-index: 888; }\n    .page-content.categories > div .category .inner:hover {\n      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);\n      z-index: 999;\n      transform: scale(1.08); }\n    .page-content.categories > div .category .inner img {\n      max-width: 100%;\n      margin: 0 auto;\n      display: block; }\n\n.sidebar {\n  background-color: #f5f5f5;\n  margin: 10px 0;\n  padding: 10px; }\n\n.productCard {\n  text-align: center;\n  background-color: #f5f5f5;\n  border: solid 1px #ececec;\n  padding: 10px;\n  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); }\n  .productCard img {\n    max-width: 100%; }\n  .productCard .name {\n    padding-bottom: 10px;\n    border-bottom: solid 1px #dedede;\n    font-size: 24px; }\n    .productCard .name a {\n      font-size: 16px;\n      color: #1A0315;\n      font-weight: bold; }\n      .productCard .name a:hover, .productCard .name a:active, .productCard .name a:focus {\n        color: #6e3667; }\n\n.prices > div {\n  display: block;\n  font-size: 22px;\n  padding-bottom: 10px;\n  border-bottom: solid 1px #dedede;\n  min-height: 50px; }\n  .prices > div:last-child {\n    border: none; }\n  .prices > div strong {\n    font-size: 24px; }\n  .prices > div span.price {\n    float: left;\n    margin: 7px 0; }\n  .prices > div span.action {\n    float: right;\n    margin: 7px 0; }\n\n.singleProduct .productCard, .singleProduct .sidebar {\n  background-color: #f5f5f5;\n  border: solid 1px #ececec;\n  padding: 10px;\n  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);\n  border-radius: 3px; }\n\n.singleProduct .sidebar {\n  margin: 0; }\n  .singleProduct .sidebar .lotteryPrice {\n    height: 80px; }\n\n.singleProduct .timer {\n  font-size: 22px;\n  font-weight: bold; }\n\n.singleProduct .detailedInfo {\n  margin-top: 10px; }\n\n.singleProduct .tab-content {\n  background-color: #f5f5f5;\n  border: solid 1px #ececec;\n  padding: 10px;\n  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);\n  border-radius: 3px; }\n", ""]);
+	exports.push([module.id, "* {\n  font-size: 12px;\n  font-family: 'Roboto', sans-serif; }\n\n* {\n  margin: 0; }\n\nhtml, body, #root, .App {\n  height: 100%; }\n\n.page-wrap {\n  min-height: 100%;\n  /* equal to footer height */\n  margin-bottom: -150px; }\n\n.page-wrap:after {\n  content: \"\";\n  display: block; }\n\nfooter, .page-wrap:after {\n  height: 150px; }\n\nhtml, body {\n  width: 100%;\n  height: 100%; }\n\nbody {\n  background: url(\"/images/elements/ui/background.jpg\") no-repeat fixed;\n  background-size: cover; }\n\nnav.navbar {\n  background: #6e3667 linear-gradient(to bottom, #6e3667 0, #82387b 100%);\n  border-radius: 0;\n  border-color: #673360;\n  padding: 0;\n  margin: 0; }\n  nav.navbar > .container > .navbar-header > .navbar-brand img {\n    max-height: 100%; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li > a {\n    color: #f3f3f3; }\n    nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li > a:hover {\n      color: #88D317; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li.language > a > img {\n    max-width: 20px;\n    max-height: 20px;\n    margin: 0 5px; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li.dropdown.open > a, nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li.active > a {\n    background: transparent; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li ul.dropdown-menu {\n    padding: 0; }\n  nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu {\n    display: flex;\n    padding: 15px;\n    background-color: #773770;\n    color: #fff;\n    min-width: 300px; }\n    nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .photo {\n      width: 60px;\n      display: inline-block;\n      height: 100%;\n      align-self: center; }\n    nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .userInfo {\n      display: inline-block;\n      padding: 0 10px; }\n      nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .userInfo span.name {\n        font-size: 20px;\n        display: block;\n        font-weight: bold; }\n      nav.navbar > .container > .navbar-collapse > ul.nav.navbar-nav > li .userMenu .userInfo div.actions {\n        display: block;\n        margin: 5px 0; }\n\ntable thead tr {\n  border: none;\n  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.3); }\n  table thead tr th {\n    text-align: center;\n    border: none;\n    padding: 0 20px;\n    font-size: 10px;\n    text-shadow: none;\n    color: #f3f3f3;\n    text-transform: uppercase; }\n\ntable tbody tr {\n  border: none;\n  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.3); }\n  table tbody tr td {\n    border: none;\n    padding: 10px; }\n\nimg.avatar {\n  max-width: 50px;\n  max-height: 50px;\n  border-radius: 50%;\n  margin: 5px; }\n\n.section {\n  background-color: #fcfcfc;\n  margin: 0 auto !important;\n  padding: 30px;\n  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);\n  text-align: center; }\n  .section .title {\n    margin: 10px 0;\n    text-transform: uppercase;\n    font-size: 24px;\n    color: #535353; }\n  .section.About {\n    background-color: #fcfcfc; }\n    .section.About .promoText {\n      font-size: 20px; }\n  .section.Latest {\n    background-color: #292928;\n    color: #f3f3f3;\n    min-height: 1100px; }\n    .section.Latest .title {\n      color: #f3f3f3; }\n    .section.Latest table.latestWinners thead tr th:nth-child(1), .section.Latest table.latestWinners tbody tr td:nth-child(1) {\n      width: 30%; }\n    .section.Latest table.latestWinners thead tr th:nth-child(2), .section.Latest table.latestWinners tbody tr td:nth-child(2) {\n      width: 25%; }\n    .section.Latest table.latestWinners thead tr th:nth-child(3), .section.Latest table.latestWinners tbody tr td:nth-child(3) {\n      width: 25%; }\n    .section.Latest table.latestWinners thead tr th:nth-child(4), .section.Latest table.latestWinners tbody tr td:nth-child(4) {\n      width: 20%; }\n    .section.Latest table.latestWinners tbody tr {\n      height: 65px; }\n      .section.Latest table.latestWinners tbody tr td {\n        line-height: 65px; }\n    .section.Latest table.latestWinners img.product {\n      max-width: 100px;\n      max-height: 65px;\n      margin: 5px; }\n  .section.Hot {\n    padding-bottom: 60px; }\n    .section.Hot .slick-slide img {\n      max-width: 100%;\n      max-height: 300px;\n      margin: 0 auto; }\n    .section.Hot .slick-prev:before, .section.Hot .slick-next:before {\n      color: #1A0315; }\n\na {\n  cursor: pointer;\n  color: #fcfcfc; }\n  a:active, a:hover, a:visited {\n    color: #d3d3d3;\n    text-decoration: none; }\n\nfooter {\n  margin-top: 10px;\n  clear: both;\n  width: 100%;\n  height: 150px;\n  background-color: #82387b;\n  padding: 20px; }\n  footer > div {\n    color: #f3f3f3;\n    text-align: center; }\n    footer > div ul {\n      list-style: none;\n      padding: 0; }\n      footer > div ul li {\n        padding: 0; }\n\n.notFound {\n  display: flex;\n  justify-content: center; }\n  .notFound > .inner {\n    align-self: center;\n    text-align: center;\n    color: #fcfcfc; }\n    .notFound > .inner .errorCode {\n      font-family: 'Dancing Script', cursive;\n      font-size: 48px; }\n    .notFound > .inner .errorName {\n      font-size: 24px; }\n    .notFound > .inner .errorDescription, .notFound > .inner .errorDescription a {\n      font-size: 16px; }\n    .notFound > .inner .errorDescription a:hover, .notFound > .inner .errorDescription a:focus, .notFound > .inner .errorDescription a:active {\n      text-decoration: underline; }\n\n.page-content > div {\n  margin: 10px 0; }\n  .page-content > div.container {\n    margin: 10px auto; }\n\n.page-content.categories > div .category {\n  user-select: none;\n  padding: 15px; }\n  .page-content.categories > div .category .inner {\n    background-color: #fcfcfc;\n    text-align: center;\n    transition-duration: .25s;\n    cursor: pointer;\n    border: solid 1px #ececec;\n    z-index: 888; }\n    .page-content.categories > div .category .inner:hover {\n      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);\n      z-index: 999;\n      transform: scale(1.08); }\n    .page-content.categories > div .category .inner img {\n      max-width: 100%;\n      margin: 0 auto;\n      display: block; }\n\n.sidebar {\n  background-color: #f5f5f5;\n  margin: 10px 0;\n  padding: 10px; }\n\n.productCard {\n  text-align: center;\n  background-color: #fcfcfc;\n  border: solid 1px #ececec;\n  padding: 10px;\n  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); }\n  .productCard img {\n    max-width: 100%; }\n  .productCard .name {\n    padding-bottom: 10px;\n    border-bottom: solid 1px #dedede;\n    font-size: 24px; }\n    .productCard .name a {\n      font-size: 16px;\n      color: #1A0315;\n      font-weight: bold; }\n      .productCard .name a:hover, .productCard .name a:active, .productCard .name a:focus {\n        color: #6e3667; }\n\n.prices > div {\n  display: block;\n  font-size: 22px;\n  padding-bottom: 10px;\n  border-bottom: solid 1px #dedede;\n  min-height: 50px; }\n  .prices > div:last-child {\n    border: none; }\n  .prices > div strong {\n    font-size: 24px; }\n  .prices > div span.price {\n    float: left;\n    margin: 7px 0; }\n  .prices > div span.action {\n    float: right;\n    margin: 7px 0; }\n\n.singleProduct .productCard, .singleProduct .sidebar {\n  background-color: #fcfcfc;\n  border: solid 1px #ececec;\n  padding: 10px;\n  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);\n  border-radius: 3px; }\n\n.singleProduct .sidebar {\n  margin: 0; }\n  .singleProduct .sidebar .lotteryPrice {\n    height: 80px; }\n\n.singleProduct .timer {\n  font-size: 22px;\n  font-weight: bold; }\n\n.singleProduct .detailedInfo {\n  margin-top: 10px; }\n\n.singleProduct .tab-content {\n  background-color: #fcfcfc;\n  border: solid 1px #ececec;\n  padding: 10px;\n  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);\n  border-radius: 3px; }\n\n.authentication {\n  background-color: #fcfcfc;\n  border: solid 1px #ececec;\n  padding: 6.5rem 10rem;\n  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.15);\n  border-radius: 3px; }\n  .authentication span a {\n    color: #6e3667; }\n  .authentication h3 {\n    text-align: center; }\n  .authentication button {\n    box-shadow: none;\n    width: 100%; }\n\n/** INPUT STYLES **/\n.input {\n  position: relative;\n  z-index: 1;\n  display: inline-block;\n  margin: 1em;\n  max-width: 350px;\n  width: calc(100% - 2em);\n  vertical-align: top; }\n\n.input__field {\n  position: relative;\n  display: block;\n  float: right;\n  padding: 0.8em;\n  width: 60%;\n  border: none;\n  border-radius: 0;\n  background: #f0f0f0;\n  color: #aaa;\n  font-weight: bold;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  -webkit-appearance: none;\n  /* for box shadows to show on iOS */ }\n\n.input__field:focus {\n  outline: none; }\n\n.input__label {\n  display: inline-block;\n  float: right;\n  padding: 0 1em;\n  width: 40%;\n  color: #6a7989;\n  font-weight: bold;\n  font-size: 70.25%;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none; }\n\n.input__label-content {\n  position: relative;\n  display: block;\n  padding: 1.6em 0;\n  width: 100%; }\n\n.graphic {\n  position: absolute;\n  top: 0;\n  left: 0;\n  fill: none; }\n\n.icon {\n  color: #ddd;\n  font-size: 150%; }\n\n/* Hoshi */\n.input--hoshi {\n  overflow: hidden; }\n\n.input__field--hoshi {\n  margin-top: 1em;\n  padding: 0.85em 0.15em;\n  width: 100%;\n  height: 50px;\n  background: transparent;\n  color: #595F6E; }\n\n.input__label--hoshi {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  padding: 0 0.25em;\n  width: 100%;\n  height: calc(100% - 1em);\n  text-align: left;\n  pointer-events: none; }\n\n.input__label-content--hoshi {\n  position: absolute; }\n\n.input__label--hoshi::before,\n.input__label--hoshi::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: calc(100% - 10px);\n  border-bottom: 1px solid #B9C1CA; }\n\n.input__label--hoshi::after {\n  margin-top: 2px;\n  border-bottom: 4px solid red;\n  -webkit-transform: translate3d(-100%, 0, 0);\n  transform: translate3d(-100%, 0, 0);\n  -webkit-transition: -webkit-transform 0.3s;\n  transition: transform 0.3s; }\n\n.input__label--hoshi-color-1::after {\n  border-color: #00aaff; }\n\n.input__label--hoshi-color-2::after {\n  border-color: #00ffaa; }\n\n.input__label--hoshi-color-3::after {\n  border-color: #ff5500; }\n\n.input__field--hoshi:focus + .input__label--hoshi::after,\n.input--filled .input__label--hoshi::after {\n  -webkit-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi,\n.input--filled .input__label-content--hoshi {\n  -webkit-animation: anim-1 0.3s forwards;\n  animation: anim-1 0.3s forwards; }\n\n@-webkit-keyframes anim-1 {\n  50% {\n    opacity: 0;\n    -webkit-transform: translate3d(1em, 0, 0);\n    transform: translate3d(1em, 0, 0); }\n  51% {\n    opacity: 0;\n    -webkit-transform: translate3d(-1em, -40%, 0);\n    transform: translate3d(-1em, -40%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -40%, 0);\n    transform: translate3d(0, -40%, 0); } }\n\n@keyframes anim-1 {\n  50% {\n    opacity: 0;\n    -webkit-transform: translate3d(1em, 0, 0);\n    transform: translate3d(1em, 0, 0); }\n  51% {\n    opacity: 0;\n    -webkit-transform: translate3d(-1em, -40%, 0);\n    transform: translate3d(-1em, -40%, 0); }\n  100% {\n    opacity: 1;\n    -webkit-transform: translate3d(0, -40%, 0);\n    transform: translate3d(0, -40%, 0); } }\n\n.profile {\n  /* USER PROFILE PAGE */ }\n  .profile .card {\n    margin-top: 20px;\n    padding: 30px;\n    background-color: rgba(214, 224, 226, 0.2);\n    -webkit-border-top-left-radius: 5px;\n    -moz-border-top-left-radius: 5px;\n    border-top-left-radius: 5px;\n    -webkit-border-top-right-radius: 5px;\n    -moz-border-top-right-radius: 5px;\n    border-top-right-radius: 5px;\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box; }\n    .profile .card.hovercard {\n      position: relative;\n      padding-top: 0;\n      overflow: hidden;\n      text-align: center;\n      background-color: #fff;\n      background-color: white; }\n      .profile .card.hovercard .card-background {\n        height: 130px; }\n        .profile .card.hovercard .card-background img {\n          -webkit-filter: blur(25px);\n          -moz-filter: blur(25px);\n          -o-filter: blur(25px);\n          -ms-filter: blur(25px);\n          filter: blur(25px);\n          margin-left: -100px;\n          margin-top: -200px;\n          min-width: 130%; }\n      .profile .card.hovercard .useravatar {\n        position: absolute;\n        top: 15px;\n        left: 0;\n        right: 0; }\n        .profile .card.hovercard .useravatar img {\n          width: 100px;\n          height: 100px;\n          max-width: 100px;\n          max-height: 100px;\n          -webkit-border-radius: 50%;\n          -moz-border-radius: 50%;\n          border-radius: 50%;\n          border: 5px solid rgba(255, 255, 255, 0.5); }\n      .profile .card.hovercard .card-info {\n        position: absolute;\n        bottom: 14px;\n        left: 0;\n        right: 0;\n        overflow: hidden;\n        font-size: 12px;\n        line-height: 20px;\n        color: #737373;\n        text-overflow: ellipsis; }\n        .profile .card.hovercard .card-info .card-title {\n          padding: 0 5px;\n          font-size: 20px;\n          line-height: 1;\n          color: #262626;\n          background-color: rgba(255, 255, 255, 0.1);\n          -webkit-border-radius: 4px;\n          -moz-border-radius: 4px;\n          border-radius: 4px; }\n      .profile .card.hovercard .bottom {\n        padding: 0 20px;\n        margin-bottom: 17px; }\n  .profile .btn-pref .btn {\n    -webkit-border-radius: 0;\n    -moz-border-radius: 0;\n    border-radius: 0;\n    outline: none !important; }\n    .profile .btn-pref .btn.btn-primary {\n      background: #6e3667 linear-gradient(to bottom, #6e3667 0, #673360 100%); }\n  .profile .well {\n    -webkit-border-radius: 0;\n    -moz-border-radius: 0;\n    border-radius: 0; }\n\n/** TIMELINE **/\n@font-face {\n  font-family: 'ecoico';\n  src: url(" + __webpack_require__(538) + ");\n  src: url(" + __webpack_require__(538) + "?#iefix) format(\"embedded-opentype\"), url(" + __webpack_require__(539) + ") format(\"woff\"), url(" + __webpack_require__(540) + ") format(\"truetype\"), url(" + __webpack_require__(541) + "#ecoico) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n/* Made with http://icomoon.io/ */\n.cbp_tmtimeline {\n  margin: 30px 0 0 0;\n  padding: 0;\n  list-style: none;\n  position: relative; }\n\n/* The line */\n.cbp_tmtimeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 10px;\n  background: #82387b;\n  left: 20%;\n  margin-left: -10px; }\n\n.cbp_tmtimeline > li {\n  position: relative; }\n\n/* The date/time */\n.cbp_tmtimeline > li .cbp_tmtime {\n  display: block;\n  width: 25%;\n  padding-right: 100px;\n  position: absolute; }\n\n.cbp_tmtimeline > li .cbp_tmtime span {\n  display: block;\n  text-align: right; }\n\n.cbp_tmtimeline > li .cbp_tmtime span:first-child {\n  font-size: 0.9em;\n  color: #1A0315; }\n\n.cbp_tmtimeline > li .cbp_tmtime span:last-child {\n  font-size: 2.9em;\n  color: #1A0315; }\n\n.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {\n  color: #1A0315; }\n\n/* Right content */\n.cbp_tmtimeline > li .cbp_tmlabel {\n  margin: 0 0 15px 25%;\n  background: #88D317;\n  color: #fff;\n  padding: 2em;\n  font-size: 1.2em;\n  font-weight: 300;\n  line-height: 1.4;\n  position: relative;\n  border-radius: 5px; }\n\n.cbp_tmtimeline > li.lost .cbp_tmlabel {\n  background: #82387b; }\n\n.cbp_tmtimeline > li .cbp_tmlabel h2 {\n  margin-top: 0;\n  padding: 0 0 10px 0;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.4); }\n\n/* The triangle */\n.cbp_tmtimeline > li .cbp_tmlabel:after {\n  right: 100%;\n  border: solid transparent;\n  content: \" \";\n  height: 0;\n  width: 0;\n  position: absolute;\n  pointer-events: none;\n  border-right-color: #88D317;\n  border-width: 10px;\n  top: 10px; }\n\n.cbp_tmtimeline > li.lost .cbp_tmlabel:after {\n  border-right-color: #82387b; }\n\n/* The icons */\n.cbp_tmtimeline > li .cbp_tmicon {\n  width: 40px;\n  height: 40px;\n  font-family: 'ecoico';\n  speak: none;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  font-size: 1.4em;\n  line-height: 40px;\n  -webkit-font-smoothing: antialiased;\n  position: absolute;\n  color: #fff;\n  background: #71cb45;\n  border-radius: 50%;\n  box-shadow: 0 0 0 8px #87db79;\n  text-align: center;\n  left: 20%;\n  top: 0;\n  margin: 0 0 0 -25px; }\n\n.cbp_tmtimeline > li.lost .cbp_tmicon {\n  background: #6e3667;\n  box-shadow: 0 0 0 8px #82387b; }\n\n.cbp_tmicon-phone:before {\n  content: \"\\E000\"; }\n\n.cbp_tmicon-screen:before {\n  content: \"\\E001\"; }\n\n.cbp_tmicon-mail:before {\n  content: \"\\E002\"; }\n\n.cbp_tmicon-earth:before {\n  content: \"\\E003\"; }\n\n/* Example Media Queries */\n@media screen and (max-width: 65.375em) {\n  .cbp_tmtimeline > li .cbp_tmtime span:last-child {\n    font-size: 1.5em; } }\n\n@media screen and (max-width: 47.2em) {\n  .cbp_tmtimeline:before {\n    display: none; }\n  .cbp_tmtimeline > li .cbp_tmtime {\n    width: 100%;\n    position: relative;\n    padding: 0 0 20px 0; }\n  .cbp_tmtimeline > li .cbp_tmtime span {\n    text-align: left; }\n  .cbp_tmtimeline > li .cbp_tmlabel {\n    margin: 0 0 30px 0;\n    padding: 1em;\n    font-weight: 400;\n    font-size: 95%; }\n  .cbp_tmtimeline > li .cbp_tmlabel:after {\n    right: auto;\n    left: 20px;\n    border-right-color: transparent;\n    border-bottom-color: #71cb45;\n    top: -20px; }\n  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {\n    border-right-color: transparent;\n    border-bottom-color: #87db79; }\n  .cbp_tmtimeline > li .cbp_tmicon {\n    position: relative;\n    float: right;\n    left: auto;\n    margin: -55px 5px 0 0px; } }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 538 */
+/***/ function(module, exports) {
+
+	module.exports = "data:application/vnd.ms-fontobject;base64,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"
+
+/***/ },
+/* 539 */
+/***/ function(module, exports) {
+
+	module.exports = "data:application/font-woff;base64,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"
+
+/***/ },
+/* 540 */
+/***/ function(module, exports) {
+
+	module.exports = "data:application/x-font-ttf;base64,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"
+
+/***/ },
+/* 541 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiID4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8bWV0YWRhdGE+ClRoaXMgaXMgYSBjdXN0b20gU1ZHIGZvbnQgZ2VuZXJhdGVkIGJ5IEljb01vb24uCjxpY29uc2V0IGdyaWQ9IjIyIj48L2ljb25zZXQ+CjwvbWV0YWRhdGE+CjxkZWZzPgo8Zm9udCBpZD0iZWNvaWNvIiBob3Jpei1hZHYteD0iNzA0IiA+Cjxmb250LWZhY2UgdW5pdHMtcGVyLWVtPSI3MDQiIGFzY2VudD0iNjcyIiBkZXNjZW50PSItMzIiIC8+CjxtaXNzaW5nLWdseXBoIGhvcml6LWFkdi14PSI3MDQiIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlMDAwOyIgZD0iTSA1NDQuMDAtMzIuMDBMIDE2MC4wMC0zMi4wMCBjLTM1LjMyOCwwLjAwLTY0LjAwLDI4LjY3Mi02NC4wMCw2NC4wMEwgOTYuMDAsNjA4LjAwIGMwLjAwLDM1LjMyOCwgMjguNjcyLDY0LjAwLCA2NC4wMCw2NC4wMGwgMzg0LjAwLDAuMDAgYyAzNS4zMjgsMC4wMCwgNjQuMDAtMjguNjcyLCA2NC4wMC02NC4wMGwwLjAwLTU3Ni4wMCAKCUMgNjA4LjAwLTMuMzI4LCA1NzkuMzI4LTMyLjAwLCA1NDQuMDAtMzIuMDB6IE0gNTQ0LjAwLDYwOC4wMEwgMTYwLjAwLDYwOC4wMCBsMC4wMC01NzYuMDAgbCAzODQuMDAsMC4wMCBMIDU0NC4wMCw2MDguMDAgeiBNIDQ4MC4wMCwxMjguMDBMIDIyNC4wMCwxMjguMDAgTCAyMjQuMDAsNTQ0LjAwIGwgMjU2LjAwLDAuMDAgTCA0ODAuMDAsMTI4LjAwIHogTSAzODQuMDAsNjQuMDBsLTY0LjAwLDAuMDAgbDAuMDAsMzIuMDAgbCA2NC4wMCwwLjAwIEwgMzg0LjAwLDY0LjAwIHoiICAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTAwMTsiIGQ9Ik0gNjQwLjAwLDk2LjAwbC0yMjAuODY0LDAuMDAgQyA0MTcuMzQ0LDg2LjMwNCwgNDE2LjAwLDc1Ljg3MiwgNDE2LjAwLDY0LjAwYzAuMDAtNjQuMDAsIDY0LjAwLTY0LjAwLCA2NC4wMC02NC4wMGMgMTcuNjk2LDAuMDAsIDMyLjAwLTcuMjAsIDMyLjAwLTE2LjAwCgljMC4wMC04LjgzMi0xNC4zMDQtMTYuMDAtMzIuMDAtMTYuMDBMIDIyNC4wMC0zMi4wMCBjLTE3LjY2NCwwLjAwLTMyLjAwLDcuMTY4LTMyLjAwLDE2LjAwQyAxOTIuMDAtNy4yMCwgMjA2LjMzNiwwLjAwLCAyMjQuMDAsMC4wMGMwLjAwLDAuMDAsIDY0LjAwLDAuMDAsIDY0LjAwLDY0LjAwYzAuMDAsMTEuODcyLTEuMzQ0LDIyLjMwNC0zLjEzNiwzMi4wMEwgNjQuMDAsOTYuMDAgCgljLTM1LjMyOCwwLjAwLTY0LjAwLDI4LjY3Mi02NC4wMCw2NC4wMEwwLjAwLDYwOC4wMCBjMC4wMCwzNS4zMjgsIDI4LjY3Miw2NC4wMCwgNjQuMDAsNjQuMDBsIDU3Ni4wMCwwLjAwIGMgMzUuMzI4LDAuMDAsIDY0LjAwLTI4LjY3MiwgNjQuMDAtNjQuMDBsMC4wMC00NDguMDAgQyA3MDQuMDAsMTI0LjY3MiwgNjc1LjMyOCw5Ni4wMCwgNjQwLjAwLDk2LjAweiBNIDY0MC4wMCw2MDguMDBMIDY0LjAwLDYwOC4wMCBsMC4wMC0zODQuMDAgbCA1NzYuMDAsMC4wMCBMIDY0MC4wMCw2MDguMDAgeiIgIC8+CjxnbHlwaCB1bmljb2RlPSImI3hlMDAyOyIgZD0iTSA2NDAuMDAsNjQuMDBMIDY0LjAwLDY0LjAwIGMtMzUuMzI4LDAuMDAtNjQuMDAsMjguNjcyLTY0LjAwLDY0LjAwTDAuMDAsNTEyLjAwIGMwLjAwLDM1LjMyOCwgMjguNjcyLDY0LjAwLCA2NC4wMCw2NC4wMGwgNTc2LjAwLDAuMDAgYyAzNS4zMjgsMC4wMCwgNjQuMDAtMjguNjcyLCA2NC4wMC02NC4wMGwwLjAwLTM4NC4wMCAKCUMgNzA0LjAwLDkyLjY3MiwgNjc1LjMyOCw2NC4wMCwgNjQwLjAwLDY0LjAweiBNIDYwOC4wMCwxMjguMDBsLTE4My40MjQsMTYwLjUxMkwgMzUyLjAwLDIyNC4wMGwtNzIuNTc2LDY0LjUxMkwgOTYuMDAsMTI4LjAwTCA2MDguMDAsMTI4LjAwIHogTSA2NC4wMCwxNjAuMDBsIDE4MC4wMCwxNjAuMDBMIDY0LjAwLDQ4MC4wMEwgNjQuMDAsMTYwLjAwIHogTSA5Ni4wMCw1MTIuMDBsIDI1Ni4wMC0yMjQuMDBsIDI1Ni4wMCwyMjQuMDBMIDk2LjAwLDUxMi4wMCB6IE0gNjQwLjAwLDQ4MC4wMAoJbC0xODAuMDAtMTYwLjAwTCA2NDAuMDAsMTYwLjAwTCA2NDAuMDAsNDgwLjAwIHoiICAvPgo8Z2x5cGggdW5pY29kZT0iJiN4ZTAwMzsiIGQ9Ik0gMzUyLjAwLTMyLjAwQyAxNTcuNjAtMzIuMDAsMC4wMCwxMjUuNjAsMC4wMCwzMjAuMDBTIDE1Ny42MCw2NzIuMDAsIDM1Mi4wMCw2NzIuMDBzIDM1Mi4wMC0xNTcuNjAsIDM1Mi4wMC0zNTIuMDBTIDU0Ni40MC0zMi4wMCwgMzUyLjAwLTMyLjAwegoJIE0gMzUyLjAwLDYwOC4wMGMtMTU5LjA3MiwwLjAwLTI4OC4wMC0xMjguOTI4LTI4OC4wMC0yODguMDBzIDEyOC45MjgtMjg4LjAwLCAyODguMDAtMjg4LjAwcyAyODguMDAsMTI4LjkyOCwgMjg4LjAwLDI4OC4wMFMgNTExLjA3Miw2MDguMDAsIDM1Mi4wMCw2MDguMDB6IE0gNDk2LjI4OCwxNTAuMDE2bC04LjI4OC00Ljk5MmwtMjQuMDAtMTUuMDA4bC0xNC4xNDQtMTAuNjI0CgljLTEwLjQ5Ni01LjEyLTIxLjQ3Mi05LjE4NC0zMi44MzItMTIuNjcybDAuMDAsMTQuMjcyIGwtNC4wMCwzMi45OTJjMC4wMCwwLjAwLTEuOTg0LDE5LjAwOC00Ljk5MiwyNC4wMHMtOS45ODQsMTIuMDAtMTYuOTkyLDE1LjAwOAoJcy0xMi4wMCwzLjAwOC0xNi4wMCw4LjAwcy03LjAwOCwxNC4wMTYtMTIuMDAsMjIuMDE2UyAzNTIuMDAsMjM5LjAwOCwgMzUyLjAwLDI0My4wMDhTIDM1Mi4wMCwyODguMDAsIDM1Mi4wMCwyODguMDBsIDQuOTkyLDM4LjAxNmwgMTEuMDA4LDguMDBsIDEyLjk5MiwxNS4wMDhMIDM5MC4wMTYsMzUyLjAwCglsIDMxLjAwOC02LjAxNmwgMjIuMDE2LDAuMDAgbCA4Ljk5Mi0xOS4wMDhsIDIwLjk5Mi0xNi45OTJsIDEyLjk5Mi0yMC45OTJsIDE2Ljk5Mi02LjAxNmwgMTkuMDA4LDAuMDAgbCAxMi45OTItMTYuMDBsIDguMDAtMTYuOTkybCAzLjAwOC0xMi4wMGwwLjAwLTIwLjAwIGwtMi4wNDgtMTEuODA4CglDIDUzMS4yMzIsMTg0LjgwLCA1MTUuMTY4LDE2Ni4wMTYsIDQ5Ni4yODgsMTUwLjAxNnogTSA0MTkuMDA4LDQ5NS4wMDhsLTIyLjAxNi0xMi4wMGwtOC4wMC0yMy4wMDhMIDM3Ni4wMCw0NDguMDBsLTQzLjAwOCwwLjAwIEwgMzEyLjk5Miw0NDAuMDBMIDMxMi4wMCw0MjQuMDAKCUwgMzA0LjAwLDQxMS4wMDhMIDMwMi4wMTYsMzk2Ljk5MmwgNC4wMC0xMi4wMGwgNC45OTItMTIuMDBjMC4wMCwwLjAwLCAxMi4wMC0xNC4wMTYsMC4wMC0yNC4wMGMwLjAwLDAuMDAtMTUuMDA4LDAuMDAtMTcuOTg0LDQuOTkyUyAyNjguMDAsMzcyLjk5MiwgMjY0LjAwLDM3Ni45OTIKCXMtMTYuOTkyLDguMDAtMTYuOTkyLDguMDBsLTE2LjAwLDYuMDE2TCAyMTYuMDAsMzkyLjAwbCAwLjk5MiwyMC45OTJMIDIxNi4wMCw0MzEuMDA4TCAyMDkuOTg0LDQ0NC4wMEwgMTkyLjk5Miw0NTYuOTkyTCAxOTIuMDAsNDcxLjAwOGwgMi4wNDgsNy43NzYKCUMgMjM0LjU2LDUxOS4wNzIsIDI5MC4zNjgsNTQ0LjAwLCAzNTIuMDAsNTQ0LjAwYyAzNC43ODQsMC4wMCwgNjcuMjk2LTguNjA4LCA5Ni42NzItMjIuNzUyTCA0NDguMDAsNTE2LjAwTCA0MTkuMDA4LDQ5NS4wMDh6IiAgLz4KPGdseXBoIHVuaWNvZGU9IiYjeDIwOyIgaG9yaXotYWR2LXg9IjM1MiIgLz4KPGdseXBoIGNsYXNzPSJoaWRkZW4iIHVuaWNvZGU9IiYjeGYwMDA7IiBkPSJNMCw2NzJMIDcwNCAtMzJMMCAtMzIgeiIgaG9yaXotYWR2LXg9IjAiIC8+CjwvZm9udD48L2RlZnM+PC9zdmc+"
+
+/***/ },
+/* 542 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _defineProperty2 = __webpack_require__(1);
+	
+	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+	
+	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\Main\\index.jsx'; /**
+	                                                                             * Created by Dima Graebert on 2/18/2017.
+	                                                                             */
+	
+	exports.default = Main;
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(324);
+	
+	__webpack_require__(511);
+	
+	__webpack_require__(520);
+	
+	var _Latest = __webpack_require__(543);
+	
+	var _Latest2 = _interopRequireDefault(_Latest);
+	
+	var _HotProducts = __webpack_require__(545);
+	
+	var _HotProducts2 = _interopRequireDefault(_HotProducts);
+	
+	__webpack_require__(536);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function Main() {
+	    return _react2.default.createElement(
+	        'div',
+	        (0, _defineProperty3.default)({ className: 'page-content', __source: {
+	                fileName: _jsxFileName,
+	                lineNumber: 14
+	            },
+	            __self: this
+	        }, '__self', this),
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            (0, _defineProperty3.default)({ className: 'section About', __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 15
+	                },
+	                __self: this
+	            }, '__self', this),
+	            _react2.default.createElement(
+	                'h3',
+	                (0, _defineProperty3.default)({ className: 'title', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 16
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                'Lottery promo'
+	            ),
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                (0, _defineProperty3.default)({ xs: 12, className: 'content', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 17
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                _react2.default.createElement(
+	                    'span',
+	                    (0, _defineProperty3.default)({ className: 'promoText', __source: {
+	                            fileName: _jsxFileName,
+	                            lineNumber: 18
+	                        },
+	                        __self: this
+	                    }, '__self', this),
+	                    'Here should go some nice website text'
+	                )
+	            )
+	        ),
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            (0, _defineProperty3.default)({ className: 'section Latest', __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 23
+	                },
+	                __self: this
+	            }, '__self', this),
+	            _react2.default.createElement(
+	                'h3',
+	                (0, _defineProperty3.default)({ className: 'title', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 24
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                'Latest winners'
+	            ),
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                (0, _defineProperty3.default)({ xs: 12, className: 'content', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 25
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                _react2.default.createElement(_Latest2.default, (0, _defineProperty3.default)({
+	                    __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 26
+	                    },
+	                    __self: this
+	                }, '__self', this))
+	            )
+	        ),
+	        _react2.default.createElement(
+	            _reactBootstrap.Row,
+	            (0, _defineProperty3.default)({ className: 'section Hot', __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 29
+	                },
+	                __self: this
+	            }, '__self', this),
+	            _react2.default.createElement(
+	                'h3',
+	                (0, _defineProperty3.default)({ className: 'title', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 30
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                'Hot products'
+	            ),
+	            _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                (0, _defineProperty3.default)({ xs: 12, className: 'content', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 31
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                _react2.default.createElement(_HotProducts2.default, (0, _defineProperty3.default)({
+	                    __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 32
+	                    },
+	                    __self: this
+	                }, '__self', this))
+	            )
+	        )
+	    );
+	}
+
+/***/ },
+/* 543 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _defineProperty2 = __webpack_require__(1);
+	
+	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+	
+	var _getPrototypeOf = __webpack_require__(256);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(267);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(268);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(269);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(316);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\Latest\\index.jsx';
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(324);
+	
+	var _WinnersStore = __webpack_require__(544);
+	
+	var _WinnersStore2 = _interopRequireDefault(_WinnersStore);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Latest = function (_Component) {
+	  (0, _inherits3.default)(Latest, _Component);
+	
+	  function Latest() {
+	    (0, _classCallCheck3.default)(this, Latest);
+	
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (Latest.__proto__ || (0, _getPrototypeOf2.default)(Latest)).call(this));
+	
+	    _this.onWinners = _this.onWinners.bind(_this);
+	    return _this;
+	  }
+	
+	  (0, _createClass3.default)(Latest, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      _WinnersStore2.default.addChangeListener(this.onWinners);
+	    }
+	  }, {
+	    key: 'onWinners',
+	    value: function onWinners() {
+	      this.forceUpdate();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+	
+	      return _react2.default.createElement(
+	        _reactBootstrap.Table,
+	        (0, _defineProperty3.default)({ responsive: true, condensed: true, className: 'latestWinners', __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 22
+	          },
+	          __self: this
+	        }, '__self', this),
+	        _react2.default.createElement(
+	          'thead',
+	          (0, _defineProperty3.default)({
+	            __source: {
+	              fileName: _jsxFileName,
+	              lineNumber: 23
+	            },
+	            __self: this
+	          }, '__self', this),
+	          _react2.default.createElement(
+	            'tr',
+	            (0, _defineProperty3.default)({
+	              __source: {
+	                fileName: _jsxFileName,
+	                lineNumber: 24
+	              },
+	              __self: this
+	            }, '__self', this),
+	            _react2.default.createElement(
+	              'th',
+	              (0, _defineProperty3.default)({
+	                __source: {
+	                  fileName: _jsxFileName,
+	                  lineNumber: 25
+	                },
+	                __self: this
+	              }, '__self', this),
+	              'Product'
+	            ),
+	            _react2.default.createElement(
+	              'th',
+	              (0, _defineProperty3.default)({
+	                __source: {
+	                  fileName: _jsxFileName,
+	                  lineNumber: 26
+	                },
+	                __self: this
+	              }, '__self', this),
+	              'Winner'
+	            ),
+	            _react2.default.createElement(
+	              'th',
+	              (0, _defineProperty3.default)({
+	                __source: {
+	                  fileName: _jsxFileName,
+	                  lineNumber: 27
+	                },
+	                __self: this
+	              }, '__self', this),
+	              'No. of tickets'
+	            ),
+	            _react2.default.createElement(
+	              'th',
+	              (0, _defineProperty3.default)({
+	                __source: {
+	                  fileName: _jsxFileName,
+	                  lineNumber: 28
+	                },
+	                __self: this
+	              }, '__self', this),
+	              'No. of participants'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'tbody',
+	          (0, _defineProperty3.default)({
+	            __source: {
+	              fileName: _jsxFileName,
+	              lineNumber: 31
+	            },
+	            __self: this
+	          }, '__self', this),
+	          _WinnersStore2.default.getWinners().map(function (winner) {
+	            return _react2.default.createElement(
+	              'tr',
+	              (0, _defineProperty3.default)({
+	                __source: {
+	                  fileName: _jsxFileName,
+	                  lineNumber: 34
+	                },
+	                __self: _this2
+	              }, '__self', _this2),
+	              _react2.default.createElement(
+	                'td',
+	                (0, _defineProperty3.default)({
+	                  __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 35
+	                  },
+	                  __self: _this2
+	                }, '__self', _this2),
+	                _react2.default.createElement('img', (0, _defineProperty3.default)({
+	                  alt: winner.product.name,
+	                  className: 'product',
+	                  src: '/images/elements/products/' + winner.product.id + '.png',
+	                  __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 35
+	                  },
+	                  __self: _this2
+	                }, '__self', _this2)),
+	                winner.product.name
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                (0, _defineProperty3.default)({
+	                  __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 40
+	                  },
+	                  __self: _this2
+	                }, '__self', _this2),
+	                _react2.default.createElement('img', (0, _defineProperty3.default)({
+	                  alt: winner.user.name,
+	                  className: 'avatar',
+	                  src: '/images/elements/ui/avatar' + winner.user.avatar + '.svg',
+	                  __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 40
+	                  },
+	                  __self: _this2
+	                }, '__self', _this2)),
+	                ' ',
+	                winner.user.name
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                (0, _defineProperty3.default)({
+	                  __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 45
+	                  },
+	                  __self: _this2
+	                }, '__self', _this2),
+	                winner.lot.winnerTickets
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                (0, _defineProperty3.default)({
+	                  __source: {
+	                    fileName: _jsxFileName,
+	                    lineNumber: 46
+	                  },
+	                  __self: _this2
+	                }, '__self', _this2),
+	                winner.lot.participants
+	              )
+	            );
+	          })
+	        )
+	      );
+	    }
+	  }]);
+	  return Latest;
+	}(_react.Component);
+	
+	exports.default = Latest;
+
+/***/ },
+/* 544 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _toConsumableArray2 = __webpack_require__(529);
+	
+	var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
+	
+	var _getPrototypeOf = __webpack_require__(256);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(267);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(268);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(269);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(316);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _events = __webpack_require__(524);
+	
+	var _events2 = _interopRequireDefault(_events);
+	
+	var _dispatcher = __webpack_require__(528);
+	
+	var _dispatcher2 = _interopRequireDefault(_dispatcher);
+	
+	var _WinnersConstants = __webpack_require__(535);
+	
+	var WinnersConstants = _interopRequireWildcard(_WinnersConstants);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var CHANGE_EVENT = 'change'; /**
+	                              * Created by Dima Graebert on 2/20/2017.
+	                              */
+	
+	var WinnersStore = function (_EventEmitter) {
+	    (0, _inherits3.default)(WinnersStore, _EventEmitter);
+	
+	    function WinnersStore(props) {
+	        (0, _classCallCheck3.default)(this, WinnersStore);
+	
+	        var _this = (0, _possibleConstructorReturn3.default)(this, (WinnersStore.__proto__ || (0, _getPrototypeOf2.default)(WinnersStore)).call(this, props));
+	
+	        _this.winners = [];
+	        _this.dispatcherIndex = _dispatcher2.default.register(_this.handleAction.bind(_this));
+	        return _this;
+	    }
+	
+	    (0, _createClass3.default)(WinnersStore, [{
+	        key: 'getWinners',
+	        value: function getWinners() {
+	            return this.winners;
+	        }
+	    }, {
+	        key: 'handleAction',
+	        value: function handleAction(action) {
+	            switch (action.actionType) {
+	                case WinnersConstants.ADD_WINNER:
+	                    this.winners = [action.winnerInfo].concat((0, _toConsumableArray3.default)(this.winners)).slice(0, 10);
+	                    this.emitChange();
+	                    break;
+	                default:
+	                    break;
+	            }
+	            return true;
+	        }
+	    }, {
+	        key: 'emitChange',
+	        value: function emitChange() {
+	            this.emit(CHANGE_EVENT);
+	        }
+	    }, {
+	        key: 'addChangeListener',
+	        value: function addChangeListener(callback) {
+	            this.on(CHANGE_EVENT, callback);
+	        }
+	    }, {
+	        key: 'removeChangeListener',
+	        value: function removeChangeListener(callback) {
+	            this.removeListener(CHANGE_EVENT, callback);
+	        }
+	    }]);
+	    return WinnersStore;
+	}(_events2.default);
+	
+	WinnersStore.dispatchToken = null;
+	
+	exports.default = new WinnersStore();
+
+/***/ },
+/* 545 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends3 = __webpack_require__(326);
+	
+	var _extends4 = _interopRequireDefault(_extends3);
+	
+	var _defineProperty2 = __webpack_require__(1);
+	
+	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+	
+	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\HotProducts\\index.jsx';
+	exports.default = HotProducts;
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactSlick = __webpack_require__(546);
+	
+	var _reactSlick2 = _interopRequireDefault(_reactSlick);
+	
+	__webpack_require__(562);
+	
+	__webpack_require__(564);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function HotProducts() {
+	  var settings = {
+	    dots: true,
+	    infinite: true,
+	    speed: 500,
+	    autoplay: true,
+	    arrows: true,
+	    draggable: false,
+	    slidesToShow: 3,
+	    slidesToScroll: 1
+	  };
+	  return _react2.default.createElement(
+	    _reactSlick2.default,
+	    (0, _extends4.default)({}, settings, (0, _defineProperty3.default)({
+	      __source: {
+	        fileName: _jsxFileName,
+	        lineNumber: 18
+	      },
+	      __self: this
+	    }, '__self', this)),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 19
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 19
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 19
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '1'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 20
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 20
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 20
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '2'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 21
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 21
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 21
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '3'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 22
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 22
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 22
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '4'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 23
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 23
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 23
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '5'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 24
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 24
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 24
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '6'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 25
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 25
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 25
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '7'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 26
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 26
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 26
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '8'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 27
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 27
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 27
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '9'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 28
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 28
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 28
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '10'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 29
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 29
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 29
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '11'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 30
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 30
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 30
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '12'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 31
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 31
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 31
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '13'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 32
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/2.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 32
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 32
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '14'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      (0, _defineProperty3.default)({
+	        __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 33
+	        },
+	        __self: this
+	      }, '__self', this),
+	      _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/3.png', alt: 'product_img_1', __source: {
+	          fileName: _jsxFileName,
+	          lineNumber: 33
+	        },
+	        __self: this
+	      }, '__self', this)),
+	      _react2.default.createElement(
+	        'h3',
+	        (0, _defineProperty3.default)({
+	          __source: {
+	            fileName: _jsxFileName,
+	            lineNumber: 33
+	          },
+	          __self: this
+	        }, '__self', this),
+	        '15'
+	      )
+	    )
+	  );
+	}
+
+/***/ },
+/* 546 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	module.exports = __webpack_require__(547);
+
+/***/ },
+/* 547 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _innerSlider = __webpack_require__(548);
+	
+	var _objectAssign = __webpack_require__(22);
+	
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+	
+	var _json2mq = __webpack_require__(557);
+	
+	var _json2mq2 = _interopRequireDefault(_json2mq);
+	
+	var _reactResponsiveMixin = __webpack_require__(559);
+	
+	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
+	
+	var _defaultProps = __webpack_require__(553);
+	
+	var _defaultProps2 = _interopRequireDefault(_defaultProps);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Slider = _react2.default.createClass({
+	  displayName: 'Slider',
+	
+	  mixins: [_reactResponsiveMixin2.default],
+	  innerSlider: null,
+	  innerSliderRefHandler: function innerSliderRefHandler(ref) {
+	    this.innerSlider = ref;
+	  },
+	  getInitialState: function getInitialState() {
+	    return {
+	      breakpoint: null
+	    };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    var _this = this;
+	
+	    if (this.props.responsive) {
+	      var breakpoints = this.props.responsive.map(function (breakpt) {
+	        return breakpt.breakpoint;
+	      });
+	      breakpoints.sort(function (x, y) {
+	        return x - y;
+	      });
+	
+	      breakpoints.forEach(function (breakpoint, index) {
+	        var bQuery;
+	        if (index === 0) {
+	          bQuery = (0, _json2mq2.default)({ minWidth: 0, maxWidth: breakpoint });
+	        } else {
+	          bQuery = (0, _json2mq2.default)({ minWidth: breakpoints[index - 1], maxWidth: breakpoint });
+	        }
+	        _this.media(bQuery, function () {
+	          _this.setState({ breakpoint: breakpoint });
+	        });
+	      });
+	
+	      // Register media query for full screen. Need to support resize from small to large
+	      var query = (0, _json2mq2.default)({ minWidth: breakpoints.slice(-1)[0] });
+	
+	      this.media(query, function () {
+	        _this.setState({ breakpoint: null });
+	      });
+	    }
+	  },
+	
+	  slickPrev: function slickPrev() {
+	    this.innerSlider.slickPrev();
+	  },
+	
+	  slickNext: function slickNext() {
+	    this.innerSlider.slickNext();
+	  },
+	
+	  slickGoTo: function slickGoTo(slide) {
+	    this.innerSlider.slickGoTo(slide);
+	  },
+	
+	  render: function render() {
+	    var _this2 = this;
+	
+	    var settings;
+	    var newProps;
+	    if (this.state.breakpoint) {
+	      newProps = this.props.responsive.filter(function (resp) {
+	        return resp.breakpoint === _this2.state.breakpoint;
+	      });
+	      settings = newProps[0].settings === 'unslick' ? 'unslick' : (0, _objectAssign2.default)({}, this.props, newProps[0].settings);
+	    } else {
+	      settings = (0, _objectAssign2.default)({}, _defaultProps2.default, this.props);
+	    }
+	
+	    var children = this.props.children;
+	    if (!Array.isArray(children)) {
+	      children = [children];
+	    }
+	
+	    // Children may contain false or null, so we should filter them
+	    children = children.filter(function (child) {
+	      return !!child;
+	    });
+	
+	    if (settings === 'unslick') {
+	      // if 'unslick' responsive breakpoint setting used, just return the <Slider> tag nested HTML
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        children
+	      );
+	    } else {
+	      return _react2.default.createElement(
+	        _innerSlider.InnerSlider,
+	        _extends({ ref: this.innerSliderRefHandler }, settings),
+	        children
+	      );
+	    }
+	  }
+	});
+	
+	module.exports = Slider;
+
+/***/ },
+/* 548 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.InnerSlider = undefined;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _eventHandlers = __webpack_require__(549);
+	
+	var _eventHandlers2 = _interopRequireDefault(_eventHandlers);
+	
+	var _helpers = __webpack_require__(551);
+	
+	var _helpers2 = _interopRequireDefault(_helpers);
+	
+	var _initialState = __webpack_require__(552);
+	
+	var _initialState2 = _interopRequireDefault(_initialState);
+	
+	var _defaultProps = __webpack_require__(553);
+	
+	var _defaultProps2 = _interopRequireDefault(_defaultProps);
+	
+	var _classnames = __webpack_require__(333);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	var _objectAssign = __webpack_require__(22);
+	
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+	
+	var _track = __webpack_require__(554);
+	
+	var _dots = __webpack_require__(555);
+	
+	var _arrows = __webpack_require__(556);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var InnerSlider = exports.InnerSlider = _react2.default.createClass({
+	  displayName: 'InnerSlider',
+	
+	  mixins: [_helpers2.default, _eventHandlers2.default],
+	  list: null,
+	  track: null,
+	  listRefHandler: function listRefHandler(ref) {
+	    this.list = ref;
+	  },
+	  trackRefHandler: function trackRefHandler(ref) {
+	    this.track = ref;
+	  },
+	  getInitialState: function getInitialState() {
+	    return _extends({}, _initialState2.default, {
+	      currentSlide: this.props.initialSlide
+	    });
+	  },
+	  getDefaultProps: function getDefaultProps() {
+	    return _defaultProps2.default;
+	  },
+	  componentWillMount: function componentWillMount() {
+	    if (this.props.init) {
+	      this.props.init();
+	    }
+	    this.setState({
+	      mounted: true
+	    });
+	    var lazyLoadedList = [];
+	    for (var i = 0; i < _react2.default.Children.count(this.props.children); i++) {
+	      if (i >= this.state.currentSlide && i < this.state.currentSlide + this.props.slidesToShow) {
+	        lazyLoadedList.push(i);
+	      }
+	    }
+	
+	    if (this.props.lazyLoad && this.state.lazyLoadedList.length === 0) {
+	      this.setState({
+	        lazyLoadedList: lazyLoadedList
+	      });
+	    }
+	  },
+	  componentDidMount: function componentDidMount() {
+	    // Hack for autoplay -- Inspect Later
+	    this.initialize(this.props);
+	    this.adaptHeight();
+	
+	    // To support server-side rendering
+	    if (!window) {
+	      return;
+	    }
+	    if (window.addEventListener) {
+	      window.addEventListener('resize', this.onWindowResized);
+	    } else {
+	      window.attachEvent('onresize', this.onWindowResized);
+	    }
+	  },
+	  componentWillUnmount: function componentWillUnmount() {
+	    if (this.animationEndCallback) {
+	      clearTimeout(this.animationEndCallback);
+	    }
+	    if (window.addEventListener) {
+	      window.removeEventListener('resize', this.onWindowResized);
+	    } else {
+	      window.detachEvent('onresize', this.onWindowResized);
+	    }
+	    if (this.state.autoPlayTimer) {
+	      clearInterval(this.state.autoPlayTimer);
+	    }
+	  },
+	  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	    if (this.props.slickGoTo != nextProps.slickGoTo) {
+	      if (true) {
+	        console.warn('react-slick deprecation warning: slickGoTo prop is deprecated and it will be removed in next release. Use slickGoTo method instead');
+	      }
+	      this.changeSlide({
+	        message: 'index',
+	        index: nextProps.slickGoTo,
+	        currentSlide: this.state.currentSlide
+	      });
+	    } else if (this.state.currentSlide >= nextProps.children.length) {
+	      this.update(nextProps);
+	      this.changeSlide({
+	        message: 'index',
+	        index: nextProps.children.length - nextProps.slidesToShow,
+	        currentSlide: this.state.currentSlide
+	      });
+	    } else {
+	      this.update(nextProps);
+	    }
+	  },
+	  componentDidUpdate: function componentDidUpdate() {
+	    this.adaptHeight();
+	  },
+	  onWindowResized: function onWindowResized() {
+	    this.update(this.props);
+	    // animating state should be cleared while resizing, otherwise autoplay stops working
+	    this.setState({
+	      animating: false
+	    });
+	    clearTimeout(this.animationEndCallback);
+	    delete this.animationEndCallback;
+	  },
+	  slickPrev: function slickPrev() {
+	    this.changeSlide({ message: 'previous' });
+	  },
+	  slickNext: function slickNext() {
+	    this.changeSlide({ message: 'next' });
+	  },
+	  slickGoTo: function slickGoTo(slide) {
+	    typeof slide === 'number' && this.changeSlide({
+	      message: 'index',
+	      index: slide,
+	      currentSlide: this.state.currentSlide
+	    });
+	  },
+	  render: function render() {
+	    var className = (0, _classnames2.default)('slick-initialized', 'slick-slider', this.props.className, {
+	      'slick-vertical': this.props.vertical
+	    });
+	
+	    var trackProps = {
+	      fade: this.props.fade,
+	      cssEase: this.props.cssEase,
+	      speed: this.props.speed,
+	      infinite: this.props.infinite,
+	      centerMode: this.props.centerMode,
+	      focusOnSelect: this.props.focusOnSelect ? this.selectHandler : null,
+	      currentSlide: this.state.currentSlide,
+	      lazyLoad: this.props.lazyLoad,
+	      lazyLoadedList: this.state.lazyLoadedList,
+	      rtl: this.props.rtl,
+	      slideWidth: this.state.slideWidth,
+	      slidesToShow: this.props.slidesToShow,
+	      slidesToScroll: this.props.slidesToScroll,
+	      slideCount: this.state.slideCount,
+	      trackStyle: this.state.trackStyle,
+	      variableWidth: this.props.variableWidth
+	    };
+	
+	    var dots;
+	
+	    if (this.props.dots === true && this.state.slideCount >= this.props.slidesToShow) {
+	      var dotProps = {
+	        dotsClass: this.props.dotsClass,
+	        slideCount: this.state.slideCount,
+	        slidesToShow: this.props.slidesToShow,
+	        currentSlide: this.state.currentSlide,
+	        slidesToScroll: this.props.slidesToScroll,
+	        clickHandler: this.changeSlide,
+	        children: this.props.children,
+	        customPaging: this.props.customPaging
+	      };
+	
+	      dots = _react2.default.createElement(_dots.Dots, dotProps);
+	    }
+	
+	    var prevArrow, nextArrow;
+	
+	    var arrowProps = {
+	      infinite: this.props.infinite,
+	      centerMode: this.props.centerMode,
+	      currentSlide: this.state.currentSlide,
+	      slideCount: this.state.slideCount,
+	      slidesToShow: this.props.slidesToShow,
+	      prevArrow: this.props.prevArrow,
+	      nextArrow: this.props.nextArrow,
+	      clickHandler: this.changeSlide
+	    };
+	
+	    if (this.props.arrows) {
+	      prevArrow = _react2.default.createElement(_arrows.PrevArrow, arrowProps);
+	      nextArrow = _react2.default.createElement(_arrows.NextArrow, arrowProps);
+	    }
+	
+	    var verticalHeightStyle = null;
+	
+	    if (this.props.vertical) {
+	      verticalHeightStyle = {
+	        height: this.state.listHeight
+	      };
+	    }
+	
+	    var centerPaddingStyle = null;
+	
+	    if (this.props.vertical === false) {
+	      if (this.props.centerMode === true) {
+	        centerPaddingStyle = {
+	          padding: '0px ' + this.props.centerPadding
+	        };
+	      }
+	    } else {
+	      if (this.props.centerMode === true) {
+	        centerPaddingStyle = {
+	          padding: this.props.centerPadding + ' 0px'
+	        };
+	      }
+	    }
+	
+	    var listStyle = (0, _objectAssign2.default)({}, verticalHeightStyle, centerPaddingStyle);
+	
+	    return _react2.default.createElement(
+	      'div',
+	      {
+	        className: className,
+	        onMouseEnter: this.onInnerSliderEnter,
+	        onMouseLeave: this.onInnerSliderLeave,
+	        onMouseOver: this.onInnerSliderOver
+	      },
+	      prevArrow,
+	      _react2.default.createElement(
+	        'div',
+	        {
+	          ref: this.listRefHandler,
+	          className: 'slick-list',
+	          style: listStyle,
+	          onMouseDown: this.swipeStart,
+	          onMouseMove: this.state.dragging ? this.swipeMove : null,
+	          onMouseUp: this.swipeEnd,
+	          onMouseLeave: this.state.dragging ? this.swipeEnd : null,
+	          onTouchStart: this.swipeStart,
+	          onTouchMove: this.state.dragging ? this.swipeMove : null,
+	          onTouchEnd: this.swipeEnd,
+	          onTouchCancel: this.state.dragging ? this.swipeEnd : null,
+	          onKeyDown: this.props.accessibility ? this.keyHandler : null },
+	        _react2.default.createElement(
+	          _track.Track,
+	          _extends({ ref: this.trackRefHandler }, trackProps),
+	          this.props.children
+	        )
+	      ),
+	      nextArrow,
+	      dots
+	    );
+	  }
+	});
+
+/***/ },
+/* 549 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _trackHelper = __webpack_require__(550);
+	
+	var _helpers = __webpack_require__(551);
+	
+	var _helpers2 = _interopRequireDefault(_helpers);
+	
+	var _objectAssign = __webpack_require__(22);
+	
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+	
+	var _reactDom = __webpack_require__(51);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var EventHandlers = {
+	  // Event handler for previous and next
+	  changeSlide: function changeSlide(options) {
+	    var indexOffset, previousInt, slideOffset, unevenOffset, targetSlide;
+	    var _props = this.props;
+	    var slidesToScroll = _props.slidesToScroll;
+	    var slidesToShow = _props.slidesToShow;
+	    var _state = this.state;
+	    var slideCount = _state.slideCount;
+	    var currentSlide = _state.currentSlide;
+	
+	    unevenOffset = slideCount % slidesToScroll !== 0;
+	    indexOffset = unevenOffset ? 0 : (slideCount - currentSlide) % slidesToScroll;
+	
+	    if (options.message === 'previous') {
+	      slideOffset = indexOffset === 0 ? slidesToScroll : slidesToShow - indexOffset;
+	      targetSlide = currentSlide - slideOffset;
+	      if (this.props.lazyLoad) {
+	        previousInt = currentSlide - slideOffset;
+	        targetSlide = previousInt === -1 ? slideCount - 1 : previousInt;
+	      }
+	    } else if (options.message === 'next') {
+	      slideOffset = indexOffset === 0 ? slidesToScroll : indexOffset;
+	      targetSlide = currentSlide + slideOffset;
+	      if (this.props.lazyLoad) {
+	        targetSlide = (currentSlide + slidesToScroll) % slideCount + indexOffset;
+	      }
+	    } else if (options.message === 'dots' || options.message === 'children') {
+	      // Click on dots
+	      targetSlide = options.index * options.slidesToScroll;
+	      if (targetSlide === options.currentSlide) {
+	        return;
+	      }
+	    } else if (options.message === 'index') {
+	      targetSlide = parseInt(options.index);
+	      if (targetSlide === options.currentSlide) {
+	        return;
+	      }
+	    }
+	
+	    this.slideHandler(targetSlide);
+	  },
+	
+	  // Accessiblity handler for previous and next
+	  keyHandler: function keyHandler(e) {
+	    //Dont slide if the cursor is inside the form fields and arrow keys are pressed
+	    if (!e.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
+	      if (e.keyCode === 37 && this.props.accessibility === true) {
+	        this.changeSlide({
+	          message: this.props.rtl === true ? 'next' : 'previous'
+	        });
+	      } else if (e.keyCode === 39 && this.props.accessibility === true) {
+	        this.changeSlide({
+	          message: this.props.rtl === true ? 'previous' : 'next'
+	        });
+	      }
+	    }
+	  },
+	  // Focus on selecting a slide (click handler on track)
+	  selectHandler: function selectHandler(options) {
+	    this.changeSlide(options);
+	  },
+	  swipeStart: function swipeStart(e) {
+	    var touches, posX, posY;
+	
+	    if (this.props.swipe === false || 'ontouchend' in document && this.props.swipe === false) {
+	      return;
+	    } else if (this.props.draggable === false && e.type.indexOf('mouse') !== -1) {
+	      return;
+	    }
+	    posX = e.touches !== undefined ? e.touches[0].pageX : e.clientX;
+	    posY = e.touches !== undefined ? e.touches[0].pageY : e.clientY;
+	    this.setState({
+	      dragging: true,
+	      touchObject: {
+	        startX: posX,
+	        startY: posY,
+	        curX: posX,
+	        curY: posY
+	      }
+	    });
+	  },
+	  swipeMove: function swipeMove(e) {
+	    if (!this.state.dragging) {
+	      e.preventDefault();
+	      return;
+	    }
+	    if (this.state.animating) {
+	      return;
+	    }
+	    if (this.props.vertical && this.props.swipeToSlide && this.props.verticalSwiping) {
+	      e.preventDefault();
+	    }
+	    var swipeLeft;
+	    var curLeft, positionOffset;
+	    var touchObject = this.state.touchObject;
+	
+	    curLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	      slideIndex: this.state.currentSlide,
+	      trackRef: this.track
+	    }, this.props, this.state));
+	    touchObject.curX = e.touches ? e.touches[0].pageX : e.clientX;
+	    touchObject.curY = e.touches ? e.touches[0].pageY : e.clientY;
+	    touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curX - touchObject.startX, 2)));
+	
+	    if (this.props.verticalSwiping) {
+	      touchObject.swipeLength = Math.round(Math.sqrt(Math.pow(touchObject.curY - touchObject.startY, 2)));
+	    }
+	
+	    positionOffset = (this.props.rtl === false ? 1 : -1) * (touchObject.curX > touchObject.startX ? 1 : -1);
+	
+	    if (this.props.verticalSwiping) {
+	      positionOffset = touchObject.curY > touchObject.startY ? 1 : -1;
+	    }
+	
+	    var currentSlide = this.state.currentSlide;
+	    var dotCount = Math.ceil(this.state.slideCount / this.props.slidesToScroll);
+	    var swipeDirection = this.swipeDirection(this.state.touchObject);
+	    var touchSwipeLength = touchObject.swipeLength;
+	
+	    if (this.props.infinite === false) {
+	      if (currentSlide === 0 && swipeDirection === 'right' || currentSlide + 1 >= dotCount && swipeDirection === 'left') {
+	        touchSwipeLength = touchObject.swipeLength * this.props.edgeFriction;
+	
+	        if (this.state.edgeDragged === false && this.props.edgeEvent) {
+	          this.props.edgeEvent(swipeDirection);
+	          this.setState({ edgeDragged: true });
+	        }
+	      }
+	    }
+	
+	    if (this.state.swiped === false && this.props.swipeEvent) {
+	      this.props.swipeEvent(swipeDirection);
+	      this.setState({ swiped: true });
+	    }
+	
+	    if (!this.props.vertical) {
+	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
+	    } else {
+	      swipeLeft = curLeft + touchSwipeLength * (this.state.listHeight / this.state.listWidth) * positionOffset;
+	    }
+	
+	    if (this.props.verticalSwiping) {
+	      swipeLeft = curLeft + touchSwipeLength * positionOffset;
+	    }
+	
+	    this.setState({
+	      touchObject: touchObject,
+	      swipeLeft: swipeLeft,
+	      trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: swipeLeft }, this.props, this.state))
+	    });
+	
+	    if (Math.abs(touchObject.curX - touchObject.startX) < Math.abs(touchObject.curY - touchObject.startY) * 0.8) {
+	      return;
+	    }
+	    if (touchObject.swipeLength > 4) {
+	      e.preventDefault();
+	    }
+	  },
+	  getNavigableIndexes: function getNavigableIndexes() {
+	    var max = void 0;
+	    var breakPoint = 0;
+	    var counter = 0;
+	    var indexes = [];
+	
+	    if (!this.props.infinite) {
+	      max = this.state.slideCount;
+	    } else {
+	      breakPoint = this.props.slidesToShow * -1;
+	      counter = this.props.slidesToShow * -1;
+	      max = this.state.slideCount * 2;
+	    }
+	
+	    while (breakPoint < max) {
+	      indexes.push(breakPoint);
+	      breakPoint = counter + this.props.slidesToScroll;
+	
+	      counter += this.props.slidesToScroll <= this.props.slidesToShow ? this.props.slidesToScroll : this.props.slidesToShow;
+	    }
+	
+	    return indexes;
+	  },
+	  checkNavigable: function checkNavigable(index) {
+	    var navigables = this.getNavigableIndexes();
+	    var prevNavigable = 0;
+	
+	    if (index > navigables[navigables.length - 1]) {
+	      index = navigables[navigables.length - 1];
+	    } else {
+	      for (var n in navigables) {
+	        if (index < navigables[n]) {
+	          index = prevNavigable;
+	          break;
+	        }
+	
+	        prevNavigable = navigables[n];
+	      }
+	    }
+	
+	    return index;
+	  },
+	  getSlideCount: function getSlideCount() {
+	    var _this = this;
+	
+	    var centerOffset = this.props.centerMode ? this.state.slideWidth * Math.floor(this.props.slidesToShow / 2) : 0;
+	
+	    if (this.props.swipeToSlide) {
+	      var swipedSlide = void 0;
+	
+	      var slickList = _reactDom2.default.findDOMNode(this.list);
+	
+	      var slides = slickList.querySelectorAll('.slick-slide');
+	
+	      Array.from(slides).every(function (slide) {
+	        if (!_this.props.vertical) {
+	          if (slide.offsetLeft - centerOffset + _this.getWidth(slide) / 2 > _this.state.swipeLeft * -1) {
+	            swipedSlide = slide;
+	            return false;
+	          }
+	        } else {
+	          if (slide.offsetTop + _this.getHeight(slide) / 2 > _this.state.swipeLeft * -1) {
+	            swipedSlide = slide;
+	            return false;
+	          }
+	        }
+	
+	        return true;
+	      });
+	
+	      var slidesTraversed = Math.abs(swipedSlide.dataset.index - this.state.currentSlide) || 1;
+	
+	      return slidesTraversed;
+	    } else {
+	      return this.props.slidesToScroll;
+	    }
+	  },
+	
+	  swipeEnd: function swipeEnd(e) {
+	    if (!this.state.dragging) {
+	      if (this.props.swipe) {
+	        e.preventDefault();
+	      }
+	      return;
+	    }
+	    var touchObject = this.state.touchObject;
+	    var minSwipe = this.state.listWidth / this.props.touchThreshold;
+	    var swipeDirection = this.swipeDirection(touchObject);
+	
+	    if (this.props.verticalSwiping) {
+	      minSwipe = this.state.listHeight / this.props.touchThreshold;
+	    }
+	
+	    // reset the state of touch related state variables.
+	    this.setState({
+	      dragging: false,
+	      edgeDragged: false,
+	      swiped: false,
+	      swipeLeft: null,
+	      touchObject: {}
+	    });
+	    // Fix for #13
+	    if (!touchObject.swipeLength) {
+	      return;
+	    }
+	    if (touchObject.swipeLength > minSwipe) {
+	      e.preventDefault();
+	
+	      var slideCount = void 0,
+	          newSlide = void 0;
+	
+	      switch (swipeDirection) {
+	
+	        case 'left':
+	        case 'down':
+	          newSlide = this.state.currentSlide + this.getSlideCount();
+	          slideCount = this.props.swipeToSlide ? this.checkNavigable(newSlide) : newSlide;
+	          this.state.currentDirection = 0;
+	          break;
+	
+	        case 'right':
+	        case 'up':
+	          newSlide = this.state.currentSlide - this.getSlideCount();
+	          slideCount = this.props.swipeToSlide ? this.checkNavigable(newSlide) : newSlide;
+	          this.state.currentDirection = 1;
+	          break;
+	
+	        default:
+	          slideCount = this.state.currentSlide;
+	
+	      }
+	
+	      this.slideHandler(slideCount);
+	    } else {
+	      // Adjust the track back to it's original position.
+	      var currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	        slideIndex: this.state.currentSlide,
+	        trackRef: this.track
+	      }, this.props, this.state));
+	
+	      this.setState({
+	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
+	      });
+	    }
+	  },
+	  onInnerSliderEnter: function onInnerSliderEnter(e) {
+	    if (this.props.autoplay && this.props.pauseOnHover) {
+	      this.pause();
+	    }
+	  },
+	  onInnerSliderOver: function onInnerSliderOver(e) {
+	    if (this.props.autoplay && this.props.pauseOnHover) {
+	      this.pause();
+	    }
+	  },
+	  onInnerSliderLeave: function onInnerSliderLeave(e) {
+	    if (this.props.autoplay && this.props.pauseOnHover) {
+	      this.autoPlay();
+	    }
+	  }
+	};
+	
+	exports.default = EventHandlers;
+
+/***/ },
+/* 550 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.getTrackLeft = exports.getTrackAnimateCSS = exports.getTrackCSS = undefined;
+	
+	var _reactDom = __webpack_require__(51);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _objectAssign = __webpack_require__(22);
+	
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var checkSpecKeys = function checkSpecKeys(spec, keysArray) {
+	  return keysArray.reduce(function (value, key) {
+	    return value && spec.hasOwnProperty(key);
+	  }, true) ? null : console.error('Keys Missing', spec);
+	};
+	
+	var getTrackCSS = exports.getTrackCSS = function getTrackCSS(spec) {
+	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth']);
+	
+	  var trackWidth, trackHeight;
+	
+	  var trackChildren = spec.slideCount + 2 * spec.slidesToShow;
+	
+	  if (!spec.vertical) {
+	    if (spec.variableWidth) {
+	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
+	    } else if (spec.centerMode) {
+	      trackWidth = (spec.slideCount + 2 * (spec.slidesToShow + 1)) * spec.slideWidth;
+	    } else {
+	      trackWidth = (spec.slideCount + 2 * spec.slidesToShow) * spec.slideWidth;
+	    }
+	  } else {
+	    trackHeight = trackChildren * spec.slideHeight;
+	  }
+	
+	  var style = {
+	    opacity: 1,
+	    WebkitTransform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
+	    transform: !spec.vertical ? 'translate3d(' + spec.left + 'px, 0px, 0px)' : 'translate3d(0px, ' + spec.left + 'px, 0px)',
+	    transition: '',
+	    WebkitTransition: '',
+	    msTransform: !spec.vertical ? 'translateX(' + spec.left + 'px)' : 'translateY(' + spec.left + 'px)'
+	  };
+	
+	  if (trackWidth) {
+	    (0, _objectAssign2.default)(style, { width: trackWidth });
+	  }
+	
+	  if (trackHeight) {
+	    (0, _objectAssign2.default)(style, { height: trackHeight });
+	  }
+	
+	  // Fallback for IE8
+	  if (window && !window.addEventListener && window.attachEvent) {
+	    if (!spec.vertical) {
+	      style.marginLeft = spec.left + 'px';
+	    } else {
+	      style.marginTop = spec.left + 'px';
+	    }
+	  }
+	
+	  return style;
+	};
+	
+	var getTrackAnimateCSS = exports.getTrackAnimateCSS = function getTrackAnimateCSS(spec) {
+	  checkSpecKeys(spec, ['left', 'variableWidth', 'slideCount', 'slidesToShow', 'slideWidth', 'speed', 'cssEase']);
+	
+	  var style = getTrackCSS(spec);
+	  // useCSS is true by default so it can be undefined
+	  style.WebkitTransition = '-webkit-transform ' + spec.speed + 'ms ' + spec.cssEase;
+	  style.transition = 'transform ' + spec.speed + 'ms ' + spec.cssEase;
+	  return style;
+	};
+	
+	var getTrackLeft = exports.getTrackLeft = function getTrackLeft(spec) {
+	
+	  checkSpecKeys(spec, ['slideIndex', 'trackRef', 'infinite', 'centerMode', 'slideCount', 'slidesToShow', 'slidesToScroll', 'slideWidth', 'listWidth', 'variableWidth', 'slideHeight']);
+	
+	  var slideOffset = 0;
+	  var targetLeft;
+	  var targetSlide;
+	  var verticalOffset = 0;
+	
+	  if (spec.fade) {
+	    return 0;
+	  }
+	
+	  if (spec.infinite) {
+	    if (spec.slideCount >= spec.slidesToShow) {
+	      slideOffset = spec.slideWidth * spec.slidesToShow * -1;
+	      verticalOffset = spec.slideHeight * spec.slidesToShow * -1;
+	    }
+	    if (spec.slideCount % spec.slidesToScroll !== 0) {
+	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
+	        if (spec.slideIndex > spec.slideCount) {
+	          slideOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideWidth * -1;
+	          verticalOffset = (spec.slidesToShow - (spec.slideIndex - spec.slideCount)) * spec.slideHeight * -1;
+	        } else {
+	          slideOffset = spec.slideCount % spec.slidesToScroll * spec.slideWidth * -1;
+	          verticalOffset = spec.slideCount % spec.slidesToScroll * spec.slideHeight * -1;
+	        }
+	      }
+	    }
+	  } else {
+	
+	    if (spec.slideCount % spec.slidesToScroll !== 0) {
+	      if (spec.slideIndex + spec.slidesToScroll > spec.slideCount && spec.slideCount > spec.slidesToShow) {
+	        var slidesToOffset = spec.slidesToShow - spec.slideCount % spec.slidesToScroll;
+	        slideOffset = slidesToOffset * spec.slideWidth;
+	      }
+	    }
+	  }
+	
+	  if (spec.centerMode) {
+	    if (spec.infinite) {
+	      slideOffset += spec.slideWidth * Math.floor(spec.slidesToShow / 2);
+	    } else {
+	      slideOffset = spec.slideWidth * Math.floor(spec.slidesToShow / 2);
+	    }
+	  }
+	
+	  if (!spec.vertical) {
+	    targetLeft = spec.slideIndex * spec.slideWidth * -1 + slideOffset;
+	  } else {
+	    targetLeft = spec.slideIndex * spec.slideHeight * -1 + verticalOffset;
+	  }
+	
+	  if (spec.variableWidth === true) {
+	    var targetSlideIndex;
+	    if (spec.slideCount <= spec.slidesToShow || spec.infinite === false) {
+	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[spec.slideIndex];
+	    } else {
+	      targetSlideIndex = spec.slideIndex + spec.slidesToShow;
+	      targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).childNodes[targetSlideIndex];
+	    }
+	    targetLeft = targetSlide ? targetSlide.offsetLeft * -1 : 0;
+	    if (spec.centerMode === true) {
+	      if (spec.infinite === false) {
+	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex];
+	      } else {
+	        targetSlide = _reactDom2.default.findDOMNode(spec.trackRef).children[spec.slideIndex + spec.slidesToShow + 1];
+	      }
+	
+	      if (targetSlide) {
+	        targetLeft = targetSlide.offsetLeft * -1 + (spec.listWidth - targetSlide.offsetWidth) / 2;
+	      }
+	    }
+	  }
+	
+	  return targetLeft;
+	};
+
+/***/ },
+/* 551 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(51);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _trackHelper = __webpack_require__(550);
+	
+	var _objectAssign = __webpack_require__(22);
+	
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var helpers = {
+	  initialize: function initialize(props) {
+	    var slickList = _reactDom2.default.findDOMNode(this.list);
+	
+	    var slideCount = _react2.default.Children.count(props.children);
+	    var listWidth = this.getWidth(slickList);
+	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
+	    var slideWidth;
+	
+	    if (!props.vertical) {
+	      var centerPaddingAdj = props.centerMode && parseInt(props.centerPadding) * 2;
+	      slideWidth = (this.getWidth(_reactDom2.default.findDOMNode(this)) - centerPaddingAdj) / props.slidesToShow;
+	    } else {
+	      slideWidth = this.getWidth(_reactDom2.default.findDOMNode(this));
+	    }
+	
+	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
+	    var listHeight = slideHeight * props.slidesToShow;
+	
+	    var currentSlide = props.rtl ? slideCount - 1 - props.initialSlide : props.initialSlide;
+	
+	    this.setState({
+	      slideCount: slideCount,
+	      slideWidth: slideWidth,
+	      listWidth: listWidth,
+	      trackWidth: trackWidth,
+	      currentSlide: currentSlide,
+	      slideHeight: slideHeight,
+	      listHeight: listHeight
+	    }, function () {
+	
+	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	        slideIndex: this.state.currentSlide,
+	        trackRef: this.track
+	      }, props, this.state));
+	      // getCSS function needs previously set state
+	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
+	
+	      this.setState({ trackStyle: trackStyle });
+	
+	      this.autoPlay(); // once we're set up, trigger the initial autoplay.
+	    });
+	  },
+	  update: function update(props) {
+	    var slickList = _reactDom2.default.findDOMNode(this.list);
+	    // This method has mostly same code as initialize method.
+	    // Refactor it
+	    var slideCount = _react2.default.Children.count(props.children);
+	    var listWidth = this.getWidth(slickList);
+	    var trackWidth = this.getWidth(_reactDom2.default.findDOMNode(this.track));
+	    var slideWidth;
+	
+	    if (!props.vertical) {
+	      var centerPaddingAdj = props.centerMode && parseInt(props.centerPadding) * 2;
+	      slideWidth = (this.getWidth(_reactDom2.default.findDOMNode(this)) - centerPaddingAdj) / props.slidesToShow;
+	    } else {
+	      slideWidth = this.getWidth(_reactDom2.default.findDOMNode(this));
+	    }
+	
+	    var slideHeight = this.getHeight(slickList.querySelector('[data-index="0"]'));
+	    var listHeight = slideHeight * props.slidesToShow;
+	
+	    // pause slider if autoplay is set to false
+	    if (props.autoplay) {
+	      this.pause();
+	    } else {
+	      this.autoPlay();
+	    }
+	
+	    this.setState({
+	      slideCount: slideCount,
+	      slideWidth: slideWidth,
+	      listWidth: listWidth,
+	      trackWidth: trackWidth,
+	      slideHeight: slideHeight,
+	      listHeight: listHeight
+	    }, function () {
+	
+	      var targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	        slideIndex: this.state.currentSlide,
+	        trackRef: this.track
+	      }, props, this.state));
+	      // getCSS function needs previously set state
+	      var trackStyle = (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: targetLeft }, props, this.state));
+	
+	      this.setState({ trackStyle: trackStyle });
+	    });
+	  },
+	  getWidth: function getWidth(elem) {
+	    return elem.getBoundingClientRect().width || elem.offsetWidth || 0;
+	  },
+	  getHeight: function getHeight(elem) {
+	    return elem.getBoundingClientRect().height || elem.offsetHeight || 0;
+	  },
+	
+	  adaptHeight: function adaptHeight() {
+	    if (this.props.adaptiveHeight) {
+	      var selector = '[data-index="' + this.state.currentSlide + '"]';
+	      if (this.list) {
+	        var slickList = _reactDom2.default.findDOMNode(this.list);
+	        slickList.style.height = slickList.querySelector(selector).offsetHeight + 'px';
+	      }
+	    }
+	  },
+	  canGoNext: function canGoNext(opts) {
+	    var canGo = true;
+	    if (!opts.infinite) {
+	      if (opts.centerMode) {
+	        // check if current slide is last slide
+	        if (opts.currentSlide >= opts.slideCount - 1) {
+	          canGo = false;
+	        }
+	      } else {
+	        // check if all slides are shown in slider
+	        if (opts.slideCount <= opts.slidesToShow || opts.currentSlide >= opts.slideCount - opts.slidesToShow) {
+	          canGo = false;
+	        }
+	      }
+	    }
+	    return canGo;
+	  },
+	  slideHandler: function slideHandler(index) {
+	    var _this = this;
+	
+	    // Functionality of animateSlide and postSlide is merged into this function
+	    // console.log('slideHandler', index);
+	    var targetSlide, currentSlide;
+	    var targetLeft, currentLeft;
+	    var callback;
+	
+	    if (this.props.waitForAnimate && this.state.animating) {
+	      return;
+	    }
+	
+	    if (this.props.fade) {
+	      currentSlide = this.state.currentSlide;
+	
+	      // Don't change slide if it's not infite and current slide is the first or last slide.
+	      if (this.props.infinite === false && (index < 0 || index >= this.state.slideCount)) {
+	        return;
+	      }
+	
+	      //  Shifting targetSlide back into the range
+	      if (index < 0) {
+	        targetSlide = index + this.state.slideCount;
+	      } else if (index >= this.state.slideCount) {
+	        targetSlide = index - this.state.slideCount;
+	      } else {
+	        targetSlide = index;
+	      }
+	
+	      if (this.props.lazyLoad && this.state.lazyLoadedList.indexOf(targetSlide) < 0) {
+	        this.setState({
+	          lazyLoadedList: this.state.lazyLoadedList.concat(targetSlide)
+	        });
+	      }
+	
+	      callback = function callback() {
+	        _this.setState({
+	          animating: false
+	        });
+	        if (_this.props.afterChange) {
+	          _this.props.afterChange(targetSlide);
+	        }
+	        delete _this.animationEndCallback;
+	      };
+	
+	      this.setState({
+	        animating: true,
+	        currentSlide: targetSlide
+	      }, function () {
+	        this.animationEndCallback = setTimeout(callback, this.props.speed);
+	      });
+	
+	      if (this.props.beforeChange) {
+	        this.props.beforeChange(this.state.currentSlide, targetSlide);
+	      }
+	
+	      this.autoPlay();
+	      return;
+	    }
+	
+	    targetSlide = index;
+	    if (targetSlide < 0) {
+	      if (this.props.infinite === false) {
+	        currentSlide = 0;
+	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
+	        currentSlide = this.state.slideCount - this.state.slideCount % this.props.slidesToScroll;
+	      } else {
+	        currentSlide = this.state.slideCount + targetSlide;
+	      }
+	    } else if (targetSlide >= this.state.slideCount) {
+	      if (this.props.infinite === false) {
+	        currentSlide = this.state.slideCount - this.props.slidesToShow;
+	      } else if (this.state.slideCount % this.props.slidesToScroll !== 0) {
+	        currentSlide = 0;
+	      } else {
+	        currentSlide = targetSlide - this.state.slideCount;
+	      }
+	    } else {
+	      currentSlide = targetSlide;
+	    }
+	
+	    targetLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	      slideIndex: targetSlide,
+	      trackRef: this.track
+	    }, this.props, this.state));
+	
+	    currentLeft = (0, _trackHelper.getTrackLeft)((0, _objectAssign2.default)({
+	      slideIndex: currentSlide,
+	      trackRef: this.track
+	    }, this.props, this.state));
+	
+	    if (this.props.infinite === false) {
+	      targetLeft = currentLeft;
+	    }
+	
+	    if (this.props.beforeChange) {
+	      this.props.beforeChange(this.state.currentSlide, currentSlide);
+	    }
+	
+	    if (this.props.lazyLoad) {
+	      var loaded = true;
+	      var slidesToLoad = [];
+	      for (var i = targetSlide; i < targetSlide + this.props.slidesToShow; i++) {
+	        loaded = loaded && this.state.lazyLoadedList.indexOf(i) >= 0;
+	        if (!loaded) {
+	          slidesToLoad.push(i);
+	        }
+	      }
+	      if (!loaded) {
+	        this.setState({
+	          lazyLoadedList: this.state.lazyLoadedList.concat(slidesToLoad)
+	        });
+	      }
+	    }
+	
+	    // Slide Transition happens here.
+	    // animated transition happens to target Slide and
+	    // non - animated transition happens to current Slide
+	    // If CSS transitions are false, directly go the current slide.
+	
+	    if (this.props.useCSS === false) {
+	
+	      this.setState({
+	        currentSlide: currentSlide,
+	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state))
+	      }, function () {
+	        if (this.props.afterChange) {
+	          this.props.afterChange(currentSlide);
+	        }
+	      });
+	    } else {
+	
+	      var nextStateChanges = {
+	        animating: false,
+	        currentSlide: currentSlide,
+	        trackStyle: (0, _trackHelper.getTrackCSS)((0, _objectAssign2.default)({ left: currentLeft }, this.props, this.state)),
+	        swipeLeft: null
+	      };
+	
+	      callback = function callback() {
+	        _this.setState(nextStateChanges);
+	        if (_this.props.afterChange) {
+	          _this.props.afterChange(currentSlide);
+	        }
+	        delete _this.animationEndCallback;
+	      };
+	
+	      this.setState({
+	        animating: true,
+	        currentSlide: currentSlide,
+	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2.default)({ left: targetLeft }, this.props, this.state))
+	      }, function () {
+	        this.animationEndCallback = setTimeout(callback, this.props.speed);
+	      });
+	    }
+	
+	    this.autoPlay();
+	  },
+	  swipeDirection: function swipeDirection(touchObject) {
+	    var xDist, yDist, r, swipeAngle;
+	
+	    xDist = touchObject.startX - touchObject.curX;
+	    yDist = touchObject.startY - touchObject.curY;
+	    r = Math.atan2(yDist, xDist);
+	
+	    swipeAngle = Math.round(r * 180 / Math.PI);
+	    if (swipeAngle < 0) {
+	      swipeAngle = 360 - Math.abs(swipeAngle);
+	    }
+	    if (swipeAngle <= 45 && swipeAngle >= 0 || swipeAngle <= 360 && swipeAngle >= 315) {
+	      return this.props.rtl === false ? 'left' : 'right';
+	    }
+	    if (swipeAngle >= 135 && swipeAngle <= 225) {
+	      return this.props.rtl === false ? 'right' : 'left';
+	    }
+	    if (this.props.verticalSwiping === true) {
+	      if (swipeAngle >= 35 && swipeAngle <= 135) {
+	        return 'down';
+	      } else {
+	        return 'up';
+	      }
+	    }
+	
+	    return 'vertical';
+	  },
+	  play: function play() {
+	    var nextIndex;
+	
+	    if (!this.state.mounted) {
+	      return false;
+	    }
+	
+	    if (this.props.rtl) {
+	      nextIndex = this.state.currentSlide - this.props.slidesToScroll;
+	    } else {
+	      if (this.canGoNext(_extends({}, this.props, this.state))) {
+	        nextIndex = this.state.currentSlide + this.props.slidesToScroll;
+	      } else {
+	        return false;
+	      }
+	    }
+	
+	    this.slideHandler(nextIndex);
+	  },
+	  autoPlay: function autoPlay() {
+	    if (this.state.autoPlayTimer) {
+	      clearTimeout(this.state.autoPlayTimer);
+	    }
+	    if (this.props.autoplay) {
+	      this.setState({
+	        autoPlayTimer: setTimeout(this.play, this.props.autoplaySpeed)
+	      });
+	    }
+	  },
+	  pause: function pause() {
+	    if (this.state.autoPlayTimer) {
+	      clearTimeout(this.state.autoPlayTimer);
+	      this.setState({
+	        autoPlayTimer: null
+	      });
+	    }
+	  }
+	};
+	
+	exports.default = helpers;
+
+/***/ },
+/* 552 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	var initialState = {
+	    animating: false,
+	    dragging: false,
+	    autoPlayTimer: null,
+	    currentDirection: 0,
+	    currentLeft: null,
+	    currentSlide: 0,
+	    direction: 1,
+	    listWidth: null,
+	    listHeight: null,
+	    // loadIndex: 0,
+	    slideCount: null,
+	    slideWidth: null,
+	    slideHeight: null,
+	    // sliding: false,
+	    // slideOffset: 0,
+	    swipeLeft: null,
+	    touchObject: {
+	        startX: 0,
+	        startY: 0,
+	        curX: 0,
+	        curY: 0
+	    },
+	
+	    lazyLoadedList: [],
+	
+	    // added for react
+	    initialized: false,
+	    edgeDragged: false,
+	    swiped: false, // used by swipeEvent. differentites between touch and swipe.
+	    trackStyle: {},
+	    trackWidth: 0
+	
+	    // Removed
+	    // transformsEnabled: false,
+	    // $nextArrow: null,
+	    // $prevArrow: null,
+	    // $dots: null,
+	    // $list: null,
+	    // $slideTrack: null,
+	    // $slides: null,
+	};
+	
+	module.exports = initialState;
+
+/***/ },
+/* 553 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var defaultProps = {
+	    className: '',
+	    accessibility: true,
+	    adaptiveHeight: false,
+	    arrows: true,
+	    autoplay: false,
+	    autoplaySpeed: 3000,
+	    centerMode: false,
+	    centerPadding: '50px',
+	    cssEase: 'ease',
+	    customPaging: function customPaging(i) {
+	        return _react2.default.createElement(
+	            'button',
+	            null,
+	            i + 1
+	        );
+	    },
+	    dots: false,
+	    dotsClass: 'slick-dots',
+	    draggable: true,
+	    easing: 'linear',
+	    edgeFriction: 0.35,
+	    fade: false,
+	    focusOnSelect: false,
+	    infinite: true,
+	    initialSlide: 0,
+	    lazyLoad: false,
+	    pauseOnHover: true,
+	    responsive: null,
+	    rtl: false,
+	    slide: 'div',
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    speed: 500,
+	    swipe: true,
+	    swipeToSlide: false,
+	    touchMove: true,
+	    touchThreshold: 5,
+	    useCSS: true,
+	    variableWidth: false,
+	    vertical: false,
+	    waitForAnimate: true,
+	    afterChange: null,
+	    beforeChange: null,
+	    edgeEvent: null,
+	    init: null,
+	    swipeEvent: null,
+	    // nextArrow, prevArrow are react componets
+	    nextArrow: null,
+	    prevArrow: null
+	};
+	
+	module.exports = defaultProps;
+
+/***/ },
+/* 554 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.Track = undefined;
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _objectAssign = __webpack_require__(22);
+	
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+	
+	var _classnames = __webpack_require__(333);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getSlideClasses = function getSlideClasses(spec) {
+	  var slickActive, slickCenter, slickCloned;
+	  var centerOffset, index;
+	
+	  if (spec.rtl) {
+	    index = spec.slideCount - 1 - spec.index;
+	  } else {
+	    index = spec.index;
+	  }
+	
+	  slickCloned = index < 0 || index >= spec.slideCount;
+	  if (spec.centerMode) {
+	    centerOffset = Math.floor(spec.slidesToShow / 2);
+	    slickCenter = (index - spec.currentSlide) % spec.slideCount === 0;
+	    if (index > spec.currentSlide - centerOffset - 1 && index <= spec.currentSlide + centerOffset) {
+	      slickActive = true;
+	    }
+	  } else {
+	    slickActive = spec.currentSlide <= index && index < spec.currentSlide + spec.slidesToShow;
+	  }
+	  return (0, _classnames2.default)({
+	    'slick-slide': true,
+	    'slick-active': slickActive,
+	    'slick-center': slickCenter,
+	    'slick-cloned': slickCloned
+	  });
+	};
+	
+	var getSlideStyle = function getSlideStyle(spec) {
+	  var style = {};
+	
+	  if (spec.variableWidth === undefined || spec.variableWidth === false) {
+	    style.width = spec.slideWidth;
+	  }
+	
+	  if (spec.fade) {
+	    style.position = 'relative';
+	    style.left = -spec.index * spec.slideWidth;
+	    style.opacity = spec.currentSlide === spec.index ? 1 : 0;
+	    style.transition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
+	    style.WebkitTransition = 'opacity ' + spec.speed + 'ms ' + spec.cssEase;
+	  }
+	
+	  return style;
+	};
+	
+	var getKey = function getKey(child, fallbackKey) {
+	  // key could be a zero
+	  return child.key === null || child.key === undefined ? fallbackKey : child.key;
+	};
+	
+	var renderSlides = function renderSlides(spec) {
+	  var key;
+	  var slides = [];
+	  var preCloneSlides = [];
+	  var postCloneSlides = [];
+	  var count = _react2.default.Children.count(spec.children);
+	
+	  _react2.default.Children.forEach(spec.children, function (elem, index) {
+	    var child = void 0;
+	    var childOnClickOptions = {
+	      message: 'children',
+	      index: index,
+	      slidesToScroll: spec.slidesToScroll,
+	      currentSlide: spec.currentSlide
+	    };
+	
+	    if (!spec.lazyLoad | (spec.lazyLoad && spec.lazyLoadedList.indexOf(index) >= 0)) {
+	      child = elem;
+	    } else {
+	      child = _react2.default.createElement('div', null);
+	    }
+	    var childStyle = getSlideStyle((0, _objectAssign2.default)({}, spec, { index: index }));
+	    var slickClasses = getSlideClasses((0, _objectAssign2.default)({ index: index }, spec));
+	    var cssClasses;
+	
+	    if (child.props.className) {
+	      cssClasses = (0, _classnames2.default)(slickClasses, child.props.className);
+	    } else {
+	      cssClasses = slickClasses;
+	    }
+	
+	    var onClick = function onClick(e) {
+	      child.props && child.props.onClick && child.props.onClick(e);
+	      if (spec.focusOnSelect) {
+	        spec.focusOnSelect(childOnClickOptions);
+	      }
+	    };
+	
+	    slides.push(_react2.default.cloneElement(child, {
+	      key: 'original' + getKey(child, index),
+	      'data-index': index,
+	      className: cssClasses,
+	      tabIndex: '-1',
+	      style: (0, _objectAssign2.default)({ outline: 'none' }, child.props.style || {}, childStyle),
+	      onClick: onClick
+	    }));
+	
+	    // variableWidth doesn't wrap properly.
+	    if (spec.infinite && spec.fade === false) {
+	      var infiniteCount = spec.variableWidth ? spec.slidesToShow + 1 : spec.slidesToShow;
+	
+	      if (index >= count - infiniteCount) {
+	        key = -(count - index);
+	        preCloneSlides.push(_react2.default.cloneElement(child, {
+	          key: 'precloned' + getKey(child, key),
+	          'data-index': key,
+	          className: cssClasses,
+	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
+	          onClick: onClick
+	        }));
+	      }
+	
+	      if (index < infiniteCount) {
+	        key = count + index;
+	        postCloneSlides.push(_react2.default.cloneElement(child, {
+	          key: 'postcloned' + getKey(child, key),
+	          'data-index': key,
+	          className: cssClasses,
+	          style: (0, _objectAssign2.default)({}, child.props.style || {}, childStyle),
+	          onClick: onClick
+	        }));
+	      }
+	    }
+	  });
+	
+	  if (spec.rtl) {
+	    return preCloneSlides.concat(slides, postCloneSlides).reverse();
+	  } else {
+	    return preCloneSlides.concat(slides, postCloneSlides);
+	  }
+	};
+	
+	var Track = exports.Track = _react2.default.createClass({
+	  displayName: 'Track',
+	
+	  render: function render() {
+	    var slides = renderSlides.call(this, this.props);
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'slick-track', style: this.props.trackStyle },
+	      slides
+	    );
+	  }
+	});
+
+/***/ },
+/* 555 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.Dots = undefined;
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _classnames = __webpack_require__(333);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var getDotCount = function getDotCount(spec) {
+	  var dots;
+	  dots = Math.ceil(spec.slideCount / spec.slidesToScroll);
+	  return dots;
+	};
+	
+	var Dots = exports.Dots = _react2.default.createClass({
+	  displayName: 'Dots',
+	
+	
+	  clickHandler: function clickHandler(options, e) {
+	    // In Autoplay the focus stays on clicked button even after transition
+	    // to next slide. That only goes away by click somewhere outside
+	    e.preventDefault();
+	    this.props.clickHandler(options);
+	  },
+	  render: function render() {
+	    var _this = this;
+	
+	    var dotCount = getDotCount({
+	      slideCount: this.props.slideCount,
+	      slidesToScroll: this.props.slidesToScroll
+	    });
+	
+	    // Apply join & split to Array to pre-fill it for IE8
+	    //
+	    // Credit: http://stackoverflow.com/a/13735425/1849458
+	    var dots = Array.apply(null, Array(dotCount + 1).join('0').split('')).map(function (x, i) {
+	
+	      var leftBound = i * _this.props.slidesToScroll;
+	      var rightBound = i * _this.props.slidesToScroll + (_this.props.slidesToScroll - 1);
+	      var className = (0, _classnames2.default)({
+	        'slick-active': _this.props.currentSlide >= leftBound && _this.props.currentSlide <= rightBound
+	      });
+	
+	      var dotOptions = {
+	        message: 'dots',
+	        index: i,
+	        slidesToScroll: _this.props.slidesToScroll,
+	        currentSlide: _this.props.currentSlide
+	      };
+	
+	      var onClick = _this.clickHandler.bind(_this, dotOptions);
+	
+	      return _react2.default.createElement(
+	        'li',
+	        { key: i, className: className },
+	        _react2.default.cloneElement(_this.props.customPaging(i), { onClick: onClick })
+	      );
+	    });
+	
+	    return _react2.default.createElement(
+	      'ul',
+	      { className: this.props.dotsClass, style: { display: 'block' } },
+	      dots
+	    );
+	  }
+	});
+
+/***/ },
+/* 556 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.NextArrow = exports.PrevArrow = undefined;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _classnames = __webpack_require__(333);
+	
+	var _classnames2 = _interopRequireDefault(_classnames);
+	
+	var _helpers = __webpack_require__(551);
+	
+	var _helpers2 = _interopRequireDefault(_helpers);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var PrevArrow = exports.PrevArrow = _react2.default.createClass({
+	  displayName: 'PrevArrow',
+	
+	
+	  clickHandler: function clickHandler(options, e) {
+	    if (e) {
+	      e.preventDefault();
+	    }
+	    this.props.clickHandler(options, e);
+	  },
+	  render: function render() {
+	    var prevClasses = { 'slick-arrow': true, 'slick-prev': true };
+	    var prevHandler = this.clickHandler.bind(this, { message: 'previous' });
+	
+	    if (!this.props.infinite && (this.props.currentSlide === 0 || this.props.slideCount <= this.props.slidesToShow)) {
+	      prevClasses['slick-disabled'] = true;
+	      prevHandler = null;
+	    }
+	
+	    var prevArrowProps = {
+	      key: '0',
+	      'data-role': 'none',
+	      className: (0, _classnames2.default)(prevClasses),
+	      currentSlide: this.props.currentSlide,
+	      slideCount: this.props.slideCount,
+	      style: { display: 'block' },
+	      onClick: prevHandler
+	    };
+	    var prevArrow;
+	
+	    if (this.props.prevArrow) {
+	      prevArrow = _react2.default.cloneElement(this.props.prevArrow, prevArrowProps);
+	    } else {
+	      prevArrow = _react2.default.createElement(
+	        'button',
+	        _extends({ key: '0', type: 'button' }, prevArrowProps),
+	        ' Previous'
+	      );
+	    }
+	
+	    return prevArrow;
+	  }
+	});
+	
+	var NextArrow = exports.NextArrow = _react2.default.createClass({
+	  displayName: 'NextArrow',
+	
+	  clickHandler: function clickHandler(options, e) {
+	    if (e) {
+	      e.preventDefault();
+	    }
+	    this.props.clickHandler(options, e);
+	  },
+	  render: function render() {
+	    var nextClasses = { 'slick-arrow': true, 'slick-next': true };
+	    var nextHandler = this.clickHandler.bind(this, { message: 'next' });
+	
+	    if (!_helpers2.default.canGoNext(this.props)) {
+	      nextClasses['slick-disabled'] = true;
+	      nextHandler = null;
+	    }
+	
+	    var nextArrowProps = {
+	      key: '1',
+	      'data-role': 'none',
+	      className: (0, _classnames2.default)(nextClasses),
+	      currentSlide: this.props.currentSlide,
+	      slideCount: this.props.slideCount,
+	      style: { display: 'block' },
+	      onClick: nextHandler
+	    };
+	
+	    var nextArrow;
+	
+	    if (this.props.nextArrow) {
+	      nextArrow = _react2.default.cloneElement(this.props.nextArrow, nextArrowProps);
+	    } else {
+	      nextArrow = _react2.default.createElement(
+	        'button',
+	        _extends({ key: '1', type: 'button' }, nextArrowProps),
+	        ' Next'
+	      );
+	    }
+	
+	    return nextArrow;
+	  }
+	});
+
+/***/ },
+/* 557 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var camel2hyphen = __webpack_require__(558);
+	
+	var isDimension = function (feature) {
+	  var re = /[height|width]$/;
+	  return re.test(feature);
+	};
+	
+	var obj2mq = function (obj) {
+	  var mq = '';
+	  var features = Object.keys(obj);
+	  features.forEach(function (feature, index) {
+	    var value = obj[feature];
+	    feature = camel2hyphen(feature);
+	    // Add px to dimension features
+	    if (isDimension(feature) && typeof value === 'number') {
+	      value = value + 'px';
+	    }
+	    if (value === true) {
+	      mq += feature;
+	    } else if (value === false) {
+	      mq += 'not ' + feature;
+	    } else {
+	      mq += '(' + feature + ': ' + value + ')';
+	    }
+	    if (index < features.length-1) {
+	      mq += ' and '
+	    }
+	  });
+	  return mq;
+	};
+	
+	var json2mq = function (query) {
+	  var mq = '';
+	  if (typeof query === 'string') {
+	    return query;
+	  }
+	  // Handling array of media queries
+	  if (query instanceof Array) {
+	    query.forEach(function (q, index) {
+	      mq += obj2mq(q);
+	      if (index < query.length-1) {
+	        mq += ', '
+	      }
+	    });
+	    return mq;
+	  }
+	  // Handling single media query
+	  return obj2mq(query);
+	};
+	
+	module.exports = json2mq;
+
+/***/ },
+/* 558 */
+/***/ function(module, exports) {
+
+	var camel2hyphen = function (str) {
+	  return str
+	          .replace(/[A-Z]/g, function (match) {
+	            return '-' + match.toLowerCase();
+	          })
+	          .toLowerCase();
+	};
+	
+	module.exports = camel2hyphen;
+
+/***/ },
+/* 559 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var canUseDOM = __webpack_require__(560);
+	var enquire = canUseDOM && __webpack_require__(561);
+	var json2mq = __webpack_require__(557);
+	
+	var ResponsiveMixin = {
+	  media: function (query, handler) {
+	    query = json2mq(query);
+	    if (typeof handler === 'function') {
+	      handler = {
+	        match: handler
+	      };
+	    }
+	    canUseDOM && enquire.register(query, handler);
+	
+	    // Queue the handlers to unregister them at unmount  
+	    if (! this._responsiveMediaHandlers) {
+	      this._responsiveMediaHandlers = [];
+	    }
+	    this._responsiveMediaHandlers.push({query: query, handler: handler});
+	  },
+	  componentWillUnmount: function () {
+	    if (this._responsiveMediaHandlers) {
+	      this._responsiveMediaHandlers.forEach(function(obj) {
+	        canUseDOM && enquire.unregister(obj.query, obj.handler);
+	      });
+	    }
+	  }
+	};
+	
+	module.exports = ResponsiveMixin;
+
+
+/***/ },
+/* 560 */
+/***/ function(module, exports) {
+
+	var canUseDOM = !!(
+	  typeof window !== 'undefined' &&
+	  window.document &&
+	  window.document.createElement
+	);
+	
+	module.exports = canUseDOM;
+
+/***/ },
+/* 561 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	 * enquire.js v2.1.1 - Awesome Media Queries in JavaScript
+	 * Copyright (c) 2014 Nick Williams - http://wicky.nillia.ms/enquire.js
+	 * License: MIT (http://www.opensource.org/licenses/mit-license.php)
+	 */
+	
+	;(function (name, context, factory) {
+		var matchMedia = window.matchMedia;
+	
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = factory(matchMedia);
+		}
+		else if (true) {
+			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+				return (context[name] = factory(matchMedia));
+			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		}
+		else {
+			context[name] = factory(matchMedia);
+		}
+	}('enquire', this, function (matchMedia) {
+	
+		'use strict';
+	
+	    /*jshint unused:false */
+	    /**
+	     * Helper function for iterating over a collection
+	     *
+	     * @param collection
+	     * @param fn
+	     */
+	    function each(collection, fn) {
+	        var i      = 0,
+	            length = collection.length,
+	            cont;
+	
+	        for(i; i < length; i++) {
+	            cont = fn(collection[i], i);
+	            if(cont === false) {
+	                break; //allow early exit
+	            }
+	        }
+	    }
+	
+	    /**
+	     * Helper function for determining whether target object is an array
+	     *
+	     * @param target the object under test
+	     * @return {Boolean} true if array, false otherwise
+	     */
+	    function isArray(target) {
+	        return Object.prototype.toString.apply(target) === '[object Array]';
+	    }
+	
+	    /**
+	     * Helper function for determining whether target object is a function
+	     *
+	     * @param target the object under test
+	     * @return {Boolean} true if function, false otherwise
+	     */
+	    function isFunction(target) {
+	        return typeof target === 'function';
+	    }
+	
+	    /**
+	     * Delegate to handle a media query being matched and unmatched.
+	     *
+	     * @param {object} options
+	     * @param {function} options.match callback for when the media query is matched
+	     * @param {function} [options.unmatch] callback for when the media query is unmatched
+	     * @param {function} [options.setup] one-time callback triggered the first time a query is matched
+	     * @param {boolean} [options.deferSetup=false] should the setup callback be run immediately, rather than first time query is matched?
+	     * @constructor
+	     */
+	    function QueryHandler(options) {
+	        this.options = options;
+	        !options.deferSetup && this.setup();
+	    }
+	    QueryHandler.prototype = {
+	
+	        /**
+	         * coordinates setup of the handler
+	         *
+	         * @function
+	         */
+	        setup : function() {
+	            if(this.options.setup) {
+	                this.options.setup();
+	            }
+	            this.initialised = true;
+	        },
+	
+	        /**
+	         * coordinates setup and triggering of the handler
+	         *
+	         * @function
+	         */
+	        on : function() {
+	            !this.initialised && this.setup();
+	            this.options.match && this.options.match();
+	        },
+	
+	        /**
+	         * coordinates the unmatch event for the handler
+	         *
+	         * @function
+	         */
+	        off : function() {
+	            this.options.unmatch && this.options.unmatch();
+	        },
+	
+	        /**
+	         * called when a handler is to be destroyed.
+	         * delegates to the destroy or unmatch callbacks, depending on availability.
+	         *
+	         * @function
+	         */
+	        destroy : function() {
+	            this.options.destroy ? this.options.destroy() : this.off();
+	        },
+	
+	        /**
+	         * determines equality by reference.
+	         * if object is supplied compare options, if function, compare match callback
+	         *
+	         * @function
+	         * @param {object || function} [target] the target for comparison
+	         */
+	        equals : function(target) {
+	            return this.options === target || this.options.match === target;
+	        }
+	
+	    };
+	    /**
+	     * Represents a single media query, manages it's state and registered handlers for this query
+	     *
+	     * @constructor
+	     * @param {string} query the media query string
+	     * @param {boolean} [isUnconditional=false] whether the media query should run regardless of whether the conditions are met. Primarily for helping older browsers deal with mobile-first design
+	     */
+	    function MediaQuery(query, isUnconditional) {
+	        this.query = query;
+	        this.isUnconditional = isUnconditional;
+	        this.handlers = [];
+	        this.mql = matchMedia(query);
+	
+	        var self = this;
+	        this.listener = function(mql) {
+	            self.mql = mql;
+	            self.assess();
+	        };
+	        this.mql.addListener(this.listener);
+	    }
+	    MediaQuery.prototype = {
+	
+	        /**
+	         * add a handler for this query, triggering if already active
+	         *
+	         * @param {object} handler
+	         * @param {function} handler.match callback for when query is activated
+	         * @param {function} [handler.unmatch] callback for when query is deactivated
+	         * @param {function} [handler.setup] callback for immediate execution when a query handler is registered
+	         * @param {boolean} [handler.deferSetup=false] should the setup callback be deferred until the first time the handler is matched?
+	         */
+	        addHandler : function(handler) {
+	            var qh = new QueryHandler(handler);
+	            this.handlers.push(qh);
+	
+	            this.matches() && qh.on();
+	        },
+	
+	        /**
+	         * removes the given handler from the collection, and calls it's destroy methods
+	         * 
+	         * @param {object || function} handler the handler to remove
+	         */
+	        removeHandler : function(handler) {
+	            var handlers = this.handlers;
+	            each(handlers, function(h, i) {
+	                if(h.equals(handler)) {
+	                    h.destroy();
+	                    return !handlers.splice(i,1); //remove from array and exit each early
+	                }
+	            });
+	        },
+	
+	        /**
+	         * Determine whether the media query should be considered a match
+	         * 
+	         * @return {Boolean} true if media query can be considered a match, false otherwise
+	         */
+	        matches : function() {
+	            return this.mql.matches || this.isUnconditional;
+	        },
+	
+	        /**
+	         * Clears all handlers and unbinds events
+	         */
+	        clear : function() {
+	            each(this.handlers, function(handler) {
+	                handler.destroy();
+	            });
+	            this.mql.removeListener(this.listener);
+	            this.handlers.length = 0; //clear array
+	        },
+	
+	        /*
+	         * Assesses the query, turning on all handlers if it matches, turning them off if it doesn't match
+	         */
+	        assess : function() {
+	            var action = this.matches() ? 'on' : 'off';
+	
+	            each(this.handlers, function(handler) {
+	                handler[action]();
+	            });
+	        }
+	    };
+	    /**
+	     * Allows for registration of query handlers.
+	     * Manages the query handler's state and is responsible for wiring up browser events
+	     *
+	     * @constructor
+	     */
+	    function MediaQueryDispatch () {
+	        if(!matchMedia) {
+	            throw new Error('matchMedia not present, legacy browsers require a polyfill');
+	        }
+	
+	        this.queries = {};
+	        this.browserIsIncapable = !matchMedia('only all').matches;
+	    }
+	
+	    MediaQueryDispatch.prototype = {
+	
+	        /**
+	         * Registers a handler for the given media query
+	         *
+	         * @param {string} q the media query
+	         * @param {object || Array || Function} options either a single query handler object, a function, or an array of query handlers
+	         * @param {function} options.match fired when query matched
+	         * @param {function} [options.unmatch] fired when a query is no longer matched
+	         * @param {function} [options.setup] fired when handler first triggered
+	         * @param {boolean} [options.deferSetup=false] whether setup should be run immediately or deferred until query is first matched
+	         * @param {boolean} [shouldDegrade=false] whether this particular media query should always run on incapable browsers
+	         */
+	        register : function(q, options, shouldDegrade) {
+	            var queries         = this.queries,
+	                isUnconditional = shouldDegrade && this.browserIsIncapable;
+	
+	            if(!queries[q]) {
+	                queries[q] = new MediaQuery(q, isUnconditional);
+	            }
+	
+	            //normalise to object in an array
+	            if(isFunction(options)) {
+	                options = { match : options };
+	            }
+	            if(!isArray(options)) {
+	                options = [options];
+	            }
+	            each(options, function(handler) {
+	                queries[q].addHandler(handler);
+	            });
+	
+	            return this;
+	        },
+	
+	        /**
+	         * unregisters a query and all it's handlers, or a specific handler for a query
+	         *
+	         * @param {string} q the media query to target
+	         * @param {object || function} [handler] specific handler to unregister
+	         */
+	        unregister : function(q, handler) {
+	            var query = this.queries[q];
+	
+	            if(query) {
+	                if(handler) {
+	                    query.removeHandler(handler);
+	                }
+	                else {
+	                    query.clear();
+	                    delete this.queries[q];
+	                }
+	            }
+	
+	            return this;
+	        }
+	    };
+	
+		return new MediaQueryDispatch();
+	
+	}));
+
+/***/ },
+/* 562 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(563);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(519)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick.css", function() {
+				var newContent = require("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 563 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(513)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "/* Slider */\n.slick-slider {\n  position: relative;\n  display: block;\n  box-sizing: border-box;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-touch-callout: none;\n  -khtml-user-select: none;\n  -ms-touch-action: pan-y;\n  touch-action: pan-y;\n  -webkit-tap-highlight-color: transparent; }\n\n.slick-list {\n  position: relative;\n  display: block;\n  overflow: hidden;\n  margin: 0;\n  padding: 0; }\n\n.slick-list:focus {\n  outline: none; }\n\n.slick-list.dragging {\n  cursor: pointer;\n  cursor: hand; }\n\n.slick-slider .slick-track,\n.slick-slider .slick-list {\n  -webkit-transform: translate3d(0, 0, 0);\n  -moz-transform: translate3d(0, 0, 0);\n  -ms-transform: translate3d(0, 0, 0);\n  -o-transform: translate3d(0, 0, 0);\n  transform: translate3d(0, 0, 0); }\n\n.slick-track {\n  position: relative;\n  top: 0;\n  left: 0;\n  display: block; }\n\n.slick-track:before,\n.slick-track:after {\n  display: table;\n  content: ''; }\n\n.slick-track:after {\n  clear: both; }\n\n.slick-loading .slick-track {\n  visibility: hidden; }\n\n.slick-slide {\n  display: none;\n  float: left;\n  height: 100%;\n  min-height: 1px; }\n\n[dir='rtl'] .slick-slide {\n  float: right; }\n\n.slick-slide img {\n  display: block; }\n\n.slick-slide.slick-loading img {\n  display: none; }\n\n.slick-slide.dragging img {\n  pointer-events: none; }\n\n.slick-initialized .slick-slide {\n  display: block; }\n\n.slick-loading .slick-slide {\n  visibility: hidden; }\n\n.slick-vertical .slick-slide {\n  display: block;\n  height: auto;\n  border: 1px solid transparent; }\n\n.slick-arrow.slick-hidden {\n  display: none; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 564 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(565);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(519)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick-theme.css", function() {
+				var newContent = require("!!../../css-loader/index.js!../../sass-loader/lib/loader.js!./slick-theme.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 565 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(513)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n/* Slider */\n.slick-loading .slick-list {\n  background: #fff url(" + __webpack_require__(566) + ") center center no-repeat; }\n\n/* Icons */\n@font-face {\n  font-family: 'slick';\n  font-weight: normal;\n  font-style: normal;\n  src: url(" + __webpack_require__(567) + ");\n  src: url(" + __webpack_require__(567) + "?#iefix) format(\"embedded-opentype\"), url(" + __webpack_require__(568) + ") format(\"woff\"), url(" + __webpack_require__(569) + ") format(\"truetype\"), url(" + __webpack_require__(570) + "#slick) format(\"svg\"); }\n\n/* Arrows */\n.slick-prev,\n.slick-next {\n  font-size: 0;\n  line-height: 0;\n  position: absolute;\n  top: 50%;\n  display: block;\n  width: 20px;\n  height: 20px;\n  padding: 0;\n  -webkit-transform: translate(0, -50%);\n  -ms-transform: translate(0, -50%);\n  transform: translate(0, -50%);\n  cursor: pointer;\n  color: transparent;\n  border: none;\n  outline: none;\n  background: transparent; }\n\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus {\n  color: transparent;\n  outline: none;\n  background: transparent; }\n\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before {\n  opacity: 1; }\n\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before {\n  opacity: .25; }\n\n.slick-prev:before,\n.slick-next:before {\n  font-family: 'slick';\n  font-size: 20px;\n  line-height: 1;\n  opacity: .75;\n  color: white;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.slick-prev {\n  left: -25px; }\n\n[dir='rtl'] .slick-prev {\n  right: -25px;\n  left: auto; }\n\n.slick-prev:before {\n  content: '\\2190'; }\n\n[dir='rtl'] .slick-prev:before {\n  content: '\\2192'; }\n\n.slick-next {\n  right: -25px; }\n\n[dir='rtl'] .slick-next {\n  right: auto;\n  left: -25px; }\n\n.slick-next:before {\n  content: '\\2192'; }\n\n[dir='rtl'] .slick-next:before {\n  content: '\\2190'; }\n\n/* Dots */\n.slick-dotted.slick-slider {\n  margin-bottom: 30px; }\n\n.slick-dots {\n  position: absolute;\n  bottom: -25px;\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin: 0;\n  list-style: none;\n  text-align: center; }\n\n.slick-dots li {\n  position: relative;\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  margin: 0 5px;\n  padding: 0;\n  cursor: pointer; }\n\n.slick-dots li button {\n  font-size: 0;\n  line-height: 0;\n  display: block;\n  width: 20px;\n  height: 20px;\n  padding: 5px;\n  cursor: pointer;\n  color: transparent;\n  border: 0;\n  outline: none;\n  background: transparent; }\n\n.slick-dots li button:hover,\n.slick-dots li button:focus {\n  outline: none; }\n\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before {\n  opacity: 1; }\n\n.slick-dots li button:before {\n  font-family: 'slick';\n  font-size: 6px;\n  line-height: 20px;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 20px;\n  height: 20px;\n  content: '\\2022';\n  text-align: center;\n  opacity: .25;\n  color: black;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n.slick-dots li.slick-active button:before {\n  opacity: .75;\n  color: black; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
 /* 566 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/gif;base64,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"
+
+/***/ },
+/* 567 */
+/***/ function(module, exports) {
+
+	module.exports = "data:application/vnd.ms-fontobject;base64,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"
+
+/***/ },
+/* 568 */
+/***/ function(module, exports) {
+
+	module.exports = "data:application/font-woff;base64,d09GRk9UVE8AAAVkAAsAAAAAB1wAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAABCAAAAi4AAAKbH/pWDkZGVE0AAAM4AAAAGgAAABxt0civR0RFRgAAA1QAAAAcAAAAIAAyAARPUy8yAAADcAAAAFIAAABgUBj/rmNtYXAAAAPEAAAAUAAAAWIiC0SwaGVhZAAABBQAAAAuAAAANgABMftoaGVhAAAERAAAABwAAAAkA+UCA2htdHgAAARgAAAADgAAAA4ESgBKbWF4cAAABHAAAAAGAAAABgAFUABuYW1lAAAEeAAAANwAAAFuBSeBwnBvc3QAAAVUAAAAEAAAACAAAwABeJw9ks9vEkEUx2cpWyeUoFYgNkHi2Wt7N3rVm3cTs3UVLC4LxIWEQvi1P3i7O1tYLJDAmlgKGEhQrsajf0j7J3jYTXrQWUrMJG+++b55n5e8NwwKBhHDMLv5kxT3ATEBxKBn3qOAl9zxHgb1MAPhHQgHkyF08Gr/L8B/Eb6zWnmCJ7AJVLubQOheArXvJ1A4EXi6j4I+Zg9F0QFKvsnlBCmXeve+sFEnb/nCptdtQ4QYhVFRAT1HrF8UQK/RL/SbmUbclsvGVFXRZKDHUE38cc4qpkbAAsuwiImvro+ufcfaOIQ6szlrmjRJDaKZKnbjN3GWKIbiIzRFUfCffuxxKOL+3LDlDVvx2TdxN84qZEsnhNBa6pgm2dAsnzbLsETdsmRFxUeHV4e+I2/ptN8TyqV8T3Dt29t7EYOuajVIw2y1Wy3M86w0zg/Fz2IvawmQAUHOVrPVfLkoScVynsqsTG0MGUs4z55nh3mnOJa+li+rl9WpPIcFfDubDeaDC+fLBdYN3QADzLauGfj4B6sZmq6CCpqmtSvF0qlUl2qf5AJIUCSlTqlb7lUG+LRfGzZGzZEyBgccMu6MuqPecNDvD4Y9Kjtj4gD+DsvKVMTcMdtqtZtmkzQstQvYje7Syep0PDSAhSOeHYXYWThEF//A/0YvYV1fSQtpKU5STtrhbQ444OtpKSWJIg3pOg8cBs7maTY1EZf07aq+hjWs7IWzdCYTGhb2CtZ47x+Uhx28AAB4nGNgYGBkAIJz765vANHnCyvqYTQAWnkHswAAeJxjYGRgYOADYgkGEGBiYARCFjAG8RgABHYAN3icY2BmYmCcwMDKwMHow5jGwMDgDqW/MkgytDAwMDGwcjKAQQMDAyOQUmCAgoA01xQGB4ZExUmMD/4/YNBjvP3/NgNEDQPjbbBKBQZGADfLDgsAAHicY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQzMCQqKClOUJz0/z9YHRLv/+L7D+8V3cuHmgAHjGwM6ELUByxUMIOZCmbgAAA5LQ8XeJxjYGRgYABiO68w73h+m68M3EwMIHC+sKIeTqsyqDLeZrwN5HIwgKUB/aYJUgAAeJxjYGRgYLzNwMCgx8QAAkA2IwMqYAIAMGIB7QIAAAACAAAlACUAJQAlAAAAAFAAAAUAAHicbY49asNAEIU/2ZJDfkiRIvXapUFCEqpcptABUrg3ZhEiQoKVfY9UqVLlGDlADpAT5e16IUWysMz3hjfzBrjjjQT/EjKpCy+4YhN5yZoxcirPe+SMWz4jr6S+5UzSa3VuwpTnBfc8RF7yxDZyKs9r5IxHPiKv1P9iZqDnyAvMQ39UecbScVb/gJO03Xk4CFom3XYK1clhMdQUlKo7/d9NF13RkIdfy+MV7TSe2sl11tRFaXYmJKpWTd7kdVnJ8veevZKc+n3I93t9Jnvr5n4aTVWU/0z9AI2qMkV4nGNgZkAGjAxoAAAAjgAF"
+
+/***/ },
+/* 569 */
+/***/ function(module, exports) {
+
+	module.exports = "data:application/x-font-ttf;base64,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"
+
+/***/ },
+/* 570 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxtZXRhZGF0YT5HZW5lcmF0ZWQgYnkgRm9udGFzdGljLm1lPC9tZXRhZGF0YT4KPGRlZnM+Cjxmb250IGlkPSJzbGljayIgaG9yaXotYWR2LXg9IjUxMiI+Cjxmb250LWZhY2UgZm9udC1mYW1pbHk9InNsaWNrIiB1bml0cy1wZXItZW09IjUxMiIgYXNjZW50PSI0ODAiIGRlc2NlbnQ9Ii0zMiIvPgo8bWlzc2luZy1nbHlwaCBob3Jpei1hZHYteD0iNTEyIiAvPgoKPGdseXBoIHVuaWNvZGU9IiYjODU5NDsiIGQ9Ik0yNDEgMTEzbDEzMCAxMzBjNCA0IDYgOCA2IDEzIDAgNS0yIDktNiAxM2wtMTMwIDEzMGMtMyAzLTcgNS0xMiA1LTUgMC0xMC0yLTEzLTVsLTI5LTMwYy00LTMtNi03LTYtMTIgMC01IDItMTAgNi0xM2w4Ny04OC04Ny04OGMtNC0zLTYtOC02LTEzIDAtNSAyLTkgNi0xMmwyOS0zMGMzLTMgOC01IDEzLTUgNSAwIDkgMiAxMiA1eiBtMjM0IDE0M2MwLTQwLTktNzctMjktMTEwLTIwLTM0LTQ2LTYwLTgwLTgwLTMzLTIwLTcwLTI5LTExMC0yOS00MCAwLTc3IDktMTEwIDI5LTM0IDIwLTYwIDQ2LTgwIDgwLTIwIDMzLTI5IDcwLTI5IDExMCAwIDQwIDkgNzcgMjkgMTEwIDIwIDM0IDQ2IDYwIDgwIDgwIDMzIDIwIDcwIDI5IDExMCAyOSA0MCAwIDc3LTkgMTEwLTI5IDM0LTIwIDYwLTQ2IDgwLTgwIDIwLTMzIDI5LTcwIDI5LTExMHoiLz4KPGdseXBoIHVuaWNvZGU9IiYjODU5MjsiIGQ9Ik0yOTYgMTEzbDI5IDMwYzQgMyA2IDcgNiAxMiAwIDUtMiAxMC02IDEzbC04NyA4OCA4NyA4OGM0IDMgNiA4IDYgMTMgMCA1LTIgOS02IDEybC0yOSAzMGMtMyAzLTggNS0xMyA1LTUgMC05LTItMTItNWwtMTMwLTEzMGMtNC00LTYtOC02LTEzIDAtNSAyLTkgNi0xM2wxMzAtMTMwYzMtMyA3LTUgMTItNSA1IDAgMTAgMiAxMyA1eiBtMTc5IDE0M2MwLTQwLTktNzctMjktMTEwLTIwLTM0LTQ2LTYwLTgwLTgwLTMzLTIwLTcwLTI5LTExMC0yOS00MCAwLTc3IDktMTEwIDI5LTM0IDIwLTYwIDQ2LTgwIDgwLTIwIDMzLTI5IDcwLTI5IDExMCAwIDQwIDkgNzcgMjkgMTEwIDIwIDM0IDQ2IDYwIDgwIDgwIDMzIDIwIDcwIDI5IDExMCAyOSA0MCAwIDc3LTkgMTEwLTI5IDM0LTIwIDYwLTQ2IDgwLTgwIDIwLTMzIDI5LTcwIDI5LTExMHoiLz4KPGdseXBoIHVuaWNvZGU9IiYjODIyNjsiIGQ9Ik00NzUgMjU2YzAtNDAtOS03Ny0yOS0xMTAtMjAtMzQtNDYtNjAtODAtODAtMzMtMjAtNzAtMjktMTEwLTI5LTQwIDAtNzcgOS0xMTAgMjktMzQgMjAtNjAgNDYtODAgODAtMjAgMzMtMjkgNzAtMjkgMTEwIDAgNDAgOSA3NyAyOSAxMTAgMjAgMzQgNDYgNjAgODAgODAgMzMgMjAgNzAgMjkgMTEwIDI5IDQwIDAgNzctOSAxMTAtMjkgMzQtMjAgNjAtNDYgODAtODAgMjAtMzMgMjktNzAgMjktMTEweiIvPgo8Z2x5cGggdW5pY29kZT0iJiM5NzsiIGQ9Ik00NzUgNDM5bDAtMTI4YzAtNS0xLTktNS0xMy00LTQtOC01LTEzLTVsLTEyOCAwYy04IDAtMTMgMy0xNyAxMS0zIDctMiAxNCA0IDIwbDQwIDM5Yy0yOCAyNi02MiAzOS0xMDAgMzktMjAgMC0zOS00LTU3LTExLTE4LTgtMzMtMTgtNDYtMzItMTQtMTMtMjQtMjgtMzItNDYtNy0xOC0xMS0zNy0xMS01NyAwLTIwIDQtMzkgMTEtNTcgOC0xOCAxOC0zMyAzMi00NiAxMy0xNCAyOC0yNCA0Ni0zMiAxOC03IDM3LTExIDU3LTExIDIzIDAgNDQgNSA2NCAxNSAyMCA5IDM4IDIzIDUxIDQyIDIgMSA0IDMgNyAzIDMgMCA1LTEgNy0zbDM5LTM5YzItMiAzLTMgMy02IDAtMi0xLTQtMi02LTIxLTI1LTQ2LTQ1LTc2LTU5LTI5LTE0LTYwLTIwLTkzLTIwLTMwIDAtNTggNS04NSAxNy0yNyAxMi01MSAyNy03MCA0Ny0yMCAxOS0zNSA0My00NyA3MC0xMiAyNy0xNyA1NS0xNyA4NSAwIDMwIDUgNTggMTcgODUgMTIgMjcgMjcgNTEgNDcgNzAgMTkgMjAgNDMgMzUgNzAgNDcgMjcgMTIgNTUgMTcgODUgMTcgMjggMCA1NS01IDgxLTE1IDI2LTExIDUwLTI2IDcwLTQ1bDM3IDM3YzYgNiAxMiA3IDIwIDQgOC00IDExLTkgMTEtMTd6Ii8+CjwvZm9udD48L2RlZnM+PC9zdmc+Cg=="
+
+/***/ },
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65127,7 +65384,7 @@ webpackJsonp([0,1],[
 	}
 
 /***/ },
-/* 567 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66120,7 +66377,7 @@ webpackJsonp([0,1],[
 	}
 
 /***/ },
-/* 568 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -68258,7 +68515,7 @@ webpackJsonp([0,1],[
 	}
 
 /***/ },
-/* 569 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -68280,7 +68537,7 @@ webpackJsonp([0,1],[
 	
 	var _reactBootstrap = __webpack_require__(324);
 	
-	var _react3 = __webpack_require__(571);
+	var _react3 = __webpack_require__(575);
 	
 	var _react4 = _interopRequireDefault(_react3);
 	
@@ -68578,176 +68835,14 @@ webpackJsonp([0,1],[
 	}
 
 /***/ },
-/* 570 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _defineProperty2 = __webpack_require__(1);
-	
-	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
-	
-	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\Main\\index.jsx'; /**
-	                                                                             * Created by Dima Graebert on 2/18/2017.
-	                                                                             */
-	
-	exports.default = Main;
-	
-	var _react = __webpack_require__(20);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactBootstrap = __webpack_require__(324);
-	
-	__webpack_require__(511);
-	
-	__webpack_require__(520);
-	
-	var _Latest = __webpack_require__(523);
-	
-	var _Latest2 = _interopRequireDefault(_Latest);
-	
-	var _HotProducts = __webpack_require__(531);
-	
-	var _HotProducts2 = _interopRequireDefault(_HotProducts);
-	
-	__webpack_require__(564);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function Main() {
-	    return _react2.default.createElement(
-	        'div',
-	        (0, _defineProperty3.default)({ className: 'page-content', __source: {
-	                fileName: _jsxFileName,
-	                lineNumber: 14
-	            },
-	            __self: this
-	        }, '__self', this),
-	        _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            (0, _defineProperty3.default)({ className: 'section About', __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 15
-	                },
-	                __self: this
-	            }, '__self', this),
-	            _react2.default.createElement(
-	                'h3',
-	                (0, _defineProperty3.default)({ className: 'title', __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 16
-	                    },
-	                    __self: this
-	                }, '__self', this),
-	                'Lottery promo'
-	            ),
-	            _react2.default.createElement(
-	                _reactBootstrap.Col,
-	                (0, _defineProperty3.default)({ xs: 12, className: 'content', __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 17
-	                    },
-	                    __self: this
-	                }, '__self', this),
-	                _react2.default.createElement(
-	                    'span',
-	                    (0, _defineProperty3.default)({ className: 'promoText', __source: {
-	                            fileName: _jsxFileName,
-	                            lineNumber: 18
-	                        },
-	                        __self: this
-	                    }, '__self', this),
-	                    'Here should go some nice website text'
-	                )
-	            )
-	        ),
-	        _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            (0, _defineProperty3.default)({ className: 'section Latest', __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 23
-	                },
-	                __self: this
-	            }, '__self', this),
-	            _react2.default.createElement(
-	                'h3',
-	                (0, _defineProperty3.default)({ className: 'title', __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 24
-	                    },
-	                    __self: this
-	                }, '__self', this),
-	                'Latest winners'
-	            ),
-	            _react2.default.createElement(
-	                _reactBootstrap.Col,
-	                (0, _defineProperty3.default)({ xs: 12, className: 'content', __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 25
-	                    },
-	                    __self: this
-	                }, '__self', this),
-	                _react2.default.createElement(_Latest2.default, (0, _defineProperty3.default)({
-	                    __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 26
-	                    },
-	                    __self: this
-	                }, '__self', this))
-	            )
-	        ),
-	        _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            (0, _defineProperty3.default)({ className: 'section Hot', __source: {
-	                    fileName: _jsxFileName,
-	                    lineNumber: 29
-	                },
-	                __self: this
-	            }, '__self', this),
-	            _react2.default.createElement(
-	                'h3',
-	                (0, _defineProperty3.default)({ className: 'title', __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 30
-	                    },
-	                    __self: this
-	                }, '__self', this),
-	                'Hot products'
-	            ),
-	            _react2.default.createElement(
-	                _reactBootstrap.Col,
-	                (0, _defineProperty3.default)({ xs: 12, className: 'content', __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 31
-	                    },
-	                    __self: this
-	                }, '__self', this),
-	                _react2.default.createElement(_HotProducts2.default, (0, _defineProperty3.default)({
-	                    __source: {
-	                        fileName: _jsxFileName,
-	                        lineNumber: 32
-	                    },
-	                    __self: this
-	                }, '__self', this))
-	            )
-	        )
-	    );
-	}
-
-/***/ },
-/* 571 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(572)
+	module.exports = __webpack_require__(576)
 
 
 /***/ },
-/* 572 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -68756,15 +68851,15 @@ webpackJsonp([0,1],[
 	  value: true
 	});
 	
-	var _react = __webpack_require__(573);
+	var _react = __webpack_require__(577);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _countdown = __webpack_require__(729);
+	var _countdown = __webpack_require__(733);
 	
 	var _countdown2 = _interopRequireDefault(_countdown);
 	
-	var _countup = __webpack_require__(730);
+	var _countup = __webpack_require__(734);
 	
 	var _countup2 = _interopRequireDefault(_countup);
 	
@@ -68785,16 +68880,16 @@ webpackJsonp([0,1],[
 	exports.default = Timer;
 
 /***/ },
-/* 573 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(574);
+	module.exports = __webpack_require__(578);
 
 
 /***/ },
-/* 574 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -68810,12 +68905,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactDOM = __webpack_require__(575);
-	var ReactDOMServer = __webpack_require__(719);
-	var ReactIsomorphic = __webpack_require__(723);
+	var ReactDOM = __webpack_require__(579);
+	var ReactDOMServer = __webpack_require__(723);
+	var ReactIsomorphic = __webpack_require__(727);
 	
-	var assign = __webpack_require__(610);
-	var deprecated = __webpack_require__(728);
+	var assign = __webpack_require__(614);
+	var deprecated = __webpack_require__(732);
 	
 	// `version` will be added here by ReactIsomorphic.
 	var React = {};
@@ -68839,7 +68934,7 @@ webpackJsonp([0,1],[
 	module.exports = React;
 
 /***/ },
-/* 575 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -68857,19 +68952,19 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactDOMTextComponent = __webpack_require__(577);
-	var ReactDefaultInjection = __webpack_require__(642);
-	var ReactInstanceHandles = __webpack_require__(616);
-	var ReactMount = __webpack_require__(599);
-	var ReactPerf = __webpack_require__(589);
-	var ReactReconciler = __webpack_require__(621);
-	var ReactUpdates = __webpack_require__(625);
-	var ReactVersion = __webpack_require__(717);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactDOMTextComponent = __webpack_require__(581);
+	var ReactDefaultInjection = __webpack_require__(646);
+	var ReactInstanceHandles = __webpack_require__(620);
+	var ReactMount = __webpack_require__(603);
+	var ReactPerf = __webpack_require__(593);
+	var ReactReconciler = __webpack_require__(625);
+	var ReactUpdates = __webpack_require__(629);
+	var ReactVersion = __webpack_require__(721);
 	
-	var findDOMNode = __webpack_require__(662);
-	var renderSubtreeIntoContainer = __webpack_require__(718);
-	var warning = __webpack_require__(596);
+	var findDOMNode = __webpack_require__(666);
+	var renderSubtreeIntoContainer = __webpack_require__(722);
+	var warning = __webpack_require__(600);
 	
 	ReactDefaultInjection.inject();
 	
@@ -68900,7 +68995,7 @@ webpackJsonp([0,1],[
 	}
 	
 	if (true) {
-	  var ExecutionEnvironment = __webpack_require__(580);
+	  var ExecutionEnvironment = __webpack_require__(584);
 	  if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 	
 	    // First check if devtools is not installed
@@ -68936,7 +69031,7 @@ webpackJsonp([0,1],[
 	module.exports = React;
 
 /***/ },
-/* 576 */
+/* 580 */
 /***/ function(module, exports) {
 
 	/**
@@ -68971,7 +69066,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactCurrentOwner;
 
 /***/ },
-/* 577 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -68988,15 +69083,15 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(578);
-	var DOMPropertyOperations = __webpack_require__(593);
-	var ReactComponentBrowserEnvironment = __webpack_require__(597);
-	var ReactMount = __webpack_require__(599);
+	var DOMChildrenOperations = __webpack_require__(582);
+	var DOMPropertyOperations = __webpack_require__(597);
+	var ReactComponentBrowserEnvironment = __webpack_require__(601);
+	var ReactMount = __webpack_require__(603);
 	
-	var assign = __webpack_require__(610);
-	var escapeTextContentForBrowser = __webpack_require__(592);
-	var setTextContent = __webpack_require__(591);
-	var validateDOMNesting = __webpack_require__(641);
+	var assign = __webpack_require__(614);
+	var escapeTextContentForBrowser = __webpack_require__(596);
+	var setTextContent = __webpack_require__(595);
+	var validateDOMNesting = __webpack_require__(645);
 	
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -69103,7 +69198,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 578 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69120,13 +69215,13 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var Danger = __webpack_require__(579);
-	var ReactMultiChildUpdateTypes = __webpack_require__(587);
-	var ReactPerf = __webpack_require__(589);
+	var Danger = __webpack_require__(583);
+	var ReactMultiChildUpdateTypes = __webpack_require__(591);
+	var ReactPerf = __webpack_require__(593);
 	
-	var setInnerHTML = __webpack_require__(590);
-	var setTextContent = __webpack_require__(591);
-	var invariant = __webpack_require__(584);
+	var setInnerHTML = __webpack_require__(594);
+	var setTextContent = __webpack_require__(595);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Inserts `childNode` as a child of `parentNode` at the `index`.
@@ -69237,7 +69332,7 @@ webpackJsonp([0,1],[
 	module.exports = DOMChildrenOperations;
 
 /***/ },
-/* 579 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69254,12 +69349,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
-	var createNodesFromMarkup = __webpack_require__(581);
-	var emptyFunction = __webpack_require__(586);
-	var getMarkupWrap = __webpack_require__(585);
-	var invariant = __webpack_require__(584);
+	var createNodesFromMarkup = __webpack_require__(585);
+	var emptyFunction = __webpack_require__(590);
+	var getMarkupWrap = __webpack_require__(589);
+	var invariant = __webpack_require__(588);
 	
 	var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
 	var RESULT_INDEX_ATTR = 'data-danger-index';
@@ -69387,7 +69482,7 @@ webpackJsonp([0,1],[
 	module.exports = Danger;
 
 /***/ },
-/* 580 */
+/* 584 */
 /***/ function(module, exports) {
 
 	/**
@@ -69428,7 +69523,7 @@ webpackJsonp([0,1],[
 	module.exports = ExecutionEnvironment;
 
 /***/ },
-/* 581 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69447,11 +69542,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
-	var createArrayFromMixed = __webpack_require__(582);
-	var getMarkupWrap = __webpack_require__(585);
-	var invariant = __webpack_require__(584);
+	var createArrayFromMixed = __webpack_require__(586);
+	var getMarkupWrap = __webpack_require__(589);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Dummy container used to render all markup.
@@ -69517,7 +69612,7 @@ webpackJsonp([0,1],[
 	module.exports = createNodesFromMarkup;
 
 /***/ },
-/* 582 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69534,7 +69629,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var toArray = __webpack_require__(583);
+	var toArray = __webpack_require__(587);
 	
 	/**
 	 * Perform a heuristic test to determine if an object is "array-like".
@@ -69607,7 +69702,7 @@ webpackJsonp([0,1],[
 	module.exports = createArrayFromMixed;
 
 /***/ },
-/* 583 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69624,7 +69719,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Convert array-like objects to arrays.
@@ -69669,7 +69764,7 @@ webpackJsonp([0,1],[
 	module.exports = toArray;
 
 /***/ },
-/* 584 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69724,7 +69819,7 @@ webpackJsonp([0,1],[
 	module.exports = invariant;
 
 /***/ },
-/* 585 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69742,9 +69837,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Dummy container used to detect which wraps are necessary.
@@ -69824,7 +69919,7 @@ webpackJsonp([0,1],[
 	module.exports = getMarkupWrap;
 
 /***/ },
-/* 586 */
+/* 590 */
 /***/ function(module, exports) {
 
 	/**
@@ -69867,7 +69962,7 @@ webpackJsonp([0,1],[
 	module.exports = emptyFunction;
 
 /***/ },
-/* 587 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69883,7 +69978,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(588);
+	var keyMirror = __webpack_require__(592);
 	
 	/**
 	 * When a component's children are updated, a series of update configuration
@@ -69904,7 +69999,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 588 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -69921,7 +70016,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Constructs an enumeration with keys equal to their value.
@@ -69957,7 +70052,7 @@ webpackJsonp([0,1],[
 	module.exports = keyMirror;
 
 /***/ },
-/* 589 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70058,7 +70153,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactPerf;
 
 /***/ },
-/* 590 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70076,7 +70171,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
 	var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 	var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
@@ -70153,7 +70248,7 @@ webpackJsonp([0,1],[
 	module.exports = setInnerHTML;
 
 /***/ },
-/* 591 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70169,9 +70264,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
-	var escapeTextContentForBrowser = __webpack_require__(592);
-	var setInnerHTML = __webpack_require__(590);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var escapeTextContentForBrowser = __webpack_require__(596);
+	var setInnerHTML = __webpack_require__(594);
 	
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -70198,7 +70293,7 @@ webpackJsonp([0,1],[
 	module.exports = setTextContent;
 
 /***/ },
-/* 592 */
+/* 596 */
 /***/ function(module, exports) {
 
 	/**
@@ -70241,7 +70336,7 @@ webpackJsonp([0,1],[
 	module.exports = escapeTextContentForBrowser;
 
 /***/ },
-/* 593 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70258,11 +70353,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(594);
-	var ReactPerf = __webpack_require__(589);
+	var DOMProperty = __webpack_require__(598);
+	var ReactPerf = __webpack_require__(593);
 	
-	var quoteAttributeValueForBrowser = __webpack_require__(595);
-	var warning = __webpack_require__(596);
+	var quoteAttributeValueForBrowser = __webpack_require__(599);
+	var warning = __webpack_require__(600);
 	
 	// Simplified subset
 	var VALID_ATTRIBUTE_NAME_REGEX = /^[a-zA-Z_][\w\.\-]*$/;
@@ -70471,7 +70566,7 @@ webpackJsonp([0,1],[
 	module.exports = DOMPropertyOperations;
 
 /***/ },
-/* 594 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70488,7 +70583,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	function checkMask(value, bitmask) {
 	  return (value & bitmask) === bitmask;
@@ -70710,7 +70805,7 @@ webpackJsonp([0,1],[
 	module.exports = DOMProperty;
 
 /***/ },
-/* 595 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70726,7 +70821,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var escapeTextContentForBrowser = __webpack_require__(592);
+	var escapeTextContentForBrowser = __webpack_require__(596);
 	
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -70741,7 +70836,7 @@ webpackJsonp([0,1],[
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 596 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70757,7 +70852,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var emptyFunction = __webpack_require__(586);
+	var emptyFunction = __webpack_require__(590);
 	
 	/**
 	 * Similar to invariant but only logs a warning if the condition is not met.
@@ -70803,7 +70898,7 @@ webpackJsonp([0,1],[
 	module.exports = warning;
 
 /***/ },
-/* 597 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70819,8 +70914,8 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactDOMIDOperations = __webpack_require__(598);
-	var ReactMount = __webpack_require__(599);
+	var ReactDOMIDOperations = __webpack_require__(602);
+	var ReactMount = __webpack_require__(603);
 	
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -70849,7 +70944,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 598 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70866,12 +70961,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(578);
-	var DOMPropertyOperations = __webpack_require__(593);
-	var ReactMount = __webpack_require__(599);
-	var ReactPerf = __webpack_require__(589);
+	var DOMChildrenOperations = __webpack_require__(582);
+	var DOMPropertyOperations = __webpack_require__(597);
+	var ReactMount = __webpack_require__(603);
+	var ReactPerf = __webpack_require__(593);
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Errors for properties that should not be updated with `updatePropertyByID()`.
@@ -70948,7 +71043,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 599 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -70964,29 +71059,29 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(594);
-	var ReactBrowserEventEmitter = __webpack_require__(600);
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactDOMFeatureFlags = __webpack_require__(612);
-	var ReactElement = __webpack_require__(613);
-	var ReactEmptyComponentRegistry = __webpack_require__(615);
-	var ReactInstanceHandles = __webpack_require__(616);
-	var ReactInstanceMap = __webpack_require__(618);
-	var ReactMarkupChecksum = __webpack_require__(619);
-	var ReactPerf = __webpack_require__(589);
-	var ReactReconciler = __webpack_require__(621);
-	var ReactUpdateQueue = __webpack_require__(624);
-	var ReactUpdates = __webpack_require__(625);
+	var DOMProperty = __webpack_require__(598);
+	var ReactBrowserEventEmitter = __webpack_require__(604);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactDOMFeatureFlags = __webpack_require__(616);
+	var ReactElement = __webpack_require__(617);
+	var ReactEmptyComponentRegistry = __webpack_require__(619);
+	var ReactInstanceHandles = __webpack_require__(620);
+	var ReactInstanceMap = __webpack_require__(622);
+	var ReactMarkupChecksum = __webpack_require__(623);
+	var ReactPerf = __webpack_require__(593);
+	var ReactReconciler = __webpack_require__(625);
+	var ReactUpdateQueue = __webpack_require__(628);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var assign = __webpack_require__(610);
-	var emptyObject = __webpack_require__(629);
-	var containsNode = __webpack_require__(630);
-	var instantiateReactComponent = __webpack_require__(633);
-	var invariant = __webpack_require__(584);
-	var setInnerHTML = __webpack_require__(590);
-	var shouldUpdateReactComponent = __webpack_require__(638);
-	var validateDOMNesting = __webpack_require__(641);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var emptyObject = __webpack_require__(633);
+	var containsNode = __webpack_require__(634);
+	var instantiateReactComponent = __webpack_require__(637);
+	var invariant = __webpack_require__(588);
+	var setInnerHTML = __webpack_require__(594);
+	var shouldUpdateReactComponent = __webpack_require__(642);
+	var validateDOMNesting = __webpack_require__(645);
+	var warning = __webpack_require__(600);
 	
 	var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
 	var nodeCache = {};
@@ -71803,7 +71898,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactMount;
 
 /***/ },
-/* 600 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -71820,15 +71915,15 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventPluginHub = __webpack_require__(602);
-	var EventPluginRegistry = __webpack_require__(603);
-	var ReactEventEmitterMixin = __webpack_require__(608);
-	var ReactPerf = __webpack_require__(589);
-	var ViewportMetrics = __webpack_require__(609);
+	var EventConstants = __webpack_require__(605);
+	var EventPluginHub = __webpack_require__(606);
+	var EventPluginRegistry = __webpack_require__(607);
+	var ReactEventEmitterMixin = __webpack_require__(612);
+	var ReactPerf = __webpack_require__(593);
+	var ViewportMetrics = __webpack_require__(613);
 	
-	var assign = __webpack_require__(610);
-	var isEventSupported = __webpack_require__(611);
+	var assign = __webpack_require__(614);
+	var isEventSupported = __webpack_require__(615);
 	
 	/**
 	 * Summary of `ReactBrowserEventEmitter` event handling:
@@ -72132,7 +72227,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactBrowserEventEmitter;
 
 /***/ },
-/* 601 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72148,7 +72243,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(588);
+	var keyMirror = __webpack_require__(592);
 	
 	var PropagationPhases = keyMirror({ bubbled: null, captured: null });
 	
@@ -72229,7 +72324,7 @@ webpackJsonp([0,1],[
 	module.exports = EventConstants;
 
 /***/ },
-/* 602 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72245,14 +72340,14 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventPluginRegistry = __webpack_require__(603);
-	var EventPluginUtils = __webpack_require__(604);
-	var ReactErrorUtils = __webpack_require__(605);
+	var EventPluginRegistry = __webpack_require__(607);
+	var EventPluginUtils = __webpack_require__(608);
+	var ReactErrorUtils = __webpack_require__(609);
 	
-	var accumulateInto = __webpack_require__(606);
-	var forEachAccumulated = __webpack_require__(607);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var accumulateInto = __webpack_require__(610);
+	var forEachAccumulated = __webpack_require__(611);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * Internal store for event listeners
@@ -72513,7 +72608,7 @@ webpackJsonp([0,1],[
 	module.exports = EventPluginHub;
 
 /***/ },
-/* 603 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72530,7 +72625,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Injectable ordering of event plugins.
@@ -72738,7 +72833,7 @@ webpackJsonp([0,1],[
 	module.exports = EventPluginRegistry;
 
 /***/ },
-/* 604 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -72754,11 +72849,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var ReactErrorUtils = __webpack_require__(605);
+	var EventConstants = __webpack_require__(605);
+	var ReactErrorUtils = __webpack_require__(609);
 	
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * Injected dependencies:
@@ -72945,7 +73040,7 @@ webpackJsonp([0,1],[
 	module.exports = EventPluginUtils;
 
 /***/ },
-/* 605 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73027,7 +73122,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactErrorUtils;
 
 /***/ },
-/* 606 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73043,7 +73138,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 *
@@ -73091,7 +73186,7 @@ webpackJsonp([0,1],[
 	module.exports = accumulateInto;
 
 /***/ },
-/* 607 */
+/* 611 */
 /***/ function(module, exports) {
 
 	/**
@@ -73125,7 +73220,7 @@ webpackJsonp([0,1],[
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 608 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73141,7 +73236,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventPluginHub = __webpack_require__(602);
+	var EventPluginHub = __webpack_require__(606);
 	
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -73168,7 +73263,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 609 */
+/* 613 */
 /***/ function(module, exports) {
 
 	/**
@@ -73200,7 +73295,7 @@ webpackJsonp([0,1],[
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 610 */
+/* 614 */
 /***/ function(module, exports) {
 
 	/**
@@ -73252,7 +73347,7 @@ webpackJsonp([0,1],[
 	module.exports = assign;
 
 /***/ },
-/* 611 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73268,7 +73363,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
 	var useHasFeature;
 	if (ExecutionEnvironment.canUseDOM) {
@@ -73317,7 +73412,7 @@ webpackJsonp([0,1],[
 	module.exports = isEventSupported;
 
 /***/ },
-/* 612 */
+/* 616 */
 /***/ function(module, exports) {
 
 	/**
@@ -73340,7 +73435,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 613 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73356,10 +73451,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactCurrentOwner = __webpack_require__(576);
+	var ReactCurrentOwner = __webpack_require__(580);
 	
-	var assign = __webpack_require__(610);
-	var canDefineProperty = __webpack_require__(614);
+	var assign = __webpack_require__(614);
+	var canDefineProperty = __webpack_require__(618);
 	
 	// The Symbol used to tag the ReactElement type. If there is no native Symbol
 	// nor polyfill, then a plain number is used for performance.
@@ -73592,7 +73687,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactElement;
 
 /***/ },
-/* 614 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73621,7 +73716,7 @@ webpackJsonp([0,1],[
 	module.exports = canDefineProperty;
 
 /***/ },
-/* 615 */
+/* 619 */
 /***/ function(module, exports) {
 
 	/**
@@ -73674,7 +73769,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactEmptyComponentRegistry;
 
 /***/ },
-/* 616 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -73691,9 +73786,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactRootIndex = __webpack_require__(617);
+	var ReactRootIndex = __webpack_require__(621);
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	var SEPARATOR = '.';
 	var SEPARATOR_LENGTH = SEPARATOR.length;
@@ -73981,7 +74076,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactInstanceHandles;
 
 /***/ },
-/* 617 */
+/* 621 */
 /***/ function(module, exports) {
 
 	/**
@@ -74015,7 +74110,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactRootIndex;
 
 /***/ },
-/* 618 */
+/* 622 */
 /***/ function(module, exports) {
 
 	/**
@@ -74067,7 +74162,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactInstanceMap;
 
 /***/ },
-/* 619 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74083,7 +74178,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var adler32 = __webpack_require__(620);
+	var adler32 = __webpack_require__(624);
 	
 	var TAG_END = /\/?>/;
 	
@@ -74117,7 +74212,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 620 */
+/* 624 */
 /***/ function(module, exports) {
 
 	/**
@@ -74164,7 +74259,7 @@ webpackJsonp([0,1],[
 	module.exports = adler32;
 
 /***/ },
-/* 621 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74180,7 +74275,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactRef = __webpack_require__(622);
+	var ReactRef = __webpack_require__(626);
 	
 	/**
 	 * Helper to call ReactRef.attachRefs with this composite component, split out
@@ -74276,7 +74371,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactReconciler;
 
 /***/ },
-/* 622 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74292,7 +74387,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactOwner = __webpack_require__(623);
+	var ReactOwner = __webpack_require__(627);
 	
 	var ReactRef = {};
 	
@@ -74359,7 +74454,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactRef;
 
 /***/ },
-/* 623 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74375,7 +74470,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * ReactOwners are capable of storing references to owned components.
@@ -74455,7 +74550,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactOwner;
 
 /***/ },
-/* 624 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74471,14 +74566,14 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactElement = __webpack_require__(613);
-	var ReactInstanceMap = __webpack_require__(618);
-	var ReactUpdates = __webpack_require__(625);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactElement = __webpack_require__(617);
+	var ReactInstanceMap = __webpack_require__(622);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	function enqueueUpdate(internalInstance) {
 	  ReactUpdates.enqueueUpdate(internalInstance);
@@ -74717,7 +74812,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactUpdateQueue;
 
 /***/ },
-/* 625 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74733,14 +74828,14 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var CallbackQueue = __webpack_require__(626);
-	var PooledClass = __webpack_require__(627);
-	var ReactPerf = __webpack_require__(589);
-	var ReactReconciler = __webpack_require__(621);
-	var Transaction = __webpack_require__(628);
+	var CallbackQueue = __webpack_require__(630);
+	var PooledClass = __webpack_require__(631);
+	var ReactPerf = __webpack_require__(593);
+	var ReactReconciler = __webpack_require__(625);
+	var Transaction = __webpack_require__(632);
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
 	
 	var dirtyComponents = [];
 	var asapCallbackQueue = CallbackQueue.getPooled();
@@ -74945,7 +75040,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactUpdates;
 
 /***/ },
-/* 626 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -74961,10 +75056,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var PooledClass = __webpack_require__(627);
+	var PooledClass = __webpack_require__(631);
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * A specialized pseudo-event module to help keep track of components waiting to
@@ -75043,7 +75138,7 @@ webpackJsonp([0,1],[
 	module.exports = CallbackQueue;
 
 /***/ },
-/* 627 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75059,7 +75154,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Static poolers. Several custom versions for each potential number of
@@ -75167,7 +75262,7 @@ webpackJsonp([0,1],[
 	module.exports = PooledClass;
 
 /***/ },
-/* 628 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75183,7 +75278,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * `Transaction` creates a black box that is able to wrap any method such that
@@ -75403,7 +75498,7 @@ webpackJsonp([0,1],[
 	module.exports = Transaction;
 
 /***/ },
-/* 629 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75428,7 +75523,7 @@ webpackJsonp([0,1],[
 	module.exports = emptyObject;
 
 /***/ },
-/* 630 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75445,7 +75540,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var isTextNode = __webpack_require__(631);
+	var isTextNode = __webpack_require__(635);
 	
 	/*eslint-disable no-bitwise */
 	
@@ -75488,7 +75583,7 @@ webpackJsonp([0,1],[
 	module.exports = containsNode;
 
 /***/ },
-/* 631 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75505,7 +75600,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var isNode = __webpack_require__(632);
+	var isNode = __webpack_require__(636);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -75518,7 +75613,7 @@ webpackJsonp([0,1],[
 	module.exports = isTextNode;
 
 /***/ },
-/* 632 */
+/* 636 */
 /***/ function(module, exports) {
 
 	/**
@@ -75546,7 +75641,7 @@ webpackJsonp([0,1],[
 	module.exports = isNode;
 
 /***/ },
-/* 633 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75563,13 +75658,13 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactCompositeComponent = __webpack_require__(634);
-	var ReactEmptyComponent = __webpack_require__(639);
-	var ReactNativeComponent = __webpack_require__(640);
+	var ReactCompositeComponent = __webpack_require__(638);
+	var ReactEmptyComponent = __webpack_require__(643);
+	var ReactNativeComponent = __webpack_require__(644);
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	// To avoid a cyclic dependency, we create the final class in this module
 	var ReactCompositeComponentWrapper = function () {};
@@ -75663,7 +75758,7 @@ webpackJsonp([0,1],[
 	module.exports = instantiateReactComponent;
 
 /***/ },
-/* 634 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -75679,21 +75774,21 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactComponentEnvironment = __webpack_require__(635);
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactElement = __webpack_require__(613);
-	var ReactInstanceMap = __webpack_require__(618);
-	var ReactPerf = __webpack_require__(589);
-	var ReactPropTypeLocations = __webpack_require__(636);
-	var ReactPropTypeLocationNames = __webpack_require__(637);
-	var ReactReconciler = __webpack_require__(621);
-	var ReactUpdateQueue = __webpack_require__(624);
+	var ReactComponentEnvironment = __webpack_require__(639);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactElement = __webpack_require__(617);
+	var ReactInstanceMap = __webpack_require__(622);
+	var ReactPerf = __webpack_require__(593);
+	var ReactPropTypeLocations = __webpack_require__(640);
+	var ReactPropTypeLocationNames = __webpack_require__(641);
+	var ReactReconciler = __webpack_require__(625);
+	var ReactUpdateQueue = __webpack_require__(628);
 	
-	var assign = __webpack_require__(610);
-	var emptyObject = __webpack_require__(629);
-	var invariant = __webpack_require__(584);
-	var shouldUpdateReactComponent = __webpack_require__(638);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var emptyObject = __webpack_require__(633);
+	var invariant = __webpack_require__(588);
+	var shouldUpdateReactComponent = __webpack_require__(642);
+	var warning = __webpack_require__(600);
 	
 	function getDeclarationErrorAddendum(component) {
 	  var owner = component._currentElement._owner || null;
@@ -76362,7 +76457,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactCompositeComponent;
 
 /***/ },
-/* 635 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -76378,7 +76473,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	var injected = false;
 	
@@ -76418,7 +76513,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactComponentEnvironment;
 
 /***/ },
-/* 636 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -76434,7 +76529,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var keyMirror = __webpack_require__(588);
+	var keyMirror = __webpack_require__(592);
 	
 	var ReactPropTypeLocations = keyMirror({
 	  prop: null,
@@ -76445,7 +76540,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactPropTypeLocations;
 
 /***/ },
-/* 637 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -76474,7 +76569,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactPropTypeLocationNames;
 
 /***/ },
-/* 638 */
+/* 642 */
 /***/ function(module, exports) {
 
 	/**
@@ -76522,7 +76617,7 @@ webpackJsonp([0,1],[
 	module.exports = shouldUpdateReactComponent;
 
 /***/ },
-/* 639 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -76538,11 +76633,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactElement = __webpack_require__(613);
-	var ReactEmptyComponentRegistry = __webpack_require__(615);
-	var ReactReconciler = __webpack_require__(621);
+	var ReactElement = __webpack_require__(617);
+	var ReactEmptyComponentRegistry = __webpack_require__(619);
+	var ReactReconciler = __webpack_require__(625);
 	
-	var assign = __webpack_require__(610);
+	var assign = __webpack_require__(614);
 	
 	var placeholderElement;
 	
@@ -76582,7 +76677,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 640 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -76598,8 +76693,8 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
 	
 	var autoGenerateWrapperClass = null;
 	var genericComponentClass = null;
@@ -76681,7 +76776,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactNativeComponent;
 
 /***/ },
-/* 641 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -76697,9 +76792,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var assign = __webpack_require__(610);
-	var emptyFunction = __webpack_require__(586);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var emptyFunction = __webpack_require__(590);
+	var warning = __webpack_require__(600);
 	
 	var validateDOMNesting = emptyFunction;
 	
@@ -77049,7 +77144,7 @@ webpackJsonp([0,1],[
 	module.exports = validateDOMNesting;
 
 /***/ },
-/* 642 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77065,27 +77160,27 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var BeforeInputEventPlugin = __webpack_require__(643);
-	var ChangeEventPlugin = __webpack_require__(651);
-	var ClientReactRootIndex = __webpack_require__(654);
-	var DefaultEventPluginOrder = __webpack_require__(655);
-	var EnterLeaveEventPlugin = __webpack_require__(656);
-	var ExecutionEnvironment = __webpack_require__(580);
-	var HTMLDOMPropertyConfig = __webpack_require__(660);
-	var ReactBrowserComponentMixin = __webpack_require__(661);
-	var ReactComponentBrowserEnvironment = __webpack_require__(597);
-	var ReactDefaultBatchingStrategy = __webpack_require__(663);
-	var ReactDOMComponent = __webpack_require__(664);
-	var ReactDOMTextComponent = __webpack_require__(577);
-	var ReactEventListener = __webpack_require__(689);
-	var ReactInjection = __webpack_require__(692);
-	var ReactInstanceHandles = __webpack_require__(616);
-	var ReactMount = __webpack_require__(599);
-	var ReactReconcileTransaction = __webpack_require__(696);
-	var SelectEventPlugin = __webpack_require__(701);
-	var ServerReactRootIndex = __webpack_require__(702);
-	var SimpleEventPlugin = __webpack_require__(703);
-	var SVGDOMPropertyConfig = __webpack_require__(712);
+	var BeforeInputEventPlugin = __webpack_require__(647);
+	var ChangeEventPlugin = __webpack_require__(655);
+	var ClientReactRootIndex = __webpack_require__(658);
+	var DefaultEventPluginOrder = __webpack_require__(659);
+	var EnterLeaveEventPlugin = __webpack_require__(660);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var HTMLDOMPropertyConfig = __webpack_require__(664);
+	var ReactBrowserComponentMixin = __webpack_require__(665);
+	var ReactComponentBrowserEnvironment = __webpack_require__(601);
+	var ReactDefaultBatchingStrategy = __webpack_require__(667);
+	var ReactDOMComponent = __webpack_require__(668);
+	var ReactDOMTextComponent = __webpack_require__(581);
+	var ReactEventListener = __webpack_require__(693);
+	var ReactInjection = __webpack_require__(696);
+	var ReactInstanceHandles = __webpack_require__(620);
+	var ReactMount = __webpack_require__(603);
+	var ReactReconcileTransaction = __webpack_require__(700);
+	var SelectEventPlugin = __webpack_require__(705);
+	var ServerReactRootIndex = __webpack_require__(706);
+	var SimpleEventPlugin = __webpack_require__(707);
+	var SVGDOMPropertyConfig = __webpack_require__(716);
 	
 	var alreadyInjected = false;
 	
@@ -77140,7 +77235,7 @@ webpackJsonp([0,1],[
 	  if (true) {
 	    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
 	    if (/[?&]react_perf\b/.test(url)) {
-	      var ReactDefaultPerf = __webpack_require__(713);
+	      var ReactDefaultPerf = __webpack_require__(717);
 	      ReactDefaultPerf.start();
 	    }
 	  }
@@ -77151,7 +77246,7 @@ webpackJsonp([0,1],[
 	};
 
 /***/ },
-/* 643 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77168,14 +77263,14 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventPropagators = __webpack_require__(644);
-	var ExecutionEnvironment = __webpack_require__(580);
-	var FallbackCompositionState = __webpack_require__(645);
-	var SyntheticCompositionEvent = __webpack_require__(647);
-	var SyntheticInputEvent = __webpack_require__(649);
+	var EventConstants = __webpack_require__(605);
+	var EventPropagators = __webpack_require__(648);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var FallbackCompositionState = __webpack_require__(649);
+	var SyntheticCompositionEvent = __webpack_require__(651);
+	var SyntheticInputEvent = __webpack_require__(653);
 	
-	var keyOf = __webpack_require__(650);
+	var keyOf = __webpack_require__(654);
 	
 	var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 	var START_KEYCODE = 229;
@@ -77561,7 +77656,7 @@ webpackJsonp([0,1],[
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 644 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77577,13 +77672,13 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventPluginHub = __webpack_require__(602);
+	var EventConstants = __webpack_require__(605);
+	var EventPluginHub = __webpack_require__(606);
 	
-	var warning = __webpack_require__(596);
+	var warning = __webpack_require__(600);
 	
-	var accumulateInto = __webpack_require__(606);
-	var forEachAccumulated = __webpack_require__(607);
+	var accumulateInto = __webpack_require__(610);
+	var forEachAccumulated = __webpack_require__(611);
 	
 	var PropagationPhases = EventConstants.PropagationPhases;
 	var getListener = EventPluginHub.getListener;
@@ -77701,7 +77796,7 @@ webpackJsonp([0,1],[
 	module.exports = EventPropagators;
 
 /***/ },
-/* 645 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77718,10 +77813,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var PooledClass = __webpack_require__(627);
+	var PooledClass = __webpack_require__(631);
 	
-	var assign = __webpack_require__(610);
-	var getTextContentAccessor = __webpack_require__(646);
+	var assign = __webpack_require__(614);
+	var getTextContentAccessor = __webpack_require__(650);
 	
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -77801,7 +77896,7 @@ webpackJsonp([0,1],[
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 646 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77817,7 +77912,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
 	var contentKey = null;
 	
@@ -77839,7 +77934,7 @@ webpackJsonp([0,1],[
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 647 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77856,7 +77951,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(648);
+	var SyntheticEvent = __webpack_require__(652);
 	
 	/**
 	 * @interface Event
@@ -77881,7 +77976,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 648 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -77898,11 +77993,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var PooledClass = __webpack_require__(627);
+	var PooledClass = __webpack_require__(631);
 	
-	var assign = __webpack_require__(610);
-	var emptyFunction = __webpack_require__(586);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var emptyFunction = __webpack_require__(590);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * @interface Event
@@ -78066,7 +78161,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticEvent;
 
 /***/ },
-/* 649 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78083,7 +78178,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(648);
+	var SyntheticEvent = __webpack_require__(652);
 	
 	/**
 	 * @interface Event
@@ -78109,7 +78204,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 650 */
+/* 654 */
 /***/ function(module, exports) {
 
 	/**
@@ -78149,7 +78244,7 @@ webpackJsonp([0,1],[
 	module.exports = keyOf;
 
 /***/ },
-/* 651 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78165,17 +78260,17 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventPluginHub = __webpack_require__(602);
-	var EventPropagators = __webpack_require__(644);
-	var ExecutionEnvironment = __webpack_require__(580);
-	var ReactUpdates = __webpack_require__(625);
-	var SyntheticEvent = __webpack_require__(648);
+	var EventConstants = __webpack_require__(605);
+	var EventPluginHub = __webpack_require__(606);
+	var EventPropagators = __webpack_require__(648);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var ReactUpdates = __webpack_require__(629);
+	var SyntheticEvent = __webpack_require__(652);
 	
-	var getEventTarget = __webpack_require__(652);
-	var isEventSupported = __webpack_require__(611);
-	var isTextInputElement = __webpack_require__(653);
-	var keyOf = __webpack_require__(650);
+	var getEventTarget = __webpack_require__(656);
+	var isEventSupported = __webpack_require__(615);
+	var isTextInputElement = __webpack_require__(657);
+	var keyOf = __webpack_require__(654);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -78475,7 +78570,7 @@ webpackJsonp([0,1],[
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 652 */
+/* 656 */
 /***/ function(module, exports) {
 
 	/**
@@ -78509,7 +78604,7 @@ webpackJsonp([0,1],[
 	module.exports = getEventTarget;
 
 /***/ },
-/* 653 */
+/* 657 */
 /***/ function(module, exports) {
 
 	/**
@@ -78554,7 +78649,7 @@ webpackJsonp([0,1],[
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 654 */
+/* 658 */
 /***/ function(module, exports) {
 
 	/**
@@ -78582,7 +78677,7 @@ webpackJsonp([0,1],[
 	module.exports = ClientReactRootIndex;
 
 /***/ },
-/* 655 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78598,7 +78693,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var keyOf = __webpack_require__(650);
+	var keyOf = __webpack_require__(654);
 	
 	/**
 	 * Module that is injectable into `EventPluginHub`, that specifies a
@@ -78614,7 +78709,7 @@ webpackJsonp([0,1],[
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 656 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78631,12 +78726,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventPropagators = __webpack_require__(644);
-	var SyntheticMouseEvent = __webpack_require__(657);
+	var EventConstants = __webpack_require__(605);
+	var EventPropagators = __webpack_require__(648);
+	var SyntheticMouseEvent = __webpack_require__(661);
 	
-	var ReactMount = __webpack_require__(599);
-	var keyOf = __webpack_require__(650);
+	var ReactMount = __webpack_require__(603);
+	var keyOf = __webpack_require__(654);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	var getFirstReactDOM = ReactMount.getFirstReactDOM;
@@ -78743,7 +78838,7 @@ webpackJsonp([0,1],[
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 657 */
+/* 661 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78760,10 +78855,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(658);
-	var ViewportMetrics = __webpack_require__(609);
+	var SyntheticUIEvent = __webpack_require__(662);
+	var ViewportMetrics = __webpack_require__(613);
 	
-	var getEventModifierState = __webpack_require__(659);
+	var getEventModifierState = __webpack_require__(663);
 	
 	/**
 	 * @interface MouseEvent
@@ -78821,7 +78916,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticMouseEvent;
 
 /***/ },
-/* 658 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78838,9 +78933,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(648);
+	var SyntheticEvent = __webpack_require__(652);
 	
-	var getEventTarget = __webpack_require__(652);
+	var getEventTarget = __webpack_require__(656);
 	
 	/**
 	 * @interface UIEvent
@@ -78886,7 +78981,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticUIEvent;
 
 /***/ },
-/* 659 */
+/* 663 */
 /***/ function(module, exports) {
 
 	/**
@@ -78935,7 +79030,7 @@ webpackJsonp([0,1],[
 	module.exports = getEventModifierState;
 
 /***/ },
-/* 660 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -78951,8 +79046,8 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(594);
-	var ExecutionEnvironment = __webpack_require__(580);
+	var DOMProperty = __webpack_require__(598);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
 	var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 	var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
@@ -79170,7 +79265,7 @@ webpackJsonp([0,1],[
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 661 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79186,10 +79281,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactInstanceMap = __webpack_require__(618);
+	var ReactInstanceMap = __webpack_require__(622);
 	
-	var findDOMNode = __webpack_require__(662);
-	var warning = __webpack_require__(596);
+	var findDOMNode = __webpack_require__(666);
+	var warning = __webpack_require__(600);
 	
 	var didWarnKey = '_getDOMNodeDidWarn';
 	
@@ -79211,7 +79306,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactBrowserComponentMixin;
 
 /***/ },
-/* 662 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79228,12 +79323,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactInstanceMap = __webpack_require__(618);
-	var ReactMount = __webpack_require__(599);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactInstanceMap = __webpack_require__(622);
+	var ReactMount = __webpack_require__(603);
 	
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * Returns the DOM node rendered by this element.
@@ -79265,7 +79360,7 @@ webpackJsonp([0,1],[
 	module.exports = findDOMNode;
 
 /***/ },
-/* 663 */
+/* 667 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79281,11 +79376,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactUpdates = __webpack_require__(625);
-	var Transaction = __webpack_require__(628);
+	var ReactUpdates = __webpack_require__(629);
+	var Transaction = __webpack_require__(632);
 	
-	var assign = __webpack_require__(610);
-	var emptyFunction = __webpack_require__(586);
+	var assign = __webpack_require__(614);
+	var emptyFunction = __webpack_require__(590);
 	
 	var RESET_BATCHED_UPDATES = {
 	  initialize: emptyFunction,
@@ -79337,7 +79432,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 664 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -79356,34 +79451,34 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var AutoFocusUtils = __webpack_require__(665);
-	var CSSPropertyOperations = __webpack_require__(667);
-	var DOMProperty = __webpack_require__(594);
-	var DOMPropertyOperations = __webpack_require__(593);
-	var EventConstants = __webpack_require__(601);
-	var ReactBrowserEventEmitter = __webpack_require__(600);
-	var ReactComponentBrowserEnvironment = __webpack_require__(597);
-	var ReactDOMButton = __webpack_require__(675);
-	var ReactDOMInput = __webpack_require__(676);
-	var ReactDOMOption = __webpack_require__(680);
-	var ReactDOMSelect = __webpack_require__(683);
-	var ReactDOMTextarea = __webpack_require__(684);
-	var ReactMount = __webpack_require__(599);
-	var ReactMultiChild = __webpack_require__(685);
-	var ReactPerf = __webpack_require__(589);
-	var ReactUpdateQueue = __webpack_require__(624);
+	var AutoFocusUtils = __webpack_require__(669);
+	var CSSPropertyOperations = __webpack_require__(671);
+	var DOMProperty = __webpack_require__(598);
+	var DOMPropertyOperations = __webpack_require__(597);
+	var EventConstants = __webpack_require__(605);
+	var ReactBrowserEventEmitter = __webpack_require__(604);
+	var ReactComponentBrowserEnvironment = __webpack_require__(601);
+	var ReactDOMButton = __webpack_require__(679);
+	var ReactDOMInput = __webpack_require__(680);
+	var ReactDOMOption = __webpack_require__(684);
+	var ReactDOMSelect = __webpack_require__(687);
+	var ReactDOMTextarea = __webpack_require__(688);
+	var ReactMount = __webpack_require__(603);
+	var ReactMultiChild = __webpack_require__(689);
+	var ReactPerf = __webpack_require__(593);
+	var ReactUpdateQueue = __webpack_require__(628);
 	
-	var assign = __webpack_require__(610);
-	var canDefineProperty = __webpack_require__(614);
-	var escapeTextContentForBrowser = __webpack_require__(592);
-	var invariant = __webpack_require__(584);
-	var isEventSupported = __webpack_require__(611);
-	var keyOf = __webpack_require__(650);
-	var setInnerHTML = __webpack_require__(590);
-	var setTextContent = __webpack_require__(591);
-	var shallowEqual = __webpack_require__(688);
-	var validateDOMNesting = __webpack_require__(641);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var canDefineProperty = __webpack_require__(618);
+	var escapeTextContentForBrowser = __webpack_require__(596);
+	var invariant = __webpack_require__(588);
+	var isEventSupported = __webpack_require__(615);
+	var keyOf = __webpack_require__(654);
+	var setInnerHTML = __webpack_require__(594);
+	var setTextContent = __webpack_require__(595);
+	var shallowEqual = __webpack_require__(692);
+	var validateDOMNesting = __webpack_require__(645);
+	var warning = __webpack_require__(600);
 	
 	var deleteListener = ReactBrowserEventEmitter.deleteListener;
 	var listenTo = ReactBrowserEventEmitter.listenTo;
@@ -80304,7 +80399,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMComponent;
 
 /***/ },
-/* 665 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80321,10 +80416,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactMount = __webpack_require__(599);
+	var ReactMount = __webpack_require__(603);
 	
-	var findDOMNode = __webpack_require__(662);
-	var focusNode = __webpack_require__(666);
+	var findDOMNode = __webpack_require__(666);
+	var focusNode = __webpack_require__(670);
 	
 	var Mixin = {
 	  componentDidMount: function () {
@@ -80345,7 +80440,7 @@ webpackJsonp([0,1],[
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 666 */
+/* 670 */
 /***/ function(module, exports) {
 
 	/**
@@ -80376,7 +80471,7 @@ webpackJsonp([0,1],[
 	module.exports = focusNode;
 
 /***/ },
-/* 667 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80393,15 +80488,15 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(668);
-	var ExecutionEnvironment = __webpack_require__(580);
-	var ReactPerf = __webpack_require__(589);
+	var CSSProperty = __webpack_require__(672);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var ReactPerf = __webpack_require__(593);
 	
-	var camelizeStyleName = __webpack_require__(669);
-	var dangerousStyleValue = __webpack_require__(671);
-	var hyphenateStyleName = __webpack_require__(672);
-	var memoizeStringOnly = __webpack_require__(674);
-	var warning = __webpack_require__(596);
+	var camelizeStyleName = __webpack_require__(673);
+	var dangerousStyleValue = __webpack_require__(675);
+	var hyphenateStyleName = __webpack_require__(676);
+	var memoizeStringOnly = __webpack_require__(678);
+	var warning = __webpack_require__(600);
 	
 	var processStyleName = memoizeStringOnly(function (styleName) {
 	  return hyphenateStyleName(styleName);
@@ -80556,7 +80651,7 @@ webpackJsonp([0,1],[
 	module.exports = CSSPropertyOperations;
 
 /***/ },
-/* 668 */
+/* 672 */
 /***/ function(module, exports) {
 
 	/**
@@ -80700,7 +80795,7 @@ webpackJsonp([0,1],[
 	module.exports = CSSProperty;
 
 /***/ },
-/* 669 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80717,7 +80812,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var camelize = __webpack_require__(670);
+	var camelize = __webpack_require__(674);
 	
 	var msPattern = /^-ms-/;
 	
@@ -80745,7 +80840,7 @@ webpackJsonp([0,1],[
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 670 */
+/* 674 */
 /***/ function(module, exports) {
 
 	/**
@@ -80782,7 +80877,7 @@ webpackJsonp([0,1],[
 	module.exports = camelize;
 
 /***/ },
-/* 671 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80799,7 +80894,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(668);
+	var CSSProperty = __webpack_require__(672);
 	
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
 	
@@ -80842,7 +80937,7 @@ webpackJsonp([0,1],[
 	module.exports = dangerousStyleValue;
 
 /***/ },
-/* 672 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -80859,7 +80954,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var hyphenate = __webpack_require__(673);
+	var hyphenate = __webpack_require__(677);
 	
 	var msPattern = /^ms-/;
 	
@@ -80886,7 +80981,7 @@ webpackJsonp([0,1],[
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 673 */
+/* 677 */
 /***/ function(module, exports) {
 
 	/**
@@ -80924,7 +81019,7 @@ webpackJsonp([0,1],[
 	module.exports = hyphenate;
 
 /***/ },
-/* 674 */
+/* 678 */
 /***/ function(module, exports) {
 
 	/**
@@ -80960,7 +81055,7 @@ webpackJsonp([0,1],[
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 675 */
+/* 679 */
 /***/ function(module, exports) {
 
 	/**
@@ -81015,7 +81110,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 676 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81031,13 +81126,13 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactDOMIDOperations = __webpack_require__(598);
-	var LinkedValueUtils = __webpack_require__(677);
-	var ReactMount = __webpack_require__(599);
-	var ReactUpdates = __webpack_require__(625);
+	var ReactDOMIDOperations = __webpack_require__(602);
+	var LinkedValueUtils = __webpack_require__(681);
+	var ReactMount = __webpack_require__(603);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
 	
 	var instancesByReactID = {};
 	
@@ -81173,7 +81268,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMInput;
 
 /***/ },
-/* 677 */
+/* 681 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81190,11 +81285,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactPropTypes = __webpack_require__(678);
-	var ReactPropTypeLocations = __webpack_require__(636);
+	var ReactPropTypes = __webpack_require__(682);
+	var ReactPropTypeLocations = __webpack_require__(640);
 	
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	var hasReadOnlyValue = {
 	  'button': true,
@@ -81312,7 +81407,7 @@ webpackJsonp([0,1],[
 	module.exports = LinkedValueUtils;
 
 /***/ },
-/* 678 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81328,11 +81423,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactElement = __webpack_require__(613);
-	var ReactPropTypeLocationNames = __webpack_require__(637);
+	var ReactElement = __webpack_require__(617);
+	var ReactPropTypeLocationNames = __webpack_require__(641);
 	
-	var emptyFunction = __webpack_require__(586);
-	var getIteratorFn = __webpack_require__(679);
+	var emptyFunction = __webpack_require__(590);
+	var getIteratorFn = __webpack_require__(683);
 	
 	/**
 	 * Collection of methods that allow declaration and validation of props that are
@@ -81673,7 +81768,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactPropTypes;
 
 /***/ },
-/* 679 */
+/* 683 */
 /***/ function(module, exports) {
 
 	/**
@@ -81718,7 +81813,7 @@ webpackJsonp([0,1],[
 	module.exports = getIteratorFn;
 
 /***/ },
-/* 680 */
+/* 684 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81734,11 +81829,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactChildren = __webpack_require__(681);
-	var ReactDOMSelect = __webpack_require__(683);
+	var ReactChildren = __webpack_require__(685);
+	var ReactDOMSelect = __webpack_require__(687);
 	
-	var assign = __webpack_require__(610);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var warning = __webpack_require__(600);
 	
 	var valueContextKey = ReactDOMSelect.valueContextKey;
 	
@@ -81812,7 +81907,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMOption;
 
 /***/ },
-/* 681 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -81828,11 +81923,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var PooledClass = __webpack_require__(627);
-	var ReactElement = __webpack_require__(613);
+	var PooledClass = __webpack_require__(631);
+	var ReactElement = __webpack_require__(617);
 	
-	var emptyFunction = __webpack_require__(586);
-	var traverseAllChildren = __webpack_require__(682);
+	var emptyFunction = __webpack_require__(590);
+	var traverseAllChildren = __webpack_require__(686);
 	
 	var twoArgumentPooler = PooledClass.twoArgumentPooler;
 	var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -81999,7 +82094,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactChildren;
 
 /***/ },
-/* 682 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -82015,13 +82110,13 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactElement = __webpack_require__(613);
-	var ReactInstanceHandles = __webpack_require__(616);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactElement = __webpack_require__(617);
+	var ReactInstanceHandles = __webpack_require__(620);
 	
-	var getIteratorFn = __webpack_require__(679);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var getIteratorFn = __webpack_require__(683);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	var SEPARATOR = ReactInstanceHandles.SEPARATOR;
 	var SUBSEPARATOR = ':';
@@ -82193,7 +82288,7 @@ webpackJsonp([0,1],[
 	module.exports = traverseAllChildren;
 
 /***/ },
-/* 683 */
+/* 687 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -82209,12 +82304,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var LinkedValueUtils = __webpack_require__(677);
-	var ReactMount = __webpack_require__(599);
-	var ReactUpdates = __webpack_require__(625);
+	var LinkedValueUtils = __webpack_require__(681);
+	var ReactMount = __webpack_require__(603);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var assign = __webpack_require__(610);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var warning = __webpack_require__(600);
 	
 	var valueContextKey = '__ReactDOMSelect_value$' + Math.random().toString(36).slice(2);
 	
@@ -82386,7 +82481,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMSelect;
 
 /***/ },
-/* 684 */
+/* 688 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -82402,13 +82497,13 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var LinkedValueUtils = __webpack_require__(677);
-	var ReactDOMIDOperations = __webpack_require__(598);
-	var ReactUpdates = __webpack_require__(625);
+	var LinkedValueUtils = __webpack_require__(681);
+	var ReactDOMIDOperations = __webpack_require__(602);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var assign = __webpack_require__(610);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	function forceUpdateIfMounted() {
 	  if (this._rootNodeID) {
@@ -82504,7 +82599,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMTextarea;
 
 /***/ },
-/* 685 */
+/* 689 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -82521,14 +82616,14 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactComponentEnvironment = __webpack_require__(635);
-	var ReactMultiChildUpdateTypes = __webpack_require__(587);
+	var ReactComponentEnvironment = __webpack_require__(639);
+	var ReactMultiChildUpdateTypes = __webpack_require__(591);
 	
-	var ReactCurrentOwner = __webpack_require__(576);
-	var ReactReconciler = __webpack_require__(621);
-	var ReactChildReconciler = __webpack_require__(686);
+	var ReactCurrentOwner = __webpack_require__(580);
+	var ReactReconciler = __webpack_require__(625);
+	var ReactChildReconciler = __webpack_require__(690);
 	
-	var flattenChildren = __webpack_require__(687);
+	var flattenChildren = __webpack_require__(691);
 	
 	/**
 	 * Updating children of a component may trigger recursive updates. The depth is
@@ -83005,7 +83100,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactMultiChild;
 
 /***/ },
-/* 686 */
+/* 690 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83022,12 +83117,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactReconciler = __webpack_require__(621);
+	var ReactReconciler = __webpack_require__(625);
 	
-	var instantiateReactComponent = __webpack_require__(633);
-	var shouldUpdateReactComponent = __webpack_require__(638);
-	var traverseAllChildren = __webpack_require__(682);
-	var warning = __webpack_require__(596);
+	var instantiateReactComponent = __webpack_require__(637);
+	var shouldUpdateReactComponent = __webpack_require__(642);
+	var traverseAllChildren = __webpack_require__(686);
+	var warning = __webpack_require__(600);
 	
 	function instantiateChild(childInstances, child, name) {
 	  // We found a component instance.
@@ -83132,7 +83227,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactChildReconciler;
 
 /***/ },
-/* 687 */
+/* 691 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83148,8 +83243,8 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var traverseAllChildren = __webpack_require__(682);
-	var warning = __webpack_require__(596);
+	var traverseAllChildren = __webpack_require__(686);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * @param {function} traverseContext Context passed through traversal.
@@ -83185,7 +83280,7 @@ webpackJsonp([0,1],[
 	module.exports = flattenChildren;
 
 /***/ },
-/* 688 */
+/* 692 */
 /***/ function(module, exports) {
 
 	/**
@@ -83240,7 +83335,7 @@ webpackJsonp([0,1],[
 	module.exports = shallowEqual;
 
 /***/ },
-/* 689 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83257,16 +83352,16 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventListener = __webpack_require__(690);
-	var ExecutionEnvironment = __webpack_require__(580);
-	var PooledClass = __webpack_require__(627);
-	var ReactInstanceHandles = __webpack_require__(616);
-	var ReactMount = __webpack_require__(599);
-	var ReactUpdates = __webpack_require__(625);
+	var EventListener = __webpack_require__(694);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var PooledClass = __webpack_require__(631);
+	var ReactInstanceHandles = __webpack_require__(620);
+	var ReactMount = __webpack_require__(603);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var assign = __webpack_require__(610);
-	var getEventTarget = __webpack_require__(652);
-	var getUnboundedScrollPosition = __webpack_require__(691);
+	var assign = __webpack_require__(614);
+	var getEventTarget = __webpack_require__(656);
+	var getUnboundedScrollPosition = __webpack_require__(695);
 	
 	var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
 	
@@ -83456,7 +83551,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 690 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83480,7 +83575,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var emptyFunction = __webpack_require__(586);
+	var emptyFunction = __webpack_require__(590);
 	
 	/**
 	 * Upstream version of event listener. Does not take into account specific
@@ -83545,7 +83640,7 @@ webpackJsonp([0,1],[
 	module.exports = EventListener;
 
 /***/ },
-/* 691 */
+/* 695 */
 /***/ function(module, exports) {
 
 	/**
@@ -83588,7 +83683,7 @@ webpackJsonp([0,1],[
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 692 */
+/* 696 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83604,16 +83699,16 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(594);
-	var EventPluginHub = __webpack_require__(602);
-	var ReactComponentEnvironment = __webpack_require__(635);
-	var ReactClass = __webpack_require__(693);
-	var ReactEmptyComponent = __webpack_require__(639);
-	var ReactBrowserEventEmitter = __webpack_require__(600);
-	var ReactNativeComponent = __webpack_require__(640);
-	var ReactPerf = __webpack_require__(589);
-	var ReactRootIndex = __webpack_require__(617);
-	var ReactUpdates = __webpack_require__(625);
+	var DOMProperty = __webpack_require__(598);
+	var EventPluginHub = __webpack_require__(606);
+	var ReactComponentEnvironment = __webpack_require__(639);
+	var ReactClass = __webpack_require__(697);
+	var ReactEmptyComponent = __webpack_require__(643);
+	var ReactBrowserEventEmitter = __webpack_require__(604);
+	var ReactNativeComponent = __webpack_require__(644);
+	var ReactPerf = __webpack_require__(593);
+	var ReactRootIndex = __webpack_require__(621);
+	var ReactUpdates = __webpack_require__(629);
 	
 	var ReactInjection = {
 	  Component: ReactComponentEnvironment.injection,
@@ -83631,7 +83726,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactInjection;
 
 /***/ },
-/* 693 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -83647,18 +83742,18 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactComponent = __webpack_require__(694);
-	var ReactElement = __webpack_require__(613);
-	var ReactPropTypeLocations = __webpack_require__(636);
-	var ReactPropTypeLocationNames = __webpack_require__(637);
-	var ReactNoopUpdateQueue = __webpack_require__(695);
+	var ReactComponent = __webpack_require__(698);
+	var ReactElement = __webpack_require__(617);
+	var ReactPropTypeLocations = __webpack_require__(640);
+	var ReactPropTypeLocationNames = __webpack_require__(641);
+	var ReactNoopUpdateQueue = __webpack_require__(699);
 	
-	var assign = __webpack_require__(610);
-	var emptyObject = __webpack_require__(629);
-	var invariant = __webpack_require__(584);
-	var keyMirror = __webpack_require__(588);
-	var keyOf = __webpack_require__(650);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var emptyObject = __webpack_require__(633);
+	var invariant = __webpack_require__(588);
+	var keyMirror = __webpack_require__(592);
+	var keyOf = __webpack_require__(654);
+	var warning = __webpack_require__(600);
 	
 	var MIXINS_KEY = keyOf({ mixins: null });
 	
@@ -84407,7 +84502,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactClass;
 
 /***/ },
-/* 694 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84423,12 +84518,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactNoopUpdateQueue = __webpack_require__(695);
+	var ReactNoopUpdateQueue = __webpack_require__(699);
 	
-	var canDefineProperty = __webpack_require__(614);
-	var emptyObject = __webpack_require__(629);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var canDefineProperty = __webpack_require__(618);
+	var emptyObject = __webpack_require__(633);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * Base class helpers for the updating state of a component.
@@ -84534,7 +84629,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactComponent;
 
 /***/ },
-/* 695 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84550,7 +84645,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var warning = __webpack_require__(596);
+	var warning = __webpack_require__(600);
 	
 	function warnTDZ(publicInstance, callerName) {
 	  if (true) {
@@ -84657,7 +84752,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactNoopUpdateQueue;
 
 /***/ },
-/* 696 */
+/* 700 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84674,14 +84769,14 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var CallbackQueue = __webpack_require__(626);
-	var PooledClass = __webpack_require__(627);
-	var ReactBrowserEventEmitter = __webpack_require__(600);
-	var ReactDOMFeatureFlags = __webpack_require__(612);
-	var ReactInputSelection = __webpack_require__(697);
-	var Transaction = __webpack_require__(628);
+	var CallbackQueue = __webpack_require__(630);
+	var PooledClass = __webpack_require__(631);
+	var ReactBrowserEventEmitter = __webpack_require__(604);
+	var ReactDOMFeatureFlags = __webpack_require__(616);
+	var ReactInputSelection = __webpack_require__(701);
+	var Transaction = __webpack_require__(632);
 	
-	var assign = __webpack_require__(610);
+	var assign = __webpack_require__(614);
 	
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -84813,7 +84908,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 697 */
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84829,11 +84924,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactDOMSelection = __webpack_require__(698);
+	var ReactDOMSelection = __webpack_require__(702);
 	
-	var containsNode = __webpack_require__(630);
-	var focusNode = __webpack_require__(666);
-	var getActiveElement = __webpack_require__(700);
+	var containsNode = __webpack_require__(634);
+	var focusNode = __webpack_require__(670);
+	var getActiveElement = __webpack_require__(704);
 	
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -84942,7 +85037,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 698 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -84958,10 +85053,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
-	var getNodeForCharacterOffset = __webpack_require__(699);
-	var getTextContentAccessor = __webpack_require__(646);
+	var getNodeForCharacterOffset = __webpack_require__(703);
+	var getTextContentAccessor = __webpack_require__(650);
 	
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -85159,7 +85254,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 699 */
+/* 703 */
 /***/ function(module, exports) {
 
 	/**
@@ -85237,7 +85332,7 @@ webpackJsonp([0,1],[
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 700 */
+/* 704 */
 /***/ function(module, exports) {
 
 	/**
@@ -85277,7 +85372,7 @@ webpackJsonp([0,1],[
 	module.exports = getActiveElement;
 
 /***/ },
-/* 701 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -85293,16 +85388,16 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventPropagators = __webpack_require__(644);
-	var ExecutionEnvironment = __webpack_require__(580);
-	var ReactInputSelection = __webpack_require__(697);
-	var SyntheticEvent = __webpack_require__(648);
+	var EventConstants = __webpack_require__(605);
+	var EventPropagators = __webpack_require__(648);
+	var ExecutionEnvironment = __webpack_require__(584);
+	var ReactInputSelection = __webpack_require__(701);
+	var SyntheticEvent = __webpack_require__(652);
 	
-	var getActiveElement = __webpack_require__(700);
-	var isTextInputElement = __webpack_require__(653);
-	var keyOf = __webpack_require__(650);
-	var shallowEqual = __webpack_require__(688);
+	var getActiveElement = __webpack_require__(704);
+	var isTextInputElement = __webpack_require__(657);
+	var keyOf = __webpack_require__(654);
+	var shallowEqual = __webpack_require__(692);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -85483,7 +85578,7 @@ webpackJsonp([0,1],[
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 702 */
+/* 706 */
 /***/ function(module, exports) {
 
 	/**
@@ -85517,7 +85612,7 @@ webpackJsonp([0,1],[
 	module.exports = ServerReactRootIndex;
 
 /***/ },
-/* 703 */
+/* 707 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -85533,24 +85628,24 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(601);
-	var EventListener = __webpack_require__(690);
-	var EventPropagators = __webpack_require__(644);
-	var ReactMount = __webpack_require__(599);
-	var SyntheticClipboardEvent = __webpack_require__(704);
-	var SyntheticEvent = __webpack_require__(648);
-	var SyntheticFocusEvent = __webpack_require__(705);
-	var SyntheticKeyboardEvent = __webpack_require__(706);
-	var SyntheticMouseEvent = __webpack_require__(657);
-	var SyntheticDragEvent = __webpack_require__(709);
-	var SyntheticTouchEvent = __webpack_require__(710);
-	var SyntheticUIEvent = __webpack_require__(658);
-	var SyntheticWheelEvent = __webpack_require__(711);
+	var EventConstants = __webpack_require__(605);
+	var EventListener = __webpack_require__(694);
+	var EventPropagators = __webpack_require__(648);
+	var ReactMount = __webpack_require__(603);
+	var SyntheticClipboardEvent = __webpack_require__(708);
+	var SyntheticEvent = __webpack_require__(652);
+	var SyntheticFocusEvent = __webpack_require__(709);
+	var SyntheticKeyboardEvent = __webpack_require__(710);
+	var SyntheticMouseEvent = __webpack_require__(661);
+	var SyntheticDragEvent = __webpack_require__(713);
+	var SyntheticTouchEvent = __webpack_require__(714);
+	var SyntheticUIEvent = __webpack_require__(662);
+	var SyntheticWheelEvent = __webpack_require__(715);
 	
-	var emptyFunction = __webpack_require__(586);
-	var getEventCharCode = __webpack_require__(707);
-	var invariant = __webpack_require__(584);
-	var keyOf = __webpack_require__(650);
+	var emptyFunction = __webpack_require__(590);
+	var getEventCharCode = __webpack_require__(711);
+	var invariant = __webpack_require__(588);
+	var keyOf = __webpack_require__(654);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -86109,7 +86204,7 @@ webpackJsonp([0,1],[
 	module.exports = SimpleEventPlugin;
 
 /***/ },
-/* 704 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86126,7 +86221,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(648);
+	var SyntheticEvent = __webpack_require__(652);
 	
 	/**
 	 * @interface Event
@@ -86153,7 +86248,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 705 */
+/* 709 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86170,7 +86265,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(658);
+	var SyntheticUIEvent = __webpack_require__(662);
 	
 	/**
 	 * @interface FocusEvent
@@ -86195,7 +86290,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 706 */
+/* 710 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86212,11 +86307,11 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(658);
+	var SyntheticUIEvent = __webpack_require__(662);
 	
-	var getEventCharCode = __webpack_require__(707);
-	var getEventKey = __webpack_require__(708);
-	var getEventModifierState = __webpack_require__(659);
+	var getEventCharCode = __webpack_require__(711);
+	var getEventKey = __webpack_require__(712);
+	var getEventModifierState = __webpack_require__(663);
 	
 	/**
 	 * @interface KeyboardEvent
@@ -86285,7 +86380,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 707 */
+/* 711 */
 /***/ function(module, exports) {
 
 	/**
@@ -86340,7 +86435,7 @@ webpackJsonp([0,1],[
 	module.exports = getEventCharCode;
 
 /***/ },
-/* 708 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86357,7 +86452,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var getEventCharCode = __webpack_require__(707);
+	var getEventCharCode = __webpack_require__(711);
 	
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -86448,7 +86543,7 @@ webpackJsonp([0,1],[
 	module.exports = getEventKey;
 
 /***/ },
-/* 709 */
+/* 713 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86465,7 +86560,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(657);
+	var SyntheticMouseEvent = __webpack_require__(661);
 	
 	/**
 	 * @interface DragEvent
@@ -86490,7 +86585,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 710 */
+/* 714 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86507,9 +86602,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(658);
+	var SyntheticUIEvent = __webpack_require__(662);
 	
-	var getEventModifierState = __webpack_require__(659);
+	var getEventModifierState = __webpack_require__(663);
 	
 	/**
 	 * @interface TouchEvent
@@ -86541,7 +86636,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 711 */
+/* 715 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86558,7 +86653,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(657);
+	var SyntheticMouseEvent = __webpack_require__(661);
 	
 	/**
 	 * @interface WheelEvent
@@ -86601,7 +86696,7 @@ webpackJsonp([0,1],[
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 712 */
+/* 716 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86617,7 +86712,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(594);
+	var DOMProperty = __webpack_require__(598);
 	
 	var MUST_USE_ATTRIBUTE = DOMProperty.injection.MUST_USE_ATTRIBUTE;
 	
@@ -86733,7 +86828,7 @@ webpackJsonp([0,1],[
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 713 */
+/* 717 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86750,12 +86845,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(594);
-	var ReactDefaultPerfAnalysis = __webpack_require__(714);
-	var ReactMount = __webpack_require__(599);
-	var ReactPerf = __webpack_require__(589);
+	var DOMProperty = __webpack_require__(598);
+	var ReactDefaultPerfAnalysis = __webpack_require__(718);
+	var ReactMount = __webpack_require__(603);
+	var ReactPerf = __webpack_require__(593);
 	
-	var performanceNow = __webpack_require__(715);
+	var performanceNow = __webpack_require__(719);
 	
 	function roundFloat(val) {
 	  return Math.floor(val * 100) / 100;
@@ -86975,7 +87070,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDefaultPerf;
 
 /***/ },
-/* 714 */
+/* 718 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -86991,7 +87086,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var assign = __webpack_require__(610);
+	var assign = __webpack_require__(614);
 	
 	// Don't try to save users less than 1.2ms (a number I made up)
 	var DONT_CARE_THRESHOLD = 1.2;
@@ -87181,7 +87276,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDefaultPerfAnalysis;
 
 /***/ },
-/* 715 */
+/* 719 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87198,7 +87293,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var performance = __webpack_require__(716);
+	var performance = __webpack_require__(720);
 	
 	var performanceNow;
 	
@@ -87220,7 +87315,7 @@ webpackJsonp([0,1],[
 	module.exports = performanceNow;
 
 /***/ },
-/* 716 */
+/* 720 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87237,7 +87332,7 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(580);
+	var ExecutionEnvironment = __webpack_require__(584);
 	
 	var performance;
 	
@@ -87248,7 +87343,7 @@ webpackJsonp([0,1],[
 	module.exports = performance || {};
 
 /***/ },
-/* 717 */
+/* 721 */
 /***/ function(module, exports) {
 
 	/**
@@ -87267,7 +87362,7 @@ webpackJsonp([0,1],[
 	module.exports = '0.14.8';
 
 /***/ },
-/* 718 */
+/* 722 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87283,12 +87378,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactMount = __webpack_require__(599);
+	var ReactMount = __webpack_require__(603);
 	
 	module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 719 */
+/* 723 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87304,9 +87399,9 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactDefaultInjection = __webpack_require__(642);
-	var ReactServerRendering = __webpack_require__(720);
-	var ReactVersion = __webpack_require__(717);
+	var ReactDefaultInjection = __webpack_require__(646);
+	var ReactServerRendering = __webpack_require__(724);
+	var ReactVersion = __webpack_require__(721);
 	
 	ReactDefaultInjection.inject();
 	
@@ -87319,7 +87414,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMServer;
 
 /***/ },
-/* 720 */
+/* 724 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87335,17 +87430,17 @@ webpackJsonp([0,1],[
 	 */
 	'use strict';
 	
-	var ReactDefaultBatchingStrategy = __webpack_require__(663);
-	var ReactElement = __webpack_require__(613);
-	var ReactInstanceHandles = __webpack_require__(616);
-	var ReactMarkupChecksum = __webpack_require__(619);
-	var ReactServerBatchingStrategy = __webpack_require__(721);
-	var ReactServerRenderingTransaction = __webpack_require__(722);
-	var ReactUpdates = __webpack_require__(625);
+	var ReactDefaultBatchingStrategy = __webpack_require__(667);
+	var ReactElement = __webpack_require__(617);
+	var ReactInstanceHandles = __webpack_require__(620);
+	var ReactMarkupChecksum = __webpack_require__(623);
+	var ReactServerBatchingStrategy = __webpack_require__(725);
+	var ReactServerRenderingTransaction = __webpack_require__(726);
+	var ReactUpdates = __webpack_require__(629);
 	
-	var emptyObject = __webpack_require__(629);
-	var instantiateReactComponent = __webpack_require__(633);
-	var invariant = __webpack_require__(584);
+	var emptyObject = __webpack_require__(633);
+	var instantiateReactComponent = __webpack_require__(637);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * @param {ReactElement} element
@@ -87407,7 +87502,7 @@ webpackJsonp([0,1],[
 	};
 
 /***/ },
-/* 721 */
+/* 725 */
 /***/ function(module, exports) {
 
 	/**
@@ -87435,7 +87530,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactServerBatchingStrategy;
 
 /***/ },
-/* 722 */
+/* 726 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87452,12 +87547,12 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var PooledClass = __webpack_require__(627);
-	var CallbackQueue = __webpack_require__(626);
-	var Transaction = __webpack_require__(628);
+	var PooledClass = __webpack_require__(631);
+	var CallbackQueue = __webpack_require__(630);
+	var Transaction = __webpack_require__(632);
 	
-	var assign = __webpack_require__(610);
-	var emptyFunction = __webpack_require__(586);
+	var assign = __webpack_require__(614);
+	var emptyFunction = __webpack_require__(590);
 	
 	/**
 	 * Provides a `CallbackQueue` queue for collecting `onDOMReady` callbacks
@@ -87527,7 +87622,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactServerRenderingTransaction;
 
 /***/ },
-/* 723 */
+/* 727 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87543,17 +87638,17 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactChildren = __webpack_require__(681);
-	var ReactComponent = __webpack_require__(694);
-	var ReactClass = __webpack_require__(693);
-	var ReactDOMFactories = __webpack_require__(724);
-	var ReactElement = __webpack_require__(613);
-	var ReactElementValidator = __webpack_require__(725);
-	var ReactPropTypes = __webpack_require__(678);
-	var ReactVersion = __webpack_require__(717);
+	var ReactChildren = __webpack_require__(685);
+	var ReactComponent = __webpack_require__(698);
+	var ReactClass = __webpack_require__(697);
+	var ReactDOMFactories = __webpack_require__(728);
+	var ReactElement = __webpack_require__(617);
+	var ReactElementValidator = __webpack_require__(729);
+	var ReactPropTypes = __webpack_require__(682);
+	var ReactVersion = __webpack_require__(721);
 	
-	var assign = __webpack_require__(610);
-	var onlyChild = __webpack_require__(727);
+	var assign = __webpack_require__(614);
+	var onlyChild = __webpack_require__(731);
 	
 	var createElement = ReactElement.createElement;
 	var createFactory = ReactElement.createFactory;
@@ -87606,7 +87701,7 @@ webpackJsonp([0,1],[
 	module.exports = React;
 
 /***/ },
-/* 724 */
+/* 728 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87623,10 +87718,10 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactElement = __webpack_require__(613);
-	var ReactElementValidator = __webpack_require__(725);
+	var ReactElement = __webpack_require__(617);
+	var ReactElementValidator = __webpack_require__(729);
 	
-	var mapObject = __webpack_require__(726);
+	var mapObject = __webpack_require__(730);
 	
 	/**
 	 * Create a factory that creates HTML tag elements.
@@ -87788,7 +87883,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactDOMFactories;
 
 /***/ },
-/* 725 */
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87811,15 +87906,15 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var ReactElement = __webpack_require__(613);
-	var ReactPropTypeLocations = __webpack_require__(636);
-	var ReactPropTypeLocationNames = __webpack_require__(637);
-	var ReactCurrentOwner = __webpack_require__(576);
+	var ReactElement = __webpack_require__(617);
+	var ReactPropTypeLocations = __webpack_require__(640);
+	var ReactPropTypeLocationNames = __webpack_require__(641);
+	var ReactCurrentOwner = __webpack_require__(580);
 	
-	var canDefineProperty = __webpack_require__(614);
-	var getIteratorFn = __webpack_require__(679);
-	var invariant = __webpack_require__(584);
-	var warning = __webpack_require__(596);
+	var canDefineProperty = __webpack_require__(618);
+	var getIteratorFn = __webpack_require__(683);
+	var invariant = __webpack_require__(588);
+	var warning = __webpack_require__(600);
 	
 	function getDeclarationErrorAddendum() {
 	  if (ReactCurrentOwner.current) {
@@ -88074,7 +88169,7 @@ webpackJsonp([0,1],[
 	module.exports = ReactElementValidator;
 
 /***/ },
-/* 726 */
+/* 730 */
 /***/ function(module, exports) {
 
 	/**
@@ -88130,7 +88225,7 @@ webpackJsonp([0,1],[
 	module.exports = mapObject;
 
 /***/ },
-/* 727 */
+/* 731 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88145,9 +88240,9 @@ webpackJsonp([0,1],[
 	 */
 	'use strict';
 	
-	var ReactElement = __webpack_require__(613);
+	var ReactElement = __webpack_require__(617);
 	
-	var invariant = __webpack_require__(584);
+	var invariant = __webpack_require__(588);
 	
 	/**
 	 * Returns the first child in a collection of children and verifies that there
@@ -88168,7 +88263,7 @@ webpackJsonp([0,1],[
 	module.exports = onlyChild;
 
 /***/ },
-/* 728 */
+/* 732 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -88184,8 +88279,8 @@ webpackJsonp([0,1],[
 	
 	'use strict';
 	
-	var assign = __webpack_require__(610);
-	var warning = __webpack_require__(596);
+	var assign = __webpack_require__(614);
+	var warning = __webpack_require__(600);
 	
 	/**
 	 * This will log a single deprecation notice per function and forward the call
@@ -88221,7 +88316,7 @@ webpackJsonp([0,1],[
 	module.exports = deprecated;
 
 /***/ },
-/* 729 */
+/* 733 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -88232,7 +88327,7 @@ webpackJsonp([0,1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _react = __webpack_require__(573);
+	var _react = __webpack_require__(577);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
@@ -88304,7 +88399,7 @@ webpackJsonp([0,1],[
 	exports.default = CountDown;
 
 /***/ },
-/* 730 */
+/* 734 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -88315,11 +88410,11 @@ webpackJsonp([0,1],[
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _react = __webpack_require__(573);
+	var _react = __webpack_require__(577);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _convertTime = __webpack_require__(731);
+	var _convertTime = __webpack_require__(735);
 	
 	var _convertTime2 = _interopRequireDefault(_convertTime);
 	
@@ -88377,7 +88472,7 @@ webpackJsonp([0,1],[
 	exports.default = CountUp;
 
 /***/ },
-/* 731 */
+/* 735 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -88394,6 +88489,2149 @@ webpackJsonp([0,1],[
 	  sec = sec < 10 ? "0" + sec : "" + sec;
 	  return minutes + ":" + sec;
 	};
+
+/***/ },
+/* 736 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _defineProperty2 = __webpack_require__(1);
+	
+	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+	
+	var _getPrototypeOf = __webpack_require__(256);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(267);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(268);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(269);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(316);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\AuthenticationPage\\index.jsx';
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(324);
+	
+	var _reactRouter = __webpack_require__(198);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AuthenticationPage = function (_Component) {
+	    (0, _inherits3.default)(AuthenticationPage, _Component);
+	
+	    function AuthenticationPage(props) {
+	        (0, _classCallCheck3.default)(this, AuthenticationPage);
+	
+	        var _this = (0, _possibleConstructorReturn3.default)(this, (AuthenticationPage.__proto__ || (0, _getPrototypeOf2.default)(AuthenticationPage)).call(this, props));
+	
+	        _this.state = {
+	            currentMode: props.params.mode
+	        };
+	        return _this;
+	    }
+	
+	    (0, _createClass3.default)(AuthenticationPage, [{
+	        key: 'componentWillReceiveProps',
+	        value: function componentWillReceiveProps(newProps) {
+	            this.setState({
+	                currentMode: newProps.params.mode
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                (0, _defineProperty3.default)({ className: 'page-content productsList', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 22
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                _react2.default.createElement(
+	                    'div',
+	                    (0, _defineProperty3.default)({ className: 'container', __source: {
+	                            fileName: _jsxFileName,
+	                            lineNumber: 23
+	                        },
+	                        __self: this
+	                    }, '__self', this),
+	                    _react2.default.createElement(
+	                        _reactBootstrap.Col,
+	                        (0, _defineProperty3.default)({ xs: 12, __source: {
+	                                fileName: _jsxFileName,
+	                                lineNumber: 24
+	                            },
+	                            __self: this
+	                        }, '__self', this),
+	                        this.state.currentMode === '0' ? _react2.default.createElement(
+	                            _reactBootstrap.Col,
+	                            (0, _defineProperty3.default)({ xs: 12, sm: 10, smOffset: 1, md: 6, mdOffset: 3, className: 'authentication', __source: {
+	                                    fileName: _jsxFileName,
+	                                    lineNumber: 26
+	                                },
+	                                __self: this
+	                            }, '__self', this),
+	                            _react2.default.createElement(
+	                                'h3',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 27
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                'Sign in'
+	                            ),
+	                            _react2.default.createElement(
+	                                'form',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 28
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 29
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'email', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 30
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 31
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            (0, _defineProperty3.default)({ className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 32
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            'Email'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 35
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'password', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 36
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 37
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            (0, _defineProperty3.default)({
+	                                                className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 38
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            'Password'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.FormGroup,
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 42
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement(
+	                                        _reactBootstrap.Button,
+	                                        (0, _defineProperty3.default)({ bsStyle: 'success', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 43
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Sign in'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 45
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Not yet signed up? ',
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                _reactRouter.browserHistory.push('/auth/1');
+	                                            }, __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 45
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Sign up!'
+	                                    )
+	                                )
+	                            )
+	                        ) : _react2.default.createElement(
+	                            _reactBootstrap.Col,
+	                            (0, _defineProperty3.default)({ xs: 12, sm: 10, smOffset: 1, md: 6, mdOffset: 3, className: 'authentication', __source: {
+	                                    fileName: _jsxFileName,
+	                                    lineNumber: 51
+	                                },
+	                                __self: this
+	                            }, '__self', this),
+	                            _react2.default.createElement(
+	                                'h3',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 52
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                'Sign up'
+	                            ),
+	                            _react2.default.createElement(
+	                                'form',
+	                                (0, _defineProperty3.default)({
+	                                    __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 53
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 54
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'email', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 55
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 56
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            (0, _defineProperty3.default)({ className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 57
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            'Email'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 60
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'password', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 61
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 62
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            (0, _defineProperty3.default)({
+	                                                className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 63
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            'Password'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 67
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'password', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 68
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 69
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'span',
+	                                            (0, _defineProperty3.default)({
+	                                                className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 70
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            'Retype password'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    _reactBootstrap.FormGroup,
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 74
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement(
+	                                        _reactBootstrap.Button,
+	                                        (0, _defineProperty3.default)({ bsStyle: 'success', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 75
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Sign up'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({
+	                                        __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 77
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Already signed up? ',
+	                                    _react2.default.createElement(
+	                                        'a',
+	                                        (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                _reactRouter.browserHistory.push('/auth/0');
+	                                            }, __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 77
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Sign in!'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	    return AuthenticationPage;
+	}(_react.Component);
+	
+	exports.default = AuthenticationPage;
+
+/***/ },
+/* 737 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _defineProperty2 = __webpack_require__(1);
+	
+	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+	
+	var _getPrototypeOf = __webpack_require__(256);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(267);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(268);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(269);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(316);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _jsxFileName = 'E:\\lottery\\static\\src\\components\\ProfilePage\\index.jsx';
+	
+	var _react = __webpack_require__(20);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(324);
+	
+	var _reactRouter = __webpack_require__(198);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ProfilePage = function (_Component) {
+	    (0, _inherits3.default)(ProfilePage, _Component);
+	
+	    function ProfilePage(props) {
+	        (0, _classCallCheck3.default)(this, ProfilePage);
+	
+	        var _this = (0, _possibleConstructorReturn3.default)(this, (ProfilePage.__proto__ || (0, _getPrototypeOf2.default)(ProfilePage)).call(this, props));
+	
+	        _this.state = {
+	            selectedTab: 1
+	        };
+	        return _this;
+	    }
+	
+	    (0, _createClass3.default)(ProfilePage, [{
+	        key: 'changeTab',
+	        value: function changeTab(n) {
+	            this.setState({
+	                selectedTab: n
+	            });
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+	
+	            return _react2.default.createElement(
+	                'div',
+	                (0, _defineProperty3.default)({ className: 'page-content profile', __source: {
+	                        fileName: _jsxFileName,
+	                        lineNumber: 22
+	                    },
+	                    __self: this
+	                }, '__self', this),
+	                _react2.default.createElement(
+	                    'div',
+	                    (0, _defineProperty3.default)({ className: 'container', __source: {
+	                            fileName: _jsxFileName,
+	                            lineNumber: 23
+	                        },
+	                        __self: this
+	                    }, '__self', this),
+	                    _react2.default.createElement(
+	                        _reactBootstrap.Col,
+	                        (0, _defineProperty3.default)({ xs: 12, __source: {
+	                                fileName: _jsxFileName,
+	                                lineNumber: 24
+	                            },
+	                            __self: this
+	                        }, '__self', this),
+	                        _react2.default.createElement(
+	                            'div',
+	                            (0, _defineProperty3.default)({ className: 'card hovercard', __source: {
+	                                    fileName: _jsxFileName,
+	                                    lineNumber: 25
+	                                },
+	                                __self: this
+	                            }, '__self', this),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'card-background', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 26
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement('img', (0, _defineProperty3.default)({ className: 'card-bkimg', alt: 'profile_background',
+	                                    src: '/images/elements/ui/avatar1.svg', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 27
+	                                    },
+	                                    __self: this
+	                                }, '__self', this))
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'useravatar', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 30
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement('img', (0, _defineProperty3.default)({ alt: 'Demo User', src: '/images/elements/ui/avatar1.svg', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 31
+	                                    },
+	                                    __self: this
+	                                }, '__self', this))
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'card-info', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 33
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'span',
+	                                    (0, _defineProperty3.default)({ className: 'card-title', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 33
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    'Demo User'
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            (0, _defineProperty3.default)({ className: 'btn-pref btn-group btn-group-justified btn-group-lg', role: 'group', __source: {
+	                                    fileName: _jsxFileName,
+	                                    lineNumber: 36
+	                                },
+	                                __self: this
+	                            }, '__self', this),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'btn-group', role: 'group', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 37
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    (0, _defineProperty3.default)({ type: 'button', id: 'basic',
+	                                        className: 'btn ' + (this.state.selectedTab === 1 ? 'btn-primary' : 'btn-default'),
+	                                        onClick: function onClick() {
+	                                            _this2.changeTab(1);
+	                                        }, __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 38
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('span', (0, _defineProperty3.default)({ className: 'glyphicon glyphicon-star', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 43
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        (0, _defineProperty3.default)({ className: 'hidden-xs', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 44
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Basic Info'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'btn-group', role: 'group', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 47
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    (0, _defineProperty3.default)({ type: 'button', id: 'history',
+	                                        className: 'btn ' + (this.state.selectedTab === 2 ? 'btn-primary' : 'btn-default'),
+	                                        onClick: function onClick() {
+	                                            _this2.changeTab(2);
+	                                        }, __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 48
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('span', (0, _defineProperty3.default)({ className: 'glyphicon glyphicon-heart', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 53
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        (0, _defineProperty3.default)({ className: 'hidden-xs', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 54
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'History of lotteries'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'btn-group', role: 'group', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 57
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'button',
+	                                    (0, _defineProperty3.default)({ type: 'button', id: 'wish',
+	                                        className: 'btn ' + (this.state.selectedTab === 3 ? 'btn-primary' : 'btn-default'),
+	                                        onClick: function onClick() {
+	                                            _this2.changeTab(3);
+	                                        }, __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 58
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement('span', (0, _defineProperty3.default)({ className: 'glyphicon glyphicon-user', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 63
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this)),
+	                                    _react2.default.createElement(
+	                                        'div',
+	                                        (0, _defineProperty3.default)({ className: 'hidden-xs', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 64
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Wish list'
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            (0, _defineProperty3.default)({ className: 'well', __source: {
+	                                    fileName: _jsxFileName,
+	                                    lineNumber: 68
+	                                },
+	                                __self: this
+	                            }, '__self', this),
+	                            _react2.default.createElement(
+	                                'div',
+	                                (0, _defineProperty3.default)({ className: 'tab-content', __source: {
+	                                        fileName: _jsxFileName,
+	                                        lineNumber: 69
+	                                    },
+	                                    __self: this
+	                                }, '__self', this),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    (0, _defineProperty3.default)({ className: 'tab-pane fade in ' + (this.state.selectedTab === 1 ? 'active' : ''),
+	                                        id: 'tab1', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 70
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement(
+	                                        _reactBootstrap.Col,
+	                                        (0, _defineProperty3.default)({ xs: 12, sm: 4, smOffset: 4,
+	                                            style: { display: 'block', clear: 'both', float: 'none' }, __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 72
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'h3',
+	                                            (0, _defineProperty3.default)({
+	                                                __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 74
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            'Basic information'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'form',
+	                                            (0, _defineProperty3.default)({
+	                                                __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 75
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement(
+	                                                _reactBootstrap.FormGroup,
+	                                                (0, _defineProperty3.default)({
+	                                                    __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 76
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 77
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'email', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 78
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this)),
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 79
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            'span',
+	                                                            (0, _defineProperty3.default)({ className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 80
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Email'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _reactBootstrap.FormGroup,
+	                                                (0, _defineProperty3.default)({
+	                                                    __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 84
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 85
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'password', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 86
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this)),
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 87
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            'span',
+	                                                            (0, _defineProperty3.default)({
+	                                                                className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 88
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Password'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _reactBootstrap.FormGroup,
+	                                                (0, _defineProperty3.default)({
+	                                                    __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 93
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 94
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'password', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 95
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this)),
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 96
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            'span',
+	                                                            (0, _defineProperty3.default)({ className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 97
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Retype password'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _reactBootstrap.FormGroup,
+	                                                (0, _defineProperty3.default)({
+	                                                    __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 101
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({ className: 'input input--hoshi', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 102
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement('input', (0, _defineProperty3.default)({ className: 'input__field input__field--hoshi', type: 'text', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 103
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this)),
+	                                                    _react2.default.createElement(
+	                                                        'label',
+	                                                        (0, _defineProperty3.default)({ className: 'input__label input__label--hoshi input__label--hoshi-color-1', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 104
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            'span',
+	                                                            (0, _defineProperty3.default)({ className: 'input__label-content input__label-content--hoshi', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 105
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Adress'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                _reactBootstrap.FormGroup,
+	                                                (0, _defineProperty3.default)({
+	                                                    __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 109
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    _reactBootstrap.Button,
+	                                                    (0, _defineProperty3.default)({ bsStyle: 'success', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 110
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Save'
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    (0, _defineProperty3.default)({ className: 'tab-pane fade in ' + (this.state.selectedTab === 2 ? 'active' : ''),
+	                                        id: 'tab2', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 115
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement(
+	                                        'h3',
+	                                        (0, _defineProperty3.default)({
+	                                            __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 117
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'History of lotteries'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        'ul',
+	                                        (0, _defineProperty3.default)({ className: 'cbp_tmtimeline', __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 118
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            'li',
+	                                            (0, _defineProperty3.default)({ className: 'won', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 119
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement(
+	                                                'time',
+	                                                (0, _defineProperty3.default)({ className: 'cbp_tmtime', dateTime: '2013-04-10 18:30', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 120
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 121
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '4/10/13'
+	                                                ),
+	                                                ' ',
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 121
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '18:30'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement('div', (0, _defineProperty3.default)({ className: 'cbp_tmicon cbp_tmicon-phone', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 122
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'cbp_tmlabel', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 123
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'h2',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 124
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Won product 1'
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'p',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 125
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '10 tickets used'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'li',
+	                                            (0, _defineProperty3.default)({ className: 'lost', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 128
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement(
+	                                                'time',
+	                                                (0, _defineProperty3.default)({ className: 'cbp_tmtime', dateTime: '2013-04-11T12:04', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 129
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 130
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '4/11/13'
+	                                                ),
+	                                                ' ',
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 130
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '12:04'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement('div', (0, _defineProperty3.default)({ className: 'cbp_tmicon cbp_tmicon-screen', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 131
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'cbp_tmlabel', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 132
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'h2',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 133
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Lost product 2'
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'p',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 134
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '12 tickets used'
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'li',
+	                                            (0, _defineProperty3.default)({ className: 'won', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 137
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement(
+	                                                'time',
+	                                                (0, _defineProperty3.default)({ className: 'cbp_tmtime', dateTime: '2013-04-13 05:36', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 138
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 139
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '4/13/13'
+	                                                ),
+	                                                ' ',
+	                                                _react2.default.createElement(
+	                                                    'span',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 139
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '05:36'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement('div', (0, _defineProperty3.default)({ className: 'cbp_tmicon cbp_tmicon-mail', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 140
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'cbp_tmlabel', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 141
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'h2',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 142
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Won product 3'
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'p',
+	                                                    (0, _defineProperty3.default)({
+	                                                        __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 143
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    '15 tickets used'
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    (0, _defineProperty3.default)({ className: 'tab-pane fade in ' + (this.state.selectedTab === 3 ? 'active' : ''),
+	                                        id: 'tab3', __source: {
+	                                            fileName: _jsxFileName,
+	                                            lineNumber: 148
+	                                        },
+	                                        __self: this
+	                                    }, '__self', this),
+	                                    _react2.default.createElement(
+	                                        'h3',
+	                                        (0, _defineProperty3.default)({
+	                                            __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 150
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        'Wish list'
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        _reactBootstrap.Row,
+	                                        (0, _defineProperty3.default)({
+	                                            __source: {
+	                                                fileName: _jsxFileName,
+	                                                lineNumber: 151
+	                                            },
+	                                            __self: this
+	                                        }, '__self', this),
+	                                        _react2.default.createElement(
+	                                            _reactBootstrap.Col,
+	                                            (0, _defineProperty3.default)({ xs: 6, sm: 4, className: 'productCard', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 152
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 153
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'name', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 154
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                            _reactRouter.browserHistory.push('/products/1');
+	                                                        }, __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 155
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Demo product'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'prices', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 161
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'lotteryPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 162
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 163
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 163
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '20'
+	                                                        ),
+	                                                        ' tickets'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 164
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({
+	                                                                bsStyle: 'danger', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 164
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Participate'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'realPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 167
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 168
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 168
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '1300'
+	                                                        ),
+	                                                        '$'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 169
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({ bsStyle: 'info', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 169
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Buy'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _reactBootstrap.Col,
+	                                            (0, _defineProperty3.default)({ xs: 6, sm: 4, className: 'productCard', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 173
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 174
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'name', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 175
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                            _reactRouter.browserHistory.push('/products/1');
+	                                                        }, __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 176
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Demo product'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'prices', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 182
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'lotteryPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 183
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 184
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 184
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '20'
+	                                                        ),
+	                                                        ' tickets'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 185
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({
+	                                                                bsStyle: 'danger', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 185
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Participate'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'realPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 188
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 189
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 189
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '1300'
+	                                                        ),
+	                                                        '$'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 190
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({ bsStyle: 'info', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 190
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Buy'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _reactBootstrap.Col,
+	                                            (0, _defineProperty3.default)({ xs: 6, sm: 4, className: 'productCard', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 194
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 195
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'name', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 196
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                            _reactRouter.browserHistory.push('/products/1');
+	                                                        }, __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 197
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Demo product'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'prices', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 203
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'lotteryPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 204
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 205
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 205
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '20'
+	                                                        ),
+	                                                        ' tickets'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 206
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({
+	                                                                bsStyle: 'danger', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 206
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Participate'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'realPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 209
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 210
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 210
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '1300'
+	                                                        ),
+	                                                        '$'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 211
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({ bsStyle: 'info', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 211
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Buy'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _reactBootstrap.Col,
+	                                            (0, _defineProperty3.default)({ xs: 6, sm: 4, className: 'productCard', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 215
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 216
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'name', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 217
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                            _reactRouter.browserHistory.push('/products/1');
+	                                                        }, __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 218
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Demo product'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'prices', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 224
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'lotteryPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 225
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 226
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 226
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '20'
+	                                                        ),
+	                                                        ' tickets'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 227
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({
+	                                                                bsStyle: 'danger', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 227
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Participate'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'realPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 230
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 231
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 231
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '1300'
+	                                                        ),
+	                                                        '$'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 232
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({ bsStyle: 'info', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 232
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Buy'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _reactBootstrap.Col,
+	                                            (0, _defineProperty3.default)({ xs: 6, sm: 4, className: 'productCard', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 236
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 237
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'name', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 238
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                            _reactRouter.browserHistory.push('/products/1');
+	                                                        }, __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 239
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Demo product'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'prices', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 245
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'lotteryPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 246
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 247
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 247
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '20'
+	                                                        ),
+	                                                        ' tickets'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 248
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({
+	                                                                bsStyle: 'danger', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 248
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Participate'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'realPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 251
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 252
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 252
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '1300'
+	                                                        ),
+	                                                        '$'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 253
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({ bsStyle: 'info', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 253
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Buy'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _reactBootstrap.Col,
+	                                            (0, _defineProperty3.default)({ xs: 6, sm: 4, className: 'productCard', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 257
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this),
+	                                            _react2.default.createElement('img', (0, _defineProperty3.default)({ src: '/images/elements/products/1.png', __source: {
+	                                                    fileName: _jsxFileName,
+	                                                    lineNumber: 258
+	                                                },
+	                                                __self: this
+	                                            }, '__self', this)),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'name', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 259
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'a',
+	                                                    (0, _defineProperty3.default)({ href: '#', onClick: function onClick() {
+	                                                            _reactRouter.browserHistory.push('/products/1');
+	                                                        }, __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 260
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    'Demo product'
+	                                                )
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                'div',
+	                                                (0, _defineProperty3.default)({ className: 'prices', __source: {
+	                                                        fileName: _jsxFileName,
+	                                                        lineNumber: 266
+	                                                    },
+	                                                    __self: this
+	                                                }, '__self', this),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'lotteryPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 267
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 268
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 268
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '20'
+	                                                        ),
+	                                                        ' tickets'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 269
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({
+	                                                                bsStyle: 'danger', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 269
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Participate'
+	                                                        )
+	                                                    )
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    'div',
+	                                                    (0, _defineProperty3.default)({ className: 'realPrice', __source: {
+	                                                            fileName: _jsxFileName,
+	                                                            lineNumber: 272
+	                                                        },
+	                                                        __self: this
+	                                                    }, '__self', this),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'price', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 273
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        ' ',
+	                                                        _react2.default.createElement(
+	                                                            'strong',
+	                                                            (0, _defineProperty3.default)({
+	                                                                __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 273
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            '1300'
+	                                                        ),
+	                                                        '$'
+	                                                    ),
+	                                                    _react2.default.createElement(
+	                                                        'span',
+	                                                        (0, _defineProperty3.default)({ className: 'action', __source: {
+	                                                                fileName: _jsxFileName,
+	                                                                lineNumber: 274
+	                                                            },
+	                                                            __self: this
+	                                                        }, '__self', this),
+	                                                        _react2.default.createElement(
+	                                                            _reactBootstrap.Button,
+	                                                            (0, _defineProperty3.default)({ bsStyle: 'info', __source: {
+	                                                                    fileName: _jsxFileName,
+	                                                                    lineNumber: 274
+	                                                                },
+	                                                                __self: this
+	                                                            }, '__self', this),
+	                                                            'Buy'
+	                                                        )
+	                                                    )
+	                                                )
+	                                            )
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	    return ProfilePage;
+	}(_react.Component);
+	
+	exports.default = ProfilePage;
 
 /***/ }
 ]);

@@ -62,6 +62,16 @@ export default function CustomHeader() {
                                         browserHistory.push('/profile');
                                     }}>Open my profile</Button>
                                 </div>
+                                <div className="actions">
+                                    <Button bsStyle="info" onClick={()=> {
+                                        browserHistory.push('/auth/1');
+                                    }}>Sign up</Button>
+                                </div>
+                                <div className="actions">
+                                    <Button bsStyle="info" onClick={()=> {
+                                        browserHistory.push('/auth/0');
+                                    }}>Signin</Button>
+                                </div>
                             </div>
                         </div>
                     </NavDropdown>
