@@ -17,7 +17,7 @@
     "react-bootstrap": "0.30.7",
     "react-dom": "15.4.2",
     "react-router": "^3.0.2",
-    "react-slick": "^0.14.6",
+    "react-slick": "^0.28.1",
     "react-svg": "^2.1.19",
     "react.timer": "^2.1.0",
     "rx-dom": "^7.0.3",
