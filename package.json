@@ -5,7 +5,7 @@
   "dependencies": {
     "aws-sdk": "latest",
     "body-parser": "latest",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "ejs": "latest",
     "express": "latest",
     "express-ws": "^3.0.0",
